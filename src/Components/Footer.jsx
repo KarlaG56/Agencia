@@ -1,5 +1,6 @@
 import '../assets/Style/Footer.css'
 
+
 function Footer() {
     const sections = [
         {

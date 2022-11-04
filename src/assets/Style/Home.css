@@ -1,0 +1,294 @@
+.Body{
+    width: 100%;
+    height: auto;
+    background-color: #1565C0;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.Carousel-container{
+    width: 90%;
+    height: 400px;
+    position: relative;
+    left: 53px;
+    top: 10px;
+}
+
+.Carousel {
+    width: 100%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  .slick-list {
+    margin: 0 -10px;
+  }
+  
+  .card {
+    border: 1px solid #fff;
+    background: #f12711; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f12711, #f5af19);
+    border-radius: 8px;
+    overflow: hidden;
+    height: 375px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .card-top h1 {
+    font-size: 15px;
+    margin: 20px;
+    text-align: center;
+  }
+
+  #card-title{
+    font-size: 20px;
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .card-top > img {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+  }
+
+  .CommentBox-container{
+    width: 90%;
+    height: 30%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+    background: #0082c8;
+    position: relative;
+    left: 53px;
+}
+
+.Title-comment{
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#warning{
+    width: 100%;
+    height: 20px;
+    font-size: 15px;
+}
+
+.CommentBox-Box{
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.Image-container{
+    width: 25px;
+    height: 100%;
+}
+
+.Image-container img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#Post{
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
+.Box{	
+    height: 30px;
+    overflow: hidden;
+    width: 120px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+ }
+
+.Box::after{
+	content:"\025be";
+    color: white;
+	display:table-cell;
+	padding-top:7px;
+	text-align:center;
+	width:30px;
+	height:30px;
+	background-color: transparent;
+	position:absolute;
+	top:0;
+	left: 100px;	
+	pointer-events: none;
+}
+
+select{
+    width: 110px;
+    height: 30px;
+    font-size: 15px;
+    position: relative;
+    left: 20px;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+select:focus{ outline: none;}
+
+option{
+    color: black;
+}
+
+textarea{
+    width: 70%;
+    height: auto;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    padding: auto;
+    resize: none;
+    border: 0;
+    outline: none;
+    border: white 2px solid;
+    margin-top: 20px;
+}
+
+::placeholder { color: white; }
+
+#Publish{
+    background-color: hsl(122, 39%, 49%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    left: 280px;
+}
+
+.Container{
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    position: relative;
+    left: 10px;
+ }
+ 
+ .novedad{
+     width: 100%;
+     height: 40px;
+     box-sizing: border-box;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ .texto{
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+ }
+ 
+ .contador h4{
+     margin-top: 10px;
+ }
+ 
+ .col{
+    width: 20%;
+    height: 365px;
+    display: flex;
+    float: left;
+ }
+ 
+ .port{
+     width: 80%;
+     height: 325px;
+     margin-left: 10px;
+     margin-right: 10px;
+     margin-top: 30px;
+     background: #f12711; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f12711, #f5af19);
+     border-radius: 10px;
+     cursor: pointer;
+ }
+ 
+ .image{
+     width: 100%;
+     height: 250px;
+     border-radius: 10px;
+     object-fit: cover;
+     overflow: hidden;
+     position: relative;
+     border: 3px rgb(204, 229, 255) solid;
+ }
+ 
+ .image img{
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     border-radius: 10px;
+     transition: 0.5s;
+ }
+ 
+ .image img:hover{
+     transform: scale(1.2);
+ }
+ 
+ .calificacion{
+     width: 60px;
+     height: 20px;
+     text-align: center;
+     background-color: rgb(2, 13, 24);
+     position: absolute;
+     opacity: 0.9;
+     color: white;
+     border-top-left-radius: 10px;
+     z-index: 1;
+     overflow: hidden;
+ }
+ 
+ .state{
+     width: 110px;
+     height: 20px;
+     text-align: center;
+     background-color: rgb(2, 13, 24);
+     opacity: 0.8;
+     position: absolute;
+     bottom: 0;
+     right: 0;
+     color: white;
+     border-bottom-right-radius: 10px;
+     z-index: 1;
+     overflow: hidden;
+ }
+ 
+ .title{
+     width: 100%;
+     height: 80px;
+     color: white;
+     text-align: center;
+     margin-top: 10px;
+     font-size: 18px;
+     overflow: hidden;
+ }
