@@ -1,9 +1,9 @@
-import Home from "./Components/Page/Home";
+import Flight from "./Components/Page/Flight";
 
 function App() {
     return (
 
-        <Home />
+        <Flight/>
     )
 }
 

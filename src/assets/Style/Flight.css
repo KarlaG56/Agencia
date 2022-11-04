@@ -1,0 +1,13 @@
+.Body{
+    width: 100%;
+    height: auto;
+    background-color: #1565C0;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+#Map{
+    display: block;
+    margin: auto;
+    border-right: #1565C0 1px ;
+}
