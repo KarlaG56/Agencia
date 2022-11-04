@@ -12,7 +12,7 @@ function Body() {
             </div>
 
             <div className="Nacional">
-                <h2>Vuelos Nacionales</h2>
+                <h2>Domestic flights</h2>
                 
             </div>
 
