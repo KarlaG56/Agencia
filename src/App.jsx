@@ -1,4 +1,4 @@
-import Flight from "./Components/Page/Flight";
+import Flight from "./Components/Page/CruiceShip";
 
 
 function App() {
