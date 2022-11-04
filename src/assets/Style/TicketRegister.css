@@ -1,0 +1,91 @@
+.Background-Ticket{
+    width: 400px;
+    height: 667px;
+    color: black;
+    text-align: center;
+    background-color: rgb(21, 101, 193, .15);
+}
+
+.Ticket-Body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Ticket-container{
+    height: 600px;
+    top: 35px;
+    left: 595px;
+    backdrop-filter: blur(5px);
+}
+
+.form{
+    margin-top: 20px;
+}
+
+#User{
+    position: relative;
+    left: -87px;
+    font-size: 20px;
+}
+
+#Email{
+    position: relative;
+    left: -115px;
+    font-size: 20px;
+}
+
+#email{
+    position: relative;
+    left: -73px;
+    font-size: 20px;
+}
+
+#Password{
+    position: relative;
+    left: -95px;
+    font-size: 20px;
+}
+
+#password{
+    position: relative;
+    left: -53px;
+    font-size: 20px;
+}
+
+.place{
+    width: 300px;
+    height: 30px;
+    font-size: 15px;
+    color: black;
+}
+
+#place:focus{ outline: none;}
+
+#Ticket-button{
+    width: 150px;
+    height: 30px;
+    background-color: #0082c8;
+    font-size: 15px;
+    color: white;
+}
+
+#Create-button{
+    width: 150px;
+    height: 30px;
+    background-color: #F11712;
+    font-size: 15px;
+    color: white;
+}
+
+#Create-Ticket-button{
+    width: 150px;
+    height: 30px;
+    background-color: #0082c8;
+    font-size: 15px;
+    color: white;
+}
+
+h4{
+    margin-top: 15px;
+}

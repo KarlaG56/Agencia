@@ -2,8 +2,11 @@
 import Login from "./Components/Page/Login";
 import Register from "./Components/Page/Register";
 import Home from "./Components/Page/Home";
-import {BrowserRouter, Routes, Route} from "react-router-dom"
-import Flight from "./Components/Page/CruiceShip";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import CruiceShip from "./Components/Page/CruiceShip";
+import Flight from "./Components/Page/Flight";
+import Bus from "./Components/Page/Bus";
+import Reservacion from "./Components/Page/Reservacion";
 
 
 function App() {
@@ -13,7 +16,11 @@ function App() {
                 <Routes>
                     <Route path='/' element={<Login/>}/>
                     <Route path='/Home' element={<Home/>}/>
+                    <Route path='/Flight' element={<Flight/>}/>
+                    <Route path='/Cruice' element={<CruiceShip/>}/>
+                    <Route path='/Bus' element={<Bus/>}/>
                     <Route path='/Register' element={<Register/>}/>
+                    <Route path='/Reservation' element={<Reservacion/>}/>
                 </Routes>
         </BrowserRouter>
     )
