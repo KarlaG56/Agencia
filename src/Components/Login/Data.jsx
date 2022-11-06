@@ -1,16 +1,4 @@
 function Data() {
-    const data = [
-        {
-            id: 1,
-            data: "Email",
-            type: "text",
-        },
-        {
-            id: 2,
-            data: "Password",
-            type: "password",
-        }
-    ]
 
     return (
         <div className="Login-container">
@@ -21,14 +9,20 @@ function Data() {
                 <h1>Touring The Globe✨</h1>
             </div>
             <h3>Account login</h3>
-            {data.map ((elemento, i) => {
-                return(
-                    <div key={i} className="form">
-                        <label id={elemento.data}>{elemento.data}:</label><br />
-                        <input className="place" type={elemento.type} />
-                    </div>  
-                )
-            })}
+
+            <form>
+                <div>
+                    <label id="Email">Email</label><br />
+                    <input className="place" type="text" />
+                </div>
+                <br />
+
+                <div >
+                    <label id="Password">Password</label><br />
+                    <input className="place" type="password" />
+                </div>
+            </form>
+
         </div>
     );
 }
