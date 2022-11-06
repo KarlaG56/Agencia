@@ -12,11 +12,11 @@ function Header() {
                 <a>Touring The Globe✨</a>
             </Link>
 
-            <Link to="/Reservation" id="Reservation">
+            <Link to="/" id="Reservation">
                 <div id="place-2">
                     <img src="/icon/Reservation.svg" />
                 </div>
-                <a>Reservation</a>
+                <a>Home</a>
             </Link>
 
             <Link to="/Airplane" id="Airplane">

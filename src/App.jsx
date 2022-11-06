@@ -4,9 +4,10 @@ import Register from "./Components/Page/Register";
 import Home from "./Components/Page/Home";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import CruiceShip from "./Components/Page/CruiceShip";
-import Flight from "./Components/Page/Flight";
+import Airplane from "./Components/Page/Flight";
 import Bus from "./Components/Page/Bus";
 import Reservacion from "./Components/Page/Reservacion";
+
 
 
 function App() {
@@ -17,11 +18,12 @@ function App() {
                     <Route path='/' element={<Home/>}/>
                     <Route path='/Login' element={<Login/>}/>
                     <Route path='/Home' element={<Home/>}/>
-                    <Route path='/Flight' element={<Flight/>}/>
+                    <Route path='/Airplane' element={<Airplane/>}/>
                     <Route path='/Cruice' element={<CruiceShip/>}/>
                     <Route path='/Bus' element={<Bus/>}/>
                     <Route path='/Register' element={<Register/>}/>
                     <Route path='/Reservation' element={<Reservacion/>}/>
+                    
                 </Routes>
         </BrowserRouter>
     )

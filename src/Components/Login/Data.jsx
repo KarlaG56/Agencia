@@ -1,3 +1,7 @@
+
+import {Link} from 'react-router-dom';
+
+
 function Data() {
 
     return (
@@ -10,21 +14,37 @@ function Data() {
             </div>
             <h3>Account login</h3>
 
-            <form>
+            <form >
                 <div>
                     <label id="Email">Email</label><br />
-                    <input className="place" type="text" />
+                    <input className="place" type="text"  />
                 </div>
                 <br />
 
                 <div >
                     <label id="Password">Password</label><br />
-                    <input className="place" type="password" />
+                    <input className="place" type="password"  />
+                </div>
+
+                <div className="button-container">
+                    <Link id="Login-button" to="/">Log in</Link><br />
+                    <h4>or</h4><br />
+                    <Link id="Create-button" to="/Register">Create account</Link>
                 </div>
             </form>
 
+            
+
         </div>
     );
+
+
+
+
 }
+
+
+
+
 
 export default Data;

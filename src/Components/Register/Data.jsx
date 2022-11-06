@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 function Data() {
     const data = [
         {
@@ -42,15 +44,45 @@ function Data() {
                 <h1>Touring The Globe✨</h1>
             </div>
             <h3>Account login</h3>
-            {data.map ((elemento, i) => {
-                return(
-                    <div key={i} className="form">
-                        <label id={elemento.name}>{elemento.data}:</label><br />
-                        <input className="place" type={elemento.type} />
-                    </div>  
-                )
-            })}
+        
+            <form >
+                <div>
+                    <label id="User">User Name</label><br />
+                    <input className="place" type="text"  />
+                </div>
+                <br />
+
+                <div >
+                    <label id="Email">Email</label><br />
+                    <input className="place" type="email"  />
+                </div>
+                <br />
+
+                <div >
+                    <label id="email">Confirm email</label><br />
+                    <input className="place" type="email"  />
+                </div>
+                <br />
+
+                <div >
+                    <label id="Password">Password</label><br />
+                    <input className="place" type="password" />
+                </div>
+                <br />
+                <div >
+                    <label id="password">Confirm password</label><br />
+                    <input className="place" type="password"  />
+                </div>
+
+                <div className="Create-button-container">
+                    <Link id="Create-User-button" to="/Login">Create account</Link><br />
+                    
+                </div>
+        
+            </form>
         </div>
+
+
     );
 }
 

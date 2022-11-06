@@ -1,5 +1,5 @@
 import Header from "../Header";
-import Body from "../Reservacion/Background";
+import Body from "../Reservation/Background";
 
 import Footer from "../Footer";
 
