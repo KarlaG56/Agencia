@@ -1,62 +1,51 @@
-import  '../assets/Style/Header.css'
+import '../assets/Style/Header.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
-    const encabezado = [
-        {
-            id: 1,
-            image: "/icon/Logo.svg",
-            title: "Touring The Globe✨",
-            etiqueta: "logo",
-            place: "place-1"
-        },
-        {
-            id: 2,
-            image: "/icon/Reservation.svg",
-            title: "Reservation",
-            etiqueta: "Reservation",
-            place: "place-2"
-        },
-        {
-            id: 3,
-            image: "/icon/Airplane.svg",
-            title: "Airplane",
-            etiqueta: "Airplane",
-            place: "place-3"
-        },
-        {
-            id: 4,
-            image: "/icon/Cruise.svg",
-            title: "Cruise",
-            etiqueta: "Cruise",
-            place: "place-3"
-        },
-        {
-            id: 5,
-            image: "/icon/Bus.svg",
-            title: "Bus",
-            etiqueta: "Bus",
-            place: "place-4"
-        },
-        {
-            id: 6,
-            image: "/icon/Login.svg",
-            title: "Login",
-            etiqueta: "Login",
-            place: "place-2"
-        }
-    ]
+
     return (
         <div className="Header">
-            {encabezado.map ((elemento, i) => {
-                return(
-                    <div key={i} id={elemento.etiqueta}>
-                        <div id={elemento.place}>
-                        <img src={elemento.image} alt="" />
-                        </div>
-                        <span>{elemento.title}</span>
-                    </div>
-                )
-            })}
+            <Link to="/" id="logo">
+                <div id="place-1">
+                    <img src="/icon/Logo.svg" />
+                </div>
+                <a>Touring The Globe✨</a>
+            </Link>
+
+            <Link to="/Reservation" id="Reservation">
+                <div id="place-2">
+                    <img src="/icon/Reservation.svg" />
+                </div>
+                <a>Reservation</a>
+            </Link>
+
+            <Link to="/Airplane" id="Airplane">
+                <div id="place-3">
+                    <img src="/icon/Airplane.svg" />
+                </div>
+                <a>Airplane</a>
+            </Link>
+
+            <Link to="/Cruice" id="Cruise">
+                <div id="place-3">
+                    <img src="/icon/Cruise.svg" />
+                </div>
+                <a>Cruise</a>
+            </Link>
+
+            <Link to="/Bus" id="Bus">
+                <div id="place-4">
+                    <img src="/icon/Bus.svg" />
+                </div>
+                <a>Bus</a>
+            </Link>
+
+            <Link to="/Login" id="Login">
+                <div id="place-2">
+                    <img src="/icon/Login.svg" />
+                </div>
+                <a>Login</a>
+            </Link >
         </div>
     );
 }

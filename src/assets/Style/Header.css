@@ -19,6 +19,7 @@
     align-items: center;
     align-content: center;
     margin-left: 10px;
+    text-decoration: none;
 }
 
 #place-1{
@@ -73,6 +74,7 @@ img{
     position: absolute;
     justify-content: center;
     right: 560px;
+    text-decoration: none;
 }
 
 #Airplane{
@@ -84,6 +86,7 @@ img{
     justify-content: center;
     right: 400px;
     border-left: white 2px solid;
+    text-decoration: none;
 }
 
 #Cruise{
@@ -95,6 +98,7 @@ img{
     justify-content: center;
     right: 250px;
     border-left: white 2px solid;
+    text-decoration: none;
 }
 
 #Bus{
@@ -106,6 +110,7 @@ img{
     justify-content: center;
     right: 150px;
     border-left: white 2px solid;
+    text-decoration: none;
 }
 
 #Login{
@@ -117,10 +122,17 @@ img{
     justify-content: center;
     right: 50px;
     border-left: white 2px solid;
+    text-decoration: none;
 }
 
-#Reservation span, #Airplane span, #Cruise span, #Bus span, #Login span{
+#logo a{
+    color:rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+#Reservation a, #Airplane a, #Cruise a, #Bus a, #Login a{
     font-size: 15px;
     position: relative;
     left: 5px;
+    color: white;
 }
