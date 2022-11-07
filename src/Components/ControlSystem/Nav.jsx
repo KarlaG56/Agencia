@@ -8,11 +8,7 @@ function Aside() {
                 <a>| Upload tickets |</a>
             </Link>
 
-            <Link to="/Control_system/Destination" className='Block'>
-                <a>| Load destinations |</a>
-            </Link>
-
-            <Link to="/Control_system/Employee" className='Block'>
+             <Link to="/Control_system/Employee" className='Block'>
                 <a>| Register employee |</a>
             </Link>
 

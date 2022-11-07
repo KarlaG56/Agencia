@@ -1,30 +1,17 @@
 import '../../assets/Style/Reservation.css'
+import {useParams} from 'react-router-dom'
+import Destination from './Destination'
+import ReservationTickets from './ReservationTickets'
+
 
 
 function Body() {
+    let params = useParams();
     return (
-        <form className="Form-reservation">
-            <div className='row-1'>
-                <div className='colum-1'>
-                    <label >Email</label><br />
-                    <input type="text" />
-                </div>
-
-                <div className='colum-1'>
-                <label >Emaiksksl</label><br />
-                <input type="text" />
-                </div>
-               
-            </div>
-            <br />
-
-            <div className='row-2'>
-                <label >Password</label><br />
-                <input type="password" />
-            </div>
-
-
-        </form>
+        <div className="reservation-body">
+            <Destination/>
+            <ReservationTickets/>
+        </div>
     )
 
 }

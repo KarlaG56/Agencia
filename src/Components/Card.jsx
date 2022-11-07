@@ -1,13 +1,18 @@
 import '../assets/Style/Card.css'
+import {Link} from 'react-router-dom'
 
 function Card(props) {
+    const link=("/Reservation/" + props.id + "/" + props.type)
     return (
-        <div className="card">
-            <img src={props.src} alt={props.destination} className="img-card" />
-            <div className="info">
-                <h2>{props.destination}</h2>
+        <Link to={link}  id="reservation">
+            <div className="card">
+                <img src={props.src} alt={props.state} className="img-card" />
+                <div className="info-card">
+                    <h2>{props.city}, {props.state}</h2>
+                    <h2>{props.country}</h2>
+                </div>
             </div>
-        </div>
+        </Link>
     )
 }
 export default Card;

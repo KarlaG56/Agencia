@@ -1,23 +1,63 @@
-.Form-reservation{
+.destination-img{
+    height: 300px;
+}
+.destination-info{
+    height: 320px;
+}
+
+.destination-body {
+    
+}
+
+.form-reservation{
+    height: 335px;
+    background-color: rgb(21, 101, 193, .15);
+    backdrop-filter: blur(5px);
+   
+}
+
+.campos{
+    display: flex;
     width: 100%;
-    height: 100px;
-    background-color: #005C97;
-    color: white;  
+    justify-content: space-evenly;
 }
 
-.row-1{
+.campos label{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation-body{
     
 }
 
-.row-2{
-    display: flex;
-    flex-direction: row-reverse;
+.SelectReservation1{
+    background-color: rgb(88, 112, 134);
+    transform: translate(-20px,5px);
     
 }
 
+.SelectReservation2{
+    background-color: rgb(88, 112, 134);
+    transform: translate(-21px,5px);
+    
+}
 
+.SelectReservation3{
+    background-color: rgb(88, 112, 134);
+    transform: translate(-20px,5px);
+    
+}
+span{
+    
+}
+.date{
+    font-size: 15px;
+    transform: translate(0px,5px);
+}
 
-
- 
+.TitleReserver{
+    margin
+    margin-left: 37%;
+}
