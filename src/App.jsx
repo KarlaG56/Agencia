@@ -10,11 +10,17 @@ import Reservation from "./Components/Page/Reservation";
 import Controler_ticket from "./Components/Page/Controler-ticket"
 import Controler_destiny from "./Components/Page/Controler-destiny"
 import Controler_Employee from "./Components/Page/Controler-Employee"
+import {UserContext} from "./Components/context/context"
+import React, { useState } from "react";
+
 
 function App() {
+    const [user, setUser]=useState(null);
+
     return (
 
         <BrowserRouter>
+        <UserContext. Provider value={{user, setUser}}>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
                     <Route path='/Login' element={<Login/>}/>
@@ -28,6 +34,7 @@ function App() {
                     <Route path='/Control_system/Destination' element={<Controler_destiny/>}/>
                     <Route path='/Control_system/Employee' element={<Controler_Employee/>}/>
                 </Routes>
+                </UserContext.Provider>
         </BrowserRouter>
     )
 }
