@@ -44,7 +44,7 @@ function Data() {
                 </div>
 
                 <div className="Create-button-container-EmployeeRegister">
-                    <Link id="Create-Employee-button" to="/Register">Create account</Link>
+                    <Link id="Create-Employee-button" to="/Login">Create account</Link>
                 </div>
             </form>
 
