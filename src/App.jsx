@@ -6,9 +6,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import CruiceShip from "./Components/Page/CruiceShip";
 import Airplane from "./Components/Page/Flight";
 import Bus from "./Components/Page/Bus";
-import Reservacion from "./Components/Page/Reservacion";
-
-
+import Reservation from "./Components/Page/Reservation";
 
 function App() {
     return (
@@ -22,8 +20,7 @@ function App() {
                     <Route path='/Cruice' element={<CruiceShip/>}/>
                     <Route path='/Bus' element={<Bus/>}/>
                     <Route path='/Register' element={<Register/>}/>
-                    <Route path='/Reservation' element={<Reservacion/>}/>
-                    
+                    <Route path='/Reservation' element={<Reservation/>}/>
                 </Routes>
         </BrowserRouter>
     )

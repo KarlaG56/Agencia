@@ -1,4 +1,4 @@
-import Background from "../TicketRegister/Background";
+import Background from "./Background";
 
 import '../../assets/Style/TicketRegister.css'
 

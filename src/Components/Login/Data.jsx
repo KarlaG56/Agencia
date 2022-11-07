@@ -14,7 +14,7 @@ function Data() {
             </div>
             <h3>Account login</h3>
 
-            <form >
+            <form className='LoginForm'>
                 <div>
                     <label id="Email">Email</label><br />
                     <input className="place" type="text"  />
