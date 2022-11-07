@@ -1,13 +1,11 @@
+import Data from "./Data";
 
 function Body_Ticket() {
     return (
-  
-      <form className="Body-Controller">
-  
-        <a>sdkdkfffffffffffffffffffffkdk</a>
-      </form>
-  
-  
+      <>
+          <Data></Data>
+          
+      </>
     )
   }
   

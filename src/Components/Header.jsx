@@ -1,8 +1,10 @@
 import '../assets/Style/Header.css'
 import { Link } from 'react-router-dom';
 
+
 function Header() {
 
+    
     return (
         <div className="Header">
             <Link to="/" id="logo">
@@ -40,13 +42,30 @@ function Header() {
                 <a>Bus</a>
             </Link>
 
+        
             <Link to="/Login" id="Login">
-                <div id="place-2">
-                    <img src="/icon/Login.svg" />
-                </div>
-                <a>Login</a>
-            </Link >
+            <div id="place-2">
+                <img src="/icon/Login.svg" />
+            </div>
+            <a>Login</a>
+        </Link >
+            
+           
+
+
+
+          
+            
+    
+
+
+
+            
+
+
         </div>
+
+
     );
 }
 

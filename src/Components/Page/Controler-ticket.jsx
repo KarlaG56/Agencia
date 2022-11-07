@@ -1,7 +1,7 @@
 import Header from "../../Components/ControlSystem/Header"
 import Nav from "../ControlSystem/Nav"
-import Body from "../ControlSystem/Ticket/Body_Ticket"
-import '../../assets/Style/Control_Sistem.css'
+import Body from "../ControlSystem/Ticket/Background"
+import '../../assets/Style/ControllerTicket.css'
 function Controler_ticket() {
     return (
         <>
