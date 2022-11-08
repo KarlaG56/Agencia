@@ -23,7 +23,7 @@ function Data() {
       })
     }).then((response) => response.json())
     .then((response) => {
-        if(response.data !== null || response.data !== undefined){ if(response.role == "empleado"){sessionStorage.setItem('id', response.id); navigate("/Control_system/Employee")}else{sessionStorage.setItem('id', response.id); navigate("/Home")}}
+        if(response.data !== null || response.data !== undefined){ if(response.role == "empleado"){sessionStorage.setItem('id', response.id); navigate("/Control_system/Employee")}else{sessionStorage.setItem('id', response.id); navigate("/")}}
     }).catch(error => console.error('Error:', error))
 
 }
@@ -32,13 +32,14 @@ function Data() {
     return (
         <div className="Login-container">
             
-            <div className="title-container">
+            <div className="title-container-1">
                 <div className="Logo-container">
                     <img src="/icon/Logo.svg" alt="" />
                 </div>
                 <h1>Touring The Globe✨</h1>
             </div>
-            <h3>Account login</h3>
+
+            <h3 className='Title_R'>Account login</h3>
 
             <form className='LoginForm' ref={form} onSubmit={handleSubmit}>
                 <div>

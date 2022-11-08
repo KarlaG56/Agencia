@@ -1,13 +1,14 @@
 import Header from "../../Components/ControlSystem/Header"
 import Nav from "../ControlSystem/Nav"
-import Body from "../ControlSystem/Destiny/Body_destiny"
-import '../../assets/Style/Control_Sistem.css'
+
+import '../../assets/Style/Controller_Destinity.css'
+import Background from "../ControlSystem/Destiny/Background"
 function Controler_destiny() {
     return (
         <>
-            <Header />
-            <Nav/>
-            <Body/>
+        <Header />
+       <Nav/> 
+        <Background/>
         </>
     )
 }

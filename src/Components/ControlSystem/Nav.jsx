@@ -12,6 +12,10 @@ function Aside() {
                 <a>| Register employee |</a>
             </Link>
 
+            <Link to="/Control_system/Destination" className='Block'>
+                <a>| Load destiny |</a>
+            </Link>
+
             <Link to="/" className='Block'>
                 <a>| HomePage |</a>
             </Link>

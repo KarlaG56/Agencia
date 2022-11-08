@@ -31,12 +31,12 @@ function ReservationTickets() {
     
     return (
        <div className='Form-reservation-container'>
-             <h3>Reserver</h3>
+             <h3 className='Reserver'>Reserver</h3>
             <form action="">
                 <label id='label-date'>Departure Date:</label>
                 <input type="date"  id='input-date'/><br />
 
-                <label id='origin'>Origin:</label>
+                <label id='label-originReservation'>Origin:</label>
                 <select name="origin" id="select-origin">
                     <option className='Select_origin' disabled selected>Select origin</option>
                     <option className='Tuxtla_Gtz'  value="Tuxtla">Tuxtla Gtz, Chiapas</option>
@@ -45,13 +45,14 @@ function ReservationTickets() {
                 <label id='label-classType'>Class type:</label>
                 <select name="class" id="select-classType">
                     <option disabled selected>Select class</option>
+                    <option value="Turista">Económica</option>
                     <option value="Turista">Turista</option>
                     <option value="Ejecutiva">Ejecutiva</option>
                 </select><br />
 
                 <label id='label-seatNumber'>Seat number:</label>
-                <select className='SelectReservation3'>
-                    <option disabled selected>Select class</option>
+                <select name='SelectReservation3' id="select-seatNumber">
+                    <option disabled selected>Select number</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

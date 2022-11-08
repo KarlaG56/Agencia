@@ -1,4 +1,5 @@
 import Card from "../Card";
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react"
 function Body() {
     const [apiData, setApiData] = useState(null);
@@ -26,6 +27,8 @@ function Body() {
             </div>
 
             <div className="container-destination">
+
+                <Link to="/">       
                 {
                     apiData && apiData.map(destinations => (
                         <Card
@@ -39,6 +42,8 @@ function Body() {
                         />
                     ))
                 }
+                </Link>
+                
             </div>
         </>
     )

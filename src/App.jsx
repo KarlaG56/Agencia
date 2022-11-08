@@ -30,9 +30,9 @@ function App() {
                     <Route path='/Airplane' element={<Airplane />} />
                     <Route path='/Cruice' element={<CruiceShip />} />
                     <Route path='/Bus' element={<Bus />} />
-                    <Route path='/Register' element={<Register />} />
-                    <Route path='/Reservation' element={<Reservation />} />
-                    <Route path='/Control_system' element={<Control />} />
+                    <Route path='/Register' element={<Register/>} />
+                    <Route path='/Reservation/:id/:type' element={<Reservation/>} />
+                    <Route path='/Control_system' element={<Control/>} />
                     <Route path='/Control_system/Ticket' element={<Controler_ticket />} />
                     <Route path='/Control_system/Destination' element={<Controler_destiny />} />
                     <Route path='/Control_system/Employee' element={<Controler_Employee />} />

@@ -29,16 +29,19 @@ function Header() {
                 <a>Airplane</a>
             </Link>
 
-            <Link to="/Cruise" id="Cruise">
+            <Link to="/Cruice" id="Cruise">
                 <div id="place-3">
                     <img src="/icon/Cruise.svg" />
                 </div>
                 <a>Cruice</a>
             </Link>
 
-           
-
-            
+            <Link to="/Bus" id="Bus">
+                <div id="place-4">
+                    <img src="/icon/Bus.svg" />
+                </div>
+                <a>Bus</a>
+            </Link>
 
             {user == null ?
                 <Link to="/Login" id="Login">
@@ -49,12 +52,12 @@ function Header() {
                 </Link >
 
                 :
-                <Link to="/" id="Reservation">
-                <div id="place-2">
-                    <img src="/icon/Reservation.svg" />
-                </div>
-                <a>My reservation</a>
-            </Link>
+
+                <Link to="/Control_system" id="Control">
+                    <div id="place-2">
+                    </div>
+                    <a>Control System</a>
+                </Link>
 
             }
 
