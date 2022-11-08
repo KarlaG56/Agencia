@@ -1,10 +1,11 @@
 import '../assets/Style/Header.css'
 import { Link } from 'react-router-dom';
-
+import { useRef, useState, useContext } from 'react'
+import { UserContext } from "./context/context"
 
 function Header() {
 
-    
+    const { user, setUser } = useContext(UserContext);
     return (
         <div className="Header">
             <Link to="/" id="logo">
@@ -28,39 +29,44 @@ function Header() {
                 <a>Airplane</a>
             </Link>
 
-            <Link to="/Cruice" id="Cruise">
+            <Link to="/Cruise" id="Cruise">
                 <div id="place-3">
                     <img src="/icon/Cruise.svg" />
                 </div>
-                <a>Cruise</a>
+                <a>Cruice</a>
             </Link>
 
-            <Link to="/Bus" id="Bus">
-                <div id="place-4">
-                    <img src="/icon/Bus.svg" />
-                </div>
-                <a>Bus</a>
-            </Link>
-
-        
-            <Link to="/Login" id="Login">
-            <div id="place-2">
-                <img src="/icon/Login.svg" />
-            </div>
-            <a>Login</a>
-        </Link >
-            
            
 
-
-
-          
             
-    
+
+            {user == null ?
+                <Link to="/Login" id="Login">
+                    <div id="place-2">
+                        <img src="/icon/Login.svg" />
+                    </div>
+                    <a>Login</a>
+                </Link >
+
+                :
+                <Link to="/" id="Reservation">
+                <div id="place-2">
+                    <img src="/icon/Reservation.svg" />
+                </div>
+                <a>My reservation</a>
+            </Link>
+
+            }
 
 
 
-            
+
+
+
+
+
+
+
 
 
         </div>

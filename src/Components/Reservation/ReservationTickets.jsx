@@ -30,7 +30,41 @@ function ReservationTickets() {
     console.log(apiData)*/
     
     return (
-        <form className="form-reservation">
+       <div className='Form-reservation-container'>
+             <h3>Reserver</h3>
+            <form action="">
+                <label id='label-date'>Departure Date:</label>
+                <input type="date"  id='input-date'/><br />
+
+                <label id='origin'>Origin:</label>
+                <select name="origin" id="select-origin">
+                    <option className='Select_origin' disabled selected>Select origin</option>
+                    <option className='Tuxtla_Gtz'  value="Tuxtla">Tuxtla Gtz, Chiapas</option>
+                </select><br />
+
+                <label id='label-classType'>Class type:</label>
+                <select name="class" id="select-classType">
+                    <option disabled selected>Select class</option>
+                    <option value="Turista">Turista</option>
+                    <option value="Ejecutiva">Ejecutiva</option>
+                </select><br />
+
+                <label id='label-seatNumber'>Seat number:</label>
+                <select className='SelectReservation3'>
+                    <option disabled selected>Select class</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br />
+                <button id='button-reservation-save'>save</button>
+            </form>
+       </div>
+    )
+}
+export default ReservationTickets;
+
+/* <form className="form-reservation">
             <h3 className='TitleReserver'>Reserver</h3><br/>
 
             <div className='campos'>
@@ -71,7 +105,4 @@ function ReservationTickets() {
             </label>
 
             </div>
-        </form>
-    )
-}
-export default ReservationTickets;
+        </form> */

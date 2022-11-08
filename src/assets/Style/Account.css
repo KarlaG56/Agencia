@@ -51,6 +51,7 @@
 
 h3{
     margin-top: 30px;
+    font-size: 30px;
 }
 
 form{
@@ -146,6 +147,7 @@ form{
     border: 2px solid black;
     text-decoration: none;
     font-size: 15px;
+    margin-top: 30px;
 }
 
 
