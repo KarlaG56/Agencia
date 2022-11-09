@@ -31,7 +31,7 @@ function App() {
                     <Route path='/Cruice' element={<CruiceShip />} />
                     <Route path='/Bus' element={<Bus />} />
                     <Route path='/Register' element={<Register/>} />
-                    <Route path='/Reservation/:id/:type' element={<Reservation/>} />
+                    <Route path='/Reservation' element={<Reservation/>} />
                     <Route path='/Control_system' element={<Control/>} />
                     <Route path='/Control_system/Ticket' element={<Controler_ticket />} />
                     <Route path='/Control_system/Destination' element={<Controler_destiny />} />
@@ -40,6 +40,8 @@ function App() {
             </UserContext.Provider>
         </BrowserRouter>
     )
+
+    //Reservation/:id/:type
 }
 
 export default App;

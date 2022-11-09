@@ -8,7 +8,7 @@ function Body_destiny() {
     const [file, setFile] = useState('');
     function handleSubmit(event) {
         event.preventDefault();
-        const input = document.getElementById('file');
+        const input = document.getElementById('input-file');
         var formdata = new FormData();
         formdata.append("city", city);
         formdata.append("state", state);

@@ -1,204 +1,246 @@
-.Background{
-    width: 1479px;
-    height: 790px;
-    position: absolute;
-    margin-left: -250px;
-    color: black;
-    text-align: center;
+.Background {
+  width: 1479px;
+  height: 790px;
+  position: absolute;
+  margin-left: -250px;
+  color: black;
+  text-align: center;
 }
 
-.Background img, .Logo-container img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+.Background img,
+.Logo-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-.Login-container{
-    width: 400px;
-    height: 500px;
-    position: absolute;
-    top: 35px;
-    left: 595px;
-    background-color: rgb(21, 101, 193, .15);
-    backdrop-filter: blur(5px);
+.Login-container {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 35px;
+  left: 595px;
+  background-color: rgb(21, 101, 193, 0.15);
+  backdrop-filter: blur(5px);
 }
 
-.Register-container{
-    width: 400px;
-    height: 720px;
-    margin-left: 15px;
-    position: absolute;
-    top: 35px;
-    left: 595px;
-    background-color: rgb(21, 101, 193, .15);
-    backdrop-filter: blur(5px);
+.Register-container {
+  width: 400px;
+  height: 720px;
+  margin-left: 15px;
+  position: absolute;
+  top: 35px;
+  left: 595px;
+  background-color: rgb(21, 101, 193, 0.15);
+  backdrop-filter: blur(5px);
 }
 
-.title-container-1{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    margin-left: 30px;
-    margin-top: 15px;
+.title-container-1 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  margin-left: 30px;
+  margin-top: 15px;
 }
-
-
 
 .Logo-container {
-    width: 50px;
-    height: 100%;
+  width: 50px;
+  height: 100%;
 }
 
-.Logo-container{
-    animation: rotation 8s infinite linear;
+.Logo-container {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.Title_R {
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+#User {
+  position: relative;
+  left: -90px;
+  font-size: 20px;
+}
+
+#Age_Login {
+  position: relative;
+  left: -115px;
+  font-size: 20px;
+}
+
+#Cell_Login {
+  position: relative;
+  left: -95px;
+  font-size: 20px;
+}
+
+#Email {
+  position: relative;
+  left: -110px;
+  font-size: 20px;
+}
+
+#email {
+  position: relative;
+  left: -75px;
+  font-size: 20px;
+}
+
+#Password {
+  position: relative;
+  left: -95px;
+  font-size: 20px;
+}
+
+#password {
+  position: relative;
+  left: -53px;
+  font-size: 20px;
+}
+
+.place {
+  width: 300px;
+  height: 30px;
+  font-size: 15px;
+  color: black;
+}
+
+#place:focus {
+  outline: none;
+}
+
+.button-container {
+  position: absolute;
+  left: 30%;
+  top: 70%;
+}
+
+.Create-button-container {
+  position: absolute;
+  left: 30%;
+  bottom: 12%;
+  top: 650px;
+}
+
+#Login-button {
+  width: 150px;
+  height: 30px;
+  background: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #021b79,
+    #0575e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-size: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 6px 52px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 15px;
   
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
-
-.Title_R{
-    margin-top: 30px;
-    font-size: 30px;
 }
 
-form{
-    margin-top: 20px;
+#Create-button {
+  width: 150px;
+  height: 30px;
+  background: #f00000; 
+  background: -webkit-linear-gradient(
+    to left,
+    #f21f14,
+    #f00000
+  ); 
+  background: linear-gradient(
+    to left,
+    #ff2519,
+    #f00000
+  ); 
+  font-size: 15px;
+  color: white;
+  padding: 10px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 25px;
 }
 
-#User{
-    position: relative;
-    left: -90px;
-    font-size: 20px;
+#Create-User-button {
+  width: 150px;
+  height: 40px;
+  margin-top: 39px;
+  background: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #021b79,
+    #0575e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-size: 15px;
+  color: white;
+  padding: 5px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  position: relative;
+  border-radius: 25px;
 }
 
-#Age_Login{
-    position: relative;
-    left: -115px;
-    font-size: 20px;
+#Create-User-button-Register {
+  width: 150px;
+  height: 40px;
+  margin-top: 10px;
+  background: #0575e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #021b79,
+    #0575e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #021b79,
+    #0575e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-size: 15px;
+  color: white;
+  padding: 5px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 25px;
 }
 
-#Cell_Login{
-    position: relative;
-    left: -95px;
-    font-size: 20px;
-}
-
-#Email{
-    position: relative;
-    left: -110px;
-    font-size: 20px;
-}
-
-#email{
-    position: relative;
-    left: -75px;
-    font-size: 20px;
-}
-
-#Password{
-    position: relative;
-    left: -95px;
-    font-size: 20px;
-}
-
-#password{
-    position: relative;
-    left: -53px;
-    font-size: 20px;
-}
-
-.place{
-    width: 300px;
-    height: 30px;
-    font-size: 15px;
-    color: black;
-}
-
-#place:focus{ outline: none;}
-
-.button-container{
-    position: absolute;
-    left: 30%;
-    top: 70%;
-    
-}
-
-.Create-button-container{
-    position: absolute;
-    left:30%;
-    bottom: 12%;
-    top: 650px;
-
-}
-
-#Login-button{
-    width: 150px;
-    height: 30px;
-    background-color: #0082c8;
-    font-size: 15px;
-    color: white;
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 6px 52px;
-    font-family:Arial, Helvetica, sans-serif;
-    border: 2px solid black;
-    text-decoration: none;
-    font-size: 15px;
-   
-}
-
-#Create-button{
-    width: 150px;
-    height: 30px;
-    background-color: #F11712;
-    font-size: 15px;
-    color: white;
-    padding: 6px 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    border: 2px solid black;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-#Create-User-button{
-    width: 150px;
-    height: 30px;
-    margin-top:39px;
-    background-color: #0082c8;
-    font-size: 15px;
-    color: white;
-    padding: 6px 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    border: 2px solid black;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-#Create-User-button-Register{
-    width: 150px;
-    height: 30px;
-    margin-top:10px;
-    background-color: #0082c8;
-    font-size: 15px;
-    color: white;
-    padding: 6px 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    border: 2px solid black;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-
-
-
-
-h4{
-    margin-top: 15px;
+h4 {
+  margin-top: 15px;
 }

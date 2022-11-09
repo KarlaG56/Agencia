@@ -12,18 +12,34 @@ function Data() {
       event.preventDefault();
   
         const formData = new FormData(form.current);
-        fetch("http://localhost:8080/user/validate", {method: "POST",
-      headers:{
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-    body: JSON.stringify({
-      email: formData.get("email"),
-      password: formData.get("password"),
-      })
-    }).then((response) => response.json())
-    .then((response) => {
-        if(response.data !== null || response.data !== undefined){ if(response.role == "empleado"){sessionStorage.setItem('id', response.id); navigate("/Control_system/Employee")}else{sessionStorage.setItem('id', response.id); navigate("/")}}
+        fetch("http://localhost:8080/user/validate", 
+            {method: "POST",
+            headers:{
+                "Accept": "application/json",
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                email: formData.get('email'),
+                password: formData.get('password'),
+            })
+        }).then((response) => {
+            console.log(response.status)
+            if (response.status === 200)
+                return response.json()
+            else
+                console.log("Error")
+            })
+        .then((data) => {
+        console.log(data)
+        if(data.data !== null || data.data !== undefined){ 
+            if(data.role == "employee"){
+                sessionStorage.setItem('id', data.id); 
+                navigate("/Control_system/Employee")
+            }else{
+                sessionStorage.setItem('id', data.id); 
+                navigate("/")
+            }
+        }
     }).catch(error => console.error('Error:', error))
 
 }
@@ -44,16 +60,16 @@ function Data() {
             <form className='LoginForm' ref={form} onSubmit={handleSubmit}>
                 <div>
                     <label id="Email">Email</label><br />
-                    <input className="place" type="text" name="email" />
+                    <input className="place" type="text" name="email" id='email_Login'/>
                 </div>
                 <br />
 
                 <div >
                     <label id="Password">Password</label><br />
-                    <input className="place" type="password" name="password" />
+                    <input className="place" type="password" name="password" id='password_Login'/>
                 </div>
 
-                <button type='submit' id="Create-User-button">Login</button>
+                <button type='submit' id="Create-User-button">{window.sessionStorage.getItem("id") ? "Login" : "Logout"}</button>
                 <h4>or</h4><br />
                 <Link id="Create-button" to="/Register">Create account</Link>
                 {/*<div className="button-container">

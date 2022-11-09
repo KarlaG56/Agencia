@@ -1,89 +1,115 @@
-.destination-img{
-    height: 300px;
+.destination-img {
+  height: 300px;
+ 
+  
 }
-.destination-info{
-    height: 320px;
-}
-
-.Reserve{
-    transform: translate(10px, 50px);
-}
-
-.Form-reservation-container{
-    height: 335px;
-    background: #00F260;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0575E6, #00F260);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0575E6, #00F260); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-    text-align: center;    
+.destination-info {
+  height: 120px;
+  width: 320px;
+  position: relative;
+  margin-top:30px;
+  margin-left: 760px;
 }
 
-.campos label{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.Reserve {
+  transform: translate(10px, 25px);
+  font-size: 40px;
+  margin-top: -10px;
+  position: relative;
 }
 
-#label-date{
+.Form-reservation-container {
+  height: 430px;
+  width: 700px;
+  margin-top: -120px;
+  position: relative;
+  margin-bottom: 30px;
+  background-image: url(/public/img/Bus.png);
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  padding: -0px 10px 180px;
+}
+
+.formReserver{
+    background-color: rgb(21, 101, 193, .15);
+    backdrop-filter: blur(5px);
+    width: 620px;
+    height: 370px;
     position: relative;
-    left: -150px;
-    bottom: -60px;
-    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 40px;
 }
 
-#input-date{
-    position: relative;
-    left: -148px;
-    bottom: -60px;
-    font-size: 18px;
+.campos label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#label-classType{
-    position: relative;
-    top: 92px;
-    left: 177px;
-    font-size: 20px;
+#label-date {
+  position: relative;
+  left: -150px;
+  bottom: -60px;
+  font-size: 20px;
 }
 
-#select-classType{
-    position: relative;
-    top: 94px;
-    left: 180px;
-    font-size: 15.5px;
+#input-date {
+  position: relative;
+  left: -148px;
+  bottom: -60px;
+  font-size: 18px;
 }
 
-#label-originReservation{
-    position: relative;
-    left: 160px;
-    top:30px;
-    font-size: 20px;
-}
-#select-origin{
-    position: relative;
-    top: 30px;
-    left: 160px;
-    font-size: 15.5px;
+#label-classType {
+  position: relative;
+  top: 92px;
+  left: 177px;
+  font-size: 20px;
 }
 
-#label-seatNumber{
-    position: relative;
-    top: 60px;
-    left: -183px;
-    font-size: 20px;
+#select-classType {
+  position: relative;
+  top: 94px;
+  left: 180px;
+  font-size: 15.5px;
 }
 
-#select-seatNumber{
-    position: relative;
-    top: 60px;
-    left: -180px;
-    font-size: 15.5px;
+#label-originReservation {
+  position: relative;
+  left: 160px;
+  top: 30px;
+  font-size: 20px;
+}
+#select-origin {
+  position: relative;
+  top: 30px;
+  left: 160px;
+  font-size: 15.5px;
 }
 
-#button-reservation-save{
-    width: 150px;
-    height: 30px;
+#label-seatNumber {
+  position: relative;
+  top: 60px;
+  left: -183px;
+  font-size: 20px;
+}
+
+#select-seatNumber {
+  position: relative;
+  top: 60px;
+  left: -180px;
+  font-size: 15.5px;
+}
+
+#button-reservation-save {
+    
+    margin-top:120px;
     background-color: #0082c8;
     font-size: 15px;
     color: white;
-    transform: translate(10px,90px);
+    padding: 6px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 15px;
 }
