@@ -2,13 +2,17 @@
     width: 400px;
     height: 570px;
     transform: translate(600px, -640px);
-    
     background-color: rgb(21, 101, 193, .15);
     backdrop-filter: blur(5px);
     margin-top: 0px;
     margin-left: -250px;
     position: absolute;
 }
+
+.UploadTicketForm{
+    position: relative;
+}
+
 
 .UploadTicket_Background img{
     object-fit: cover;
@@ -20,6 +24,7 @@
     margin-left: 120px;
     color: rgb(0, 0, 0);
     font-size: 28px;
+    
 }
 
 .placeUploadTicket{
@@ -83,7 +88,10 @@
 #Create-UploadTicket-button{
     width: 150px;
     height: 30px;
-    background-color: #0082c8;
+    background: #00d2ff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3a7bd5, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     font-size: 15px;
     color: white;
     padding: 6px 20px;

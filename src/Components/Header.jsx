@@ -61,6 +61,17 @@ function Header() {
 
             }
 
+<div className='menu-container'>
+            <input type="checkbox" id="menu-hamburger" />
+            <label for="menu-hamburger"> ☰ </label>
+            <ul>
+                <li>My reservations</li>
+                <li>Payment type</li>
+                <li>Delete account</li>
+                <li>Sing off</li>
+            </ul>
+            </div>
+
 
 
 

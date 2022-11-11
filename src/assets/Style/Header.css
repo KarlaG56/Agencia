@@ -164,3 +164,67 @@ img{
     left: 5px;
     color: rgb(255, 255, 255);
 }
+
+.menu-container{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 570px;
+}
+
+ul{
+    display: none;
+}
+  
+input:checked  ~ ul{
+    display:block;
+}
+  
+input {
+    display: none;
+}
+  
+.menu-container label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+}
+
+.menu-container label:hover{
+    background: rgb(7, 83, 196);
+}
+
+input:checked ~ label {
+    background: rgb(91, 91, 235); 
+}
+  
+ul{
+    margin-top:0;
+    position: relative;
+    right: 160px;
+    padding: 0;
+    width: 200px;
+    text-align: center;
+    z-index: 1;
+}
+  
+  
+li {
+    display: block;
+    background: rgb(14, 132, 228);
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+}
+
+li:hover {
+    filter: brightness(110%);
+}

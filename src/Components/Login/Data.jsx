@@ -70,7 +70,7 @@ function Data() {
                 </div>
 
                 <button type='submit' id="Create-User-button">{window.sessionStorage.getItem("id") ? "Login" : "Logout"}</button>
-                <h4>or</h4><br />
+                <h4 id='Text-Login'>or</h4><br />
                 <Link id="Create-button" to="/Register">Create account</Link>
                 {/*<div className="button-container">
                     <Link id="Login-button" to="/">Log in</Link><br />
