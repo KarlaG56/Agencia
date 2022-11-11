@@ -13,7 +13,7 @@ import Controler_Employee from "./Components/Page/Controler-Employee"
 import { UserContext } from "./Components/context/context"
 import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
-
+import MyReservations from "./Components/MyReservations/MyReservation"
 
 
 function App() {
@@ -36,6 +36,7 @@ function App() {
                     <Route path='/Control_system/Ticket' element={<Controler_ticket />} />
                     <Route path='/Control_system/Destination' element={<Controler_destiny />} />
                     <Route path='/Control_system/Employee' element={<Controler_Employee />} />
+                    <Route path='/My_Reservations' element={<MyReservations/>} />
                 </Routes>
             </UserContext.Provider>
         </BrowserRouter>

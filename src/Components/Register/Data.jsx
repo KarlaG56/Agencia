@@ -47,7 +47,7 @@ function Data() {
   return (
     <div className="Register-container">
       <div className="title-container">
-        <div className="Logo-container1">
+        <div className="Logo-container">
           <img src="/icon/Logo.svg" alt="" />
         </div>
         <h1 id="Title-Register">Touring The Globe✨</h1>

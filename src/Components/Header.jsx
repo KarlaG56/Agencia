@@ -2,8 +2,11 @@ import '../assets/Style/Header.css'
 import { Link } from 'react-router-dom';
 import { useRef, useState, useContext } from 'react'
 import { UserContext } from "./context/context"
+import { useTheme } from "../hooks/Theme";
 
 function Header() {
+
+    const [theme, handleChange] = useTheme('dark');
 
     const { user, setUser } = useContext(UserContext);
     return (
@@ -12,7 +15,7 @@ function Header() {
                 <div id="place-1">
                     <img src="/icon/Logo.svg" />
                 </div>
-                <a>Touring The Globe✨</a>
+                <a >Touring The Globe✨</a>
             </Link>
 
             <Link to="/" id="Reservation">
@@ -61,28 +64,15 @@ function Header() {
 
             }
 
-<div className='menu-container'>
-            <input type="checkbox" id="menu-hamburger" />
-            <label for="menu-hamburger"> ☰ </label>
-            <ul>
-                <li>My reservations</li>
-                <li>Payment type</li>
-                <li>Delete account</li>
-                <li>Sing off</li>
-            </ul>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
+            <div className='menu-container'>
+                <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
+                <label for="menu-hamburger"> ☰ </label>
+                <ul>
+                    <li>My reservations</li>
+                    <li>Sing off</li>
+                </ul>
+                
+            </div>
         </div>
 
 

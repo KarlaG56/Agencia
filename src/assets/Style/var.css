@@ -1,0 +1,45 @@
+:root {
+    --header: #00c6ff;
+    --header: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    --header: linear-gradient(to right, #0072ff, #00c6ff);
+    --image: url('/Icon/Moon.svg');
+
+    --background-home: #1565C0;
+    --carousel-subtitle: #f12711;
+    --carousel-subtitle: -webkit-linear-gradient(to top, #f12711, #f5af19);
+    --carousel-subtitle: linear-gradient(to top, #f12711, #f5af19);
+    --border-image: 3px rgb(204, 229, 255) solid;
+    --comment-box: #0082c8;
+
+    --footer: #00c6ff;
+    --footer: -webkit-linear-gradient(o right, #0072ff, #00c6ff);
+    --footer: linear-gradient(to right, #0072ff, #00c6ff);
+
+
+    --body: rgb(208, 234, 254);
+
+    --invisible: -1;
+}
+
+[data-theme='dark'] {
+    --header: #00c6ff;
+    --header: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    --header: linear-gradient(to right, #0072ff, #00c6ff);
+    --image: url('/Icon/Moon.svg');
+
+    --background-home: #1565C0;
+    --carousel-subtitle: #f12711;
+    --carousel-subtitle: -webkit-linear-gradient(to top, #f12711, #f5af19);
+    --carousel-subtitle: linear-gradient(to top, #f12711, #f5af19);
+    --border-image: 3px rgb(204, 229, 255) solid;
+    --comment-box: #0082c8;
+
+    --footer: #00c6ff;
+    --footer: -webkit-linear-gradient(o right, #0072ff, #00c6ff);
+    --footer: linear-gradient(to right, #0072ff, #00c6ff);
+
+
+    --body: rgb(208, 234, 254);
+
+    --invisible: 1;
+}
