@@ -15,7 +15,7 @@ function Header() {
                 <div id="place-1">
                     <img src="/icon/Logo.svg" />
                 </div>
-                <a >Touring The Globe✨</a>
+                <a className='TitleTTG'>Touring The Globe✨</a>
             </Link>
 
             <Link to="/" id="Reservation">
@@ -68,7 +68,8 @@ function Header() {
                 <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
                 <label for="menu-hamburger"> ☰ </label>
                 <ul>
-                    <li>My reservations</li>
+                   <Link to="/My_Reservations"><li>My reservations</li></Link> 
+                    
                     <li>Sing off</li>
                 </ul>
                 

@@ -24,10 +24,16 @@
   margin-top: -120px;
   position: relative;
   margin-bottom: 30px;
-  background-image: url(/public/img/Bus.png);
+  background-image: url(/public/img/Rio.jpg);
+
   text-align: center;
   border: 2px solid rgb(0, 0, 0);
   padding: -0px 10px 180px;
+}
+
+.Form-reservation-container img{
+  width: 120px;
+  height: 120px;
 }
 
 .formReserver{

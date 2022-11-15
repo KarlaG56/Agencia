@@ -13,7 +13,7 @@ import Controler_Employee from "./Components/Page/Controler-Employee"
 import { UserContext } from "./Components/context/context"
 import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
-import MyReservations from "./Components/MyReservations/MyReservation"
+import MyReservations from "./Components/Page/MyReservation"
 
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
                     <Route path='/Cruice' element={<CruiceShip />} />
                     <Route path='/Bus' element={<Bus />} />
                     <Route path='/Register' element={<Register/>} />
-                    <Route path='/Reservation' element={<Reservation/>} />
+                    <Route path='/Reservation/:id/:type' element={<Reservation/>} />
                     <Route path='/Control_system' element={<Control/>} />
                     <Route path='/Control_system/Ticket' element={<Controler_ticket />} />
                     <Route path='/Control_system/Destination' element={<Controler_destiny />} />

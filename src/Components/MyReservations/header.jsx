@@ -15,7 +15,7 @@ function Header() {
                     <div className="image-home-container">
                         <img src="/icon/Reservation.svg" />
                     </div>
-                    <Link to="/" className='Title_MyReservation'></Link>
+                    <Link to="/" className='Title_MyReservation'>Home</Link>
                     
                 </div>
         </div>

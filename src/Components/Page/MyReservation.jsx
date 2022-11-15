@@ -1,6 +1,6 @@
-import Header from "./header";
-import Body from "./body";
-import './MyReservation.css'
+import Header from "../MyReservations/header";
+import Body from "../MyReservations/body";
+import '../../assets/Style/MyReservation.css';
 
 function Reservation() {
     return (
