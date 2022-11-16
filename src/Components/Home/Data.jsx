@@ -9,7 +9,7 @@ export const Data = [
       id: 2,
       title: 'Islandia:',
       text: 'It is known as the Land of Fire and Ice. The countrys aforementioned volcanoes along with glaciers and a land covered in ice and snow provide a stark contrast that gives this country its nickname.',
-      linkImg: '/img/Islandia.jpg'  
+      linkImg: '/img/Islandia.JPG'  
     },
     {
       id: 3,

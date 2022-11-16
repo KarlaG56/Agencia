@@ -61,7 +61,7 @@ function ReservationTickets() {
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select><br />
-                <button id='button-reservation-save'>save</button>
+                <button id='button-reservation-save'>Save</button>
             </form>
         </div>
     )

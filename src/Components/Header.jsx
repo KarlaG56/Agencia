@@ -68,8 +68,9 @@ function Header() {
                 <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
                 <label for="menu-hamburger"> ☰ </label>
                 <ul>
-                   <Link to="/My_Reservations"><li>My reservations</li></Link> 
-                    
+                   <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link> 
+                   <Link to="/" className='M-Seccion'><li>Payment type</li></Link> 
+                   <Link to="/" className='M-Seccion'><li>Delete account</li></Link> 
                     <li>Sing off</li>
                 </ul>
                 

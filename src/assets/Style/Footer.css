@@ -1,63 +1,63 @@
-.Footer{
-    width: 100%;
-    height: 100px;
-    text-align: center;
-    color: white;
-    background: #00c6ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #0072ff,
-      #00c6ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #0072ff,
-      #00c6ff
-    );
-    margin-top: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    position: relative;
-    bottom: 0;
+.Footer {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  color: white;
+  background: #00c6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #0072ff,
+    #00c6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #0072ff,
+    #00c6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  bottom: 0;
 }
 
-.div-section{
-    width: 25%;
-    height: 70%;
-    float: left;
+.div-section {
+  width: 25%;
+  height: 70%;
+  float: left;
 }
 
-#title{
-    font-size: 20px;
-    position: relative;
-    top: 10px;
+#title {
+  font-size: 20px;
+  position: relative;
+  top: 10px;
 }
 
-#id{
-    font-size: 15px;
-    position: relative;
-    top: 10px;
+#id {
+  font-size: 15px;
+  position: relative;
+  top: 10px;
 }
 
-#copyright{
-    font-size: 15px;
-    position: relative;
-    top: 10px;
+#copyright {
+  font-size: 15px;
+  position: relative;
+  top: 10px;
 }
 
-.Card-networks{
-    width: 25px;
-    height: 25px;
-    margin-right: 15px;
-    float: left;
-    position: relative;
-    left: 890px;
-    bottom: 25px;
-    cursor: pointer;
+.Card-networks {
+  width: 25px;
+  height: 25px;
+  margin-right: 15px;
+  float: left;
+  position: relative;
+  left: 890px;
+  bottom: 25px;
+  cursor: pointer;
 }
 
-.Card-networks img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.Card-networks img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

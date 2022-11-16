@@ -1,290 +1,294 @@
-@import url('./var.css');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("./var.css");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-
-.Header{
-    width: 100%;
-    height: 100px;
-    background: #00c6ff; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #0072ff,
-      #00c6ff
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #0072ff,
-      #00c6ff
-    );
-    color: white;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    position: relative;
-    border-bottom: rgb(190, 184, 206) 2px solid;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-   
-
+.Header {
+  width: 100%;
+  height: 100px;
+  background: #00c6ff; 
+  background: -webkit-linear-gradient(
+    to bottom,
+    #0072ff,
+    #00c6ff
+  ); 
+  background: linear-gradient(
+    to bottom,
+    #0072ff,
+    #00c6ff
+  ); 
+  color: white;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  border-bottom: rgb(190, 184, 206) 2px solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
-#logo{
-    width: 450px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    margin-left: 10px;
-    text-decoration: none;
+#logo {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin-left: 10px;
+  text-decoration: none;
 }
 
-#place-1{
-    animation: rotation 8s infinite linear;
+#place-1 {
+  animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
   }
-  
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
+  to {
+    transform: rotate(359deg);
   }
-
-#place-1{
-    width: 100px;
-    height: 100%;
-    display: flex;
 }
 
-#place-2{
-    width: 25px;
-    height: 50%;
+#place-1 {
+  width: 100px;
+  height: 100%;
+  display: flex;
 }
 
-#place-3{
-    width: 50px;
-    height: 50%;
+#place-2 {
+  width: 25px;
+  height: 50%;
 }
 
-#place-4{
-    width: 30px;
-    height: 50%;
+#place-3 {
+  width: 50px;
+  height: 50%;
 }
 
-img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+#place-4 {
+  width: 30px;
+  height: 50%;
 }
 
-#logo span{
-    font-size: 30px;
+img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 
-#Reservation{
-    width: 100px;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: center;
-    right: 560px;
-    text-decoration: none;
+#logo span {
+  font-size: 30px;
 }
 
-#Airplane{
-    width: 130px;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: center;
-    right: 400px;
-    border-left: white 2px solid;
-    text-decoration: none;
+#Reservation {
+  width: 100px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  right: 560px;
+  text-decoration: none;
 }
 
-#Cruise{
-    width: 130px;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: center;
-    right: 250px;
-    border-left: white 2px solid;
-    text-decoration: none;
+#Airplane {
+  width: 130px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  right: 400px;
+  border-left: white 2px solid;
+  text-decoration: none;
 }
 
-#Bus{
-    width: 90px;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: center;
-    right: 150px;
-    border-left: white 2px solid;
-    text-decoration: none;
-
+#Cruise {
+  width: 130px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  right: 250px;
+  border-left: white 2px solid;
+  text-decoration: none;
 }
 
-#Login{
-    width: 90px;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: center;
-    right: 50px;
-    border-left: white 2px solid;
-    text-decoration: none;
+#Bus {
+  width: 90px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  right: 150px;
+  border-left: white 2px solid;
+  text-decoration: none;
 }
 
-#Control{
-    width: 130px;
-    height: 50%;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    justify-content: center;
-    right: 50px;
-   
-    text-decoration: none;
-    right: 10px;
-    border-left: white 2px solid;
+#Login {
+  width: 90px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  right: 50px;
+  border-left: white 2px solid;
+  text-decoration: none;
 }
 
+#Control {
+  width: 130px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  justify-content: center;
+  right: 50px;
 
-#logo a{
-    color:rgb(255, 255, 255);
-    font-size: 30px;
+  text-decoration: none;
+  right: 10px;
+  border-left: white 2px solid;
 }
 
-
-
-#Reservation a, #Airplane a, #Cruise a, #Bus a, #Login a, #Control a{
-    font-size: 15px;
-    position: relative;
-    left: 5px;
-    color: rgb(255, 255, 255);
+#logo a {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
 }
 
-.menu-container{
-    width: 30px;
-    height: 30px;
-    position: relative;
-    left: 570px;
+#Reservation a,
+#Airplane a,
+#Cruise a,
+#Bus a,
+#Login a,
+#Control a {
+  font-size: 15px;
+  position: relative;
+  left: 5px;
+  color: rgb(255, 255, 255);
 }
 
-ul{
-    display: none;
+.menu-container {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 570px;
 }
-  
-input:checked  ~ ul{
-    display:block;
+
+ul {
+  display: none;
 }
-  
-#menu-hamburger{
-    display: none;
+
+input:checked ~ ul {
+  display: block;
 }
-  
+
+#menu-hamburger {
+  display: none;
+}
+
 .menu-container label {
-    box-sizing: border-box;
-    display: inline-block;
-    border: 1px solid white;
-    border-radius: 5px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-weight: bold;
-    text-align: center;
-    user-select: none;
+  box-sizing: border-box;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
 }
 
-.menu-container label:hover{
-    background: rgb(7, 83, 196);
+.menu-container label:hover {
+  background: rgb(7, 83, 196);
 }
 
 input:checked ~ label {
-    background: rgb(91, 91, 235); 
+  background: rgb(91, 91, 235);
 }
-  
-.menu-container ul{
-    margin-top:0;
-    position: relative;
-    right: 160px;
-    padding: 0;
-    width: 200px;
-    text-align: center;
-    z-index: 1;
+
+.menu-container ul {
+  margin-top: 0;
+  position: relative;
+  right: 160px;
+  padding: 0;
+  width: 200px;
+  text-align: center;
+  z-index: 1;
 }
-  
-  
+
 .menu-container li {
-    display: block;
-    background: rgb(14, 132, 228);
-    margin: 0;
-    padding: 10px;
-    list-style: none;
-    border-bottom: 1px solid grey;
+  display: block;
+  background: rgb(14, 132, 228);
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid grey;
 }
 
 li:hover {
-    filter: brightness(110%);
+  filter: brightness(110%);
 }
 
-.alert-container{
-    width: 350px;
-    height: 375px;
-    position: relative;
-    right: 640px;
-    top:-110px; 
-    z-index: var(--invisible);
-    background-color: rgb(21, 101, 193, .15);
-    backdrop-filter: blur(50px);
-    color: black;
+.alert-container {
+  width: 350px;
+  height: 375px;
+  position: relative;
+  right: 640px;
+  top: -110px;
+  z-index: var(--invisible);
+  background-color: rgb(21, 101, 193, 0.15);
+  backdrop-filter: blur(50px);
+  color: black;
 }
 
-#text-alert{
-    position: relative;
-    text-align: left;
-    font-size: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
+#text-alert {
+  position: relative;
+  text-align: left;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-#alert-password-input{
-    width: 310px;
-    height: 30px;
-    position: relative;
-    left: 20px;
-    top: 20px;
-    font-size: 15px;
-    color: black;
+#alert-password-input {
+  width: 310px;
+  height: 30px;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  font-size: 15px;
+  color: black;
 }
 
-.alert-container input:focus{ outline: none;}
-
-#button-alert-confirm{
-    width: 310px;
-    height: 30px;
-    position: relative;
-    left: 20px;
-    top: 40px;
-    font-size: 15px;
+.alert-container input:focus {
+  outline: none;
 }
 
-#button-alert-cancel{
-    width: 310px;
-    height: 30px;
-    position: relative;
-    left: 20px;
-    top: 60px;
-    font-size: 15px;
+#button-alert-confirm {
+  width: 310px;
+  height: 30px;
+  position: relative;
+  left: 20px;
+  top: 40px;
+  font-size: 15px;
 }
 
-.TitleTTG{
-    font-family: 'Bebas Neue', cursive;
+#button-alert-cancel {
+  width: 310px;
+  height: 30px;
+  position: relative;
+  left: 20px;
+  top: 60px;
+  font-size: 15px;
+}
+
+.TitleTTG {
+  font-family: "Bebas Neue", cursive;
+}
+
+.M-Seccion{
+    text-decoration: none;
+    color: #fff;
 }

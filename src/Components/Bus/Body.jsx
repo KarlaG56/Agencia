@@ -10,13 +10,8 @@ function Body() {
             .catch(err => console.log(err));
     }, [])
     return (
-
-        
-
         <>
-
             <div className='Body'>
-
                 <div>
                     <br />
                     <img src="/img/Map2.png" id="Map" />
@@ -27,9 +22,6 @@ function Body() {
                     <h2>Bus</h2>
 
                 </div>
-
-
-
             </div>
 
             <div className="container-destination">
@@ -47,9 +39,7 @@ function Body() {
                     ))
                 }
             </div>
-
         </>
-
     )
 }
 

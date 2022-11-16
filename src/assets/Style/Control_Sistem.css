@@ -20,6 +20,8 @@
   justify-content: center;
   line-height: 96px;
   border-bottom: rgb(146, 146, 146) 2px solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .Header-controler a {
@@ -46,22 +48,24 @@
 }
 
 .Nav-controler {
-  background: #00c6ff; /* fallback for old browsers */
+  background: #00c6ff; 
   background: -webkit-linear-gradient(
     to right,
     #0072ff,
     #00c6ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  ); 
   background: linear-gradient(
     to right,
     #0072ff,
     #00c6ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); 
   height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   line-height: 40px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .Nav-controler a {
