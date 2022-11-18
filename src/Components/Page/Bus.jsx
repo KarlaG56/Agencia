@@ -2,7 +2,6 @@ import Header from "../Header";
 import Body from "../Bus/Body";
 import Footer from "../Footer";
 
-
 function Bus() {
     return (
         <>
@@ -10,8 +9,6 @@ function Bus() {
             <Body />
             <Footer />
         </>
-
     )
 }
-
 export default Bus;

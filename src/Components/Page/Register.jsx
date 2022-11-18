@@ -1,5 +1,4 @@
 import Background from "../Register/Background";
-
 import '../../assets/Style/Account.css'
 
 function Register() {
@@ -9,5 +8,4 @@ function Register() {
         </>
     );
 }
-
 export default Register;

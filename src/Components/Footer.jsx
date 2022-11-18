@@ -1,6 +1,5 @@
 import '../assets/Style/Footer.css'
 
-
 function Footer() {
     const sections = [
         {
@@ -74,5 +73,4 @@ function Footer() {
         </div>
     );
 }
-
 export default Footer;

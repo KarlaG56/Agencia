@@ -1,7 +1,6 @@
 import {Link} from 'react-router-dom';
 
 function Data() {
-
     return (
         <div className="UploadTicket-container">
             <h3 className="UploadTicket_titulo">Upload ticket</h3>
@@ -10,7 +9,6 @@ function Data() {
                 <div>
                     <label id="seat_number">Number of Seat</label><br />
                     <input className="placeUploadTicket" type="number"  min={0} max={36}/>
-
                 </div>
                 <br />
 
@@ -52,19 +50,7 @@ function Data() {
                     <Link id="Create-UploadTicket-button" to="/">Reserver</Link><br />
                 </div>
             </form>
-
-            
-
         </div>
     );
-
-
-
-
 }
-
-
-
-
-
 export default Data;

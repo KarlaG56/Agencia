@@ -1,6 +1,7 @@
 import Card from "../Card";
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from "react"
+
 function Body() {
     const [apiData, setApiData] = useState(null);
     useEffect(function () {
@@ -13,7 +14,6 @@ function Body() {
     return (
         <>
             <div className='Body'>
-
                 <div>
                     <br />
                     <img src="/img/Map2.png" id="Map" />
@@ -22,12 +22,10 @@ function Body() {
 
                 <div className="Nacional">
                     <h2>Cruice Ship</h2>
-
                 </div>
             </div>
 
             <div className="container-destination">
-
                 <Link to="/">       
                 {
                     apiData && apiData.map(destinations => (
@@ -43,10 +41,8 @@ function Body() {
                     ))
                 }
                 </Link>
-                
             </div>
         </>
     )
 }
-
 export default Body;

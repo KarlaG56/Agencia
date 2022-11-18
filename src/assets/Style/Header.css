@@ -23,6 +23,7 @@
   border-bottom: rgb(190, 184, 206) 2px solid;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+
 }
 
 #logo {
@@ -167,6 +168,7 @@ img {
   position: relative;
   left: 5px;
   color: rgb(255, 255, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .menu-container {
@@ -202,11 +204,11 @@ input:checked ~ ul {
 }
 
 .menu-container label:hover {
-  background: rgb(7, 83, 196);
+  background: rgb(7, 143, 196);
 }
 
 input:checked ~ label {
-  background: rgb(91, 91, 235);
+  background: rgb(0, 208, 255);
 }
 
 .menu-container ul {
@@ -221,11 +223,12 @@ input:checked ~ label {
 
 .menu-container li {
   display: block;
-  background: rgb(14, 132, 228);
+  background: #0072ff;  /* fallback for old browsers */
   margin: 0;
   padding: 10px;
   list-style: none;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 li:hover {

@@ -1,5 +1,3 @@
-
-
 function Data() {
     const data = [
         {
@@ -31,7 +29,6 @@ function Data() {
             data: "Confirm password",
             type: "password",
             name: "password"
-
         }
     ]
 
@@ -52,13 +49,7 @@ function Data() {
                     </div>
                 )
             })}
-
-
-     
         </div>
-
-
     );
 }
-
 export default Data;

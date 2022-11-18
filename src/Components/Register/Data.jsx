@@ -75,9 +75,7 @@ function Data() {
           <input className="place" type="number" name="cellphone" />
         </div>
         <br />
-
-
-
+        
         <div>
           <label id="Email">Email</label>
           <br />
@@ -112,5 +110,4 @@ function Data() {
     </div>
   );
 }
-
 export default Data;

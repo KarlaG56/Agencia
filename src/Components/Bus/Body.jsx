@@ -20,7 +20,6 @@ function Body() {
 
                 <div className="Nacional">
                     <h2>Bus</h2>
-
                 </div>
             </div>
 
@@ -42,5 +41,4 @@ function Body() {
         </>
     )
 }
-
 export default Body;

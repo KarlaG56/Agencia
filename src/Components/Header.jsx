@@ -71,7 +71,7 @@ function Header() {
                    <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link> 
                    <Link to="/" className='M-Seccion'><li>Payment type</li></Link> 
                    <Link to="/" className='M-Seccion'><li>Delete account</li></Link> 
-                    <li>Sing off</li>
+                   <Link to="/Login" className='M-Seccion' ><li>Sing off</li></Link>  
                 </ul>
                 
             </div>

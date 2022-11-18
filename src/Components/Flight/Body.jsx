@@ -9,25 +9,20 @@ function Body() {
             .then(data => setApiData(data))
             .catch(err => console.log(err));
     }, [])
+    
     return (
         <>
             <div className='Body'>
-
                 <div>
                     <br />
                     <img src="/img/Map2.png" id="Map" />
                     <br />
                 </div>
 
-
-
                 <div className="Nacional">
                     <h2>Domestic flights</h2>
 
                 </div>
-
-
-
             </div>
 
             <div className="container-destination">
@@ -45,10 +40,7 @@ function Body() {
                 ))
             }
             </div>
-
         </>
-
     )
 }
-
 export default Body;

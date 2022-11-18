@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 .Header-controler {
   width: 100%;
   height: 100px;
@@ -18,10 +20,12 @@
   justify-content: center;
   line-height: 96px;
   
+  
 }
 
 .Header-controler a {
   font-size: 35px;
+  font-family: 'Bebas Neue'
 }
 
 #Logo-controler {

@@ -1,4 +1,3 @@
-
 import { useState } from 'react'
 
 function Body_destiny() {
@@ -71,5 +70,4 @@ function Body_destiny() {
         </div>
     )
 }
-
 export default Body_destiny;

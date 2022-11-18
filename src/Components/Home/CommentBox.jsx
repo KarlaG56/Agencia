@@ -25,5 +25,4 @@ function CommentBox() {
         </>
     );
 }
-
 export default CommentBox;

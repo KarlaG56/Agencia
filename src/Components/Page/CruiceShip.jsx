@@ -3,8 +3,6 @@ import Body from "../CruiceShip/Body";
 import Footer from "../Footer";
 import '../../assets/Style/Flight.css'
 
-
-
 function CruiceShip() {
     return (
         <>
@@ -15,5 +13,4 @@ function CruiceShip() {
 
     )
 }
-
 export default CruiceShip;

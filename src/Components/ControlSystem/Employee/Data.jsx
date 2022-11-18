@@ -46,7 +46,6 @@ function Data() {
     return (
         <div className="EmployeeRegister">
             <h3 className="Employee_titulo">Register Employee</h3>
-
             <form className='ControllerEmployeeRegisterForm'>
                 <div>
                     <label id="Full_name">Full name</label><br />
@@ -100,15 +99,7 @@ function Data() {
                     <button id="Create-Employee-button" >Create account</button>
                 </div>
             </form>
-
-
-
         </div>
     );
-
-
-
-
 }
-
 export default Data;

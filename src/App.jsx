@@ -2,7 +2,6 @@
 import Login from "./Components/Page/Login";
 import Register from "./Components/Page/Register";
 import Home from "./Components/Page/Home";
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CruiceShip from "./Components/Page/CruiceShip";
 import Airplane from "./Components/Page/Flight";
@@ -16,17 +15,14 @@ import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
 import MyReservations from "./Components/Page/MyReservation"
 
-
 function App() {
-
     const [user, setUser] = useState(null);
-    return (
 
+    return (
         <BrowserRouter>
             <UserContext.Provider value={{ user, setUser }}>
                 <Routes>
                     <Route path='/' element={<Home />} />
-                    
                     <Route path='/Login' element={<Login />} />
                     <Route path='/Home' element={<Home />} />
                     <Route path='/Airplane' element={<Airplane />} />
@@ -43,8 +39,6 @@ function App() {
             </UserContext.Provider>
         </BrowserRouter>
     )
-
     //Reservation/:id/:type
 }
-
 export default App;

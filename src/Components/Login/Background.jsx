@@ -1,5 +1,4 @@
 import Body from "./Body";
-
 function Background() {
     return (
         <div className="Background">
@@ -8,5 +7,4 @@ function Background() {
         </div>
     );
 }
-
 export default Background;

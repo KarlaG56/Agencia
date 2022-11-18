@@ -2,7 +2,6 @@ import {useRef, useState, useContext} from 'react'
 import { Link, useNavigate} from "react-router-dom";
 import { UserContext } from "../context/context"
 
-
 function Data() {
     const navigate = useNavigate();
     const {user, setUser} = useContext(UserContext);
@@ -43,8 +42,6 @@ function Data() {
     }).catch(error => console.error('Error:', error))
 
 }
-    
-    
     return (
         <div className="Login-container">
             
@@ -78,13 +75,7 @@ function Data() {
                     <Link id="Create-button" to="/Register">Create account</Link>
                 </div>*/}
             </form>
-
-            
-
         </div>
     );
-
-
 }
-
 export default Data;

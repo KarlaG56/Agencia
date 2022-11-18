@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 function Aside() {
     return (
         <nav className='Nav-controler'>
-
             <Link to="/Control_system/Ticket" className='Block'>
                 <a>| Upload tickets |</a>
             </Link>
@@ -16,6 +15,10 @@ function Aside() {
                 <a>| Load destiny |</a>
             </Link>
 
+            <Link to="/Control_system/Destination" className='Block'>
+                <a>| List comments |</a>
+            </Link>
+
             <Link to="/" className='Block'>
                 <a>| HomePage |</a>
             </Link>
@@ -23,12 +26,8 @@ function Aside() {
             <Link to="/Login" className='Block'>
                 <a>| Sign off</a>
             </Link>
-
-
         </nav>
     )
-
-
 }
 
 export default Aside;

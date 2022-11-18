@@ -30,12 +30,10 @@ function ReservationTickets() {
     console.log(apiData)*/
 
     return (
-
         <div className='Form-reservation-container'>
-
             <form action="" className='formReserver'>
                 <h3 className='Reserve'>Reserver</h3>
-<br/>
+                <br />
                 <label id='label-date'>Departure Date:</label>
                 <input type="date" id='input-date' /><br />
 

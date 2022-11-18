@@ -19,6 +19,7 @@ function TypeOfTrip() {
         .then(data => console.log(data))
         .catch(err => console.log(err))
     }
+
     const handleChangeCS = () => {
         const option = {
             method: 'POST',
@@ -59,7 +60,6 @@ function TypeOfTrip() {
             <h1 id='title-id'>Assign trip type to destination</h1>
             <label htmlFor="" id='label-input-target'>Id destination:</label>
             <input id='input-target' value={id} onChange={(event) => {setId(event.target.value)}}/><br/>
-
             <label htmlFor="" id='label-target'>Select Type of Trip:</label>
             <label id='input-airplane'><input type="radio" onChange={handleChangeAp} /><span>Airplane</span></label>
             <label id='input-bus'><input type="radio" onChange={handleChangeB} /><span>Bus</span></label>
