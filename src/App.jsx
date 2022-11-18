@@ -2,6 +2,7 @@
 import Login from "./Components/Page/Login";
 import Register from "./Components/Page/Register";
 import Home from "./Components/Page/Home";
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CruiceShip from "./Components/Page/CruiceShip";
 import Airplane from "./Components/Page/Flight";
@@ -25,6 +26,7 @@ function App() {
             <UserContext.Provider value={{ user, setUser }}>
                 <Routes>
                     <Route path='/' element={<Home />} />
+                    
                     <Route path='/Login' element={<Login />} />
                     <Route path='/Home' element={<Home />} />
                     <Route path='/Airplane' element={<Airplane />} />

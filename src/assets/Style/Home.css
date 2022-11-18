@@ -39,9 +39,17 @@
 
 .card {
   border: 1px solid #fff;
-  background: #fe8c00;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fe8c00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f83600,
+    #fe8c00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f83600,
+    #fe8c00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   border-radius: 8px;
   overflow: hidden;
@@ -74,9 +82,20 @@ background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, F
   text-align: center;
   margin-top: 10px;
   color: white;
-  background: #0082c8;
+  background: #00c6ff; 
+  background: -webkit-linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); 
+  background: linear-gradient(
+    to right,
+    #0072ff,
+    #00c6ff
+  ); 
   position: relative;
   left: 53px;
+  border-style:ridge;
 }
 
 .Title-comment {
@@ -101,7 +120,6 @@ background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, F
   align-items: center;
   justify-content: center;
   margin-top: 20px;
-  
 }
 
 .Image-container {
@@ -184,7 +202,11 @@ textarea {
 
 #Publish {
   background: #f12711; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #f12711, #f5af19); /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to top,
+    #f12711,
+    #f5af19
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #f12711, #f5af19);
   border: none;
   border-radius: 10px;
@@ -208,7 +230,6 @@ textarea {
   position: relative;
   left: 10px;
   margin-bottom: 50px;
-  
 }
 
 .novedad {
@@ -246,10 +267,18 @@ textarea {
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 30px;
-  background: #fe8c00;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #fe8c00; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f83600,
+    #fe8c00
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f83600,
+    #fe8c00
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   border-radius: 10px;
   cursor: pointer;
 }

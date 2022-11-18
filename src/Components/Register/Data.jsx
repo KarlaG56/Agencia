@@ -40,7 +40,7 @@ function Data() {
       });
       navigate("/Login");
     } else {
-      console.log("tas loco")
+      console.log("")
     }
   };
 
