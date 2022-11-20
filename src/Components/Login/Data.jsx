@@ -1,6 +1,6 @@
 import {useRef, useState, useContext} from 'react'
 import { Link, useNavigate} from "react-router-dom";
-import { UserContext } from "../context/UserContext"
+import UserContext from "../context/UserContext"
 
 function Data() {
     const navigate = useNavigate();
@@ -28,18 +28,8 @@ function Data() {
             else
                 console.log("Error")
             })
-        .then((data) => {
-        console.log(data)
-        if(data.data !== null || data.data !== undefined){ 
-            if(data.role == "employee"){
-                sessionStorage.setItem('id', data.id); 
-                navigate("/Control_system/Employee")
-            }else{
-                sessionStorage.setItem('id', data.id); 
-                navigate("/")
-            }
-        }
-    }).catch(error => console.error('Error:', error))
+        .then((data) => setUser(data))
+        .catch(error => console.error('Error:', error))
 
 }
     return (

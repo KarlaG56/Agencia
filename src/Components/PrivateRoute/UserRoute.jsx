@@ -1,12 +1,12 @@
 import {useContext} from 'react';
 import {useNavigate, Navigate, Outlet} from 'react-router-dom';
-import ValidateContext from '../context/ValidateContext';
+import UserContext from "../context/UserContext"
 
 function ClientRoute(){
-	const {validate} = useContext(ValidateContext)
+	const {user} = useContext(UserContext)
 	const navigate = useNavigate()
 
-	return (validate ? <Outlet/> : <Navigate to='/notFound'/>)
+	return (user ? <Outlet/> : <Navigate to='/notFound'/>)
 }
 
 export default ClientRoute;

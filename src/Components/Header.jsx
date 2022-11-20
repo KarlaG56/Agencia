@@ -1,7 +1,7 @@
 import '../assets/Style/Header.css'
 import { Link } from 'react-router-dom';
 import { useRef, useState, useContext } from 'react'
-import { UserContext } from "./context/UserContext"
+import UserContext from "./context/UserContext"
 import { useTheme } from "../hooks/Theme";
 
 function Header() {
@@ -56,25 +56,28 @@ function Header() {
 
                 :
 
-                <Link to="/Control_system" id="Control">
-                    <div id="place-2">
-                    </div>
-                    <a>Control System</a>
-                </Link>
-
-            }
-
-            <div className='menu-container'>
-                <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
-                <label for="menu-hamburger"> ☰ </label>
-                <ul>
-                   <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link> 
-                   <Link to="/" className='M-Seccion'><li>Payment type</li></Link> 
-                   <Link to="/" className='M-Seccion'><li>Delete account</li></Link> 
-                   <Link to="/Login" className='M-Seccion' ><li>Sing off</li></Link>  
-                </ul>
+                <div>
+                    {user.data.role==1 ?
+                    <div className='menu-container'>
+                    <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
+                    <label for="menu-hamburger"> ☰ </label>
+                    <ul>
+                        <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link>
+                        <Link to="/" className='M-Seccion'><li>Payment type</li></Link>
+                        <Link to="/" className='M-Seccion'><li>Delete account</li></Link>
+                        <Link to="/Login" className='M-Seccion' ><li>Sing off</li></Link>
+                    </ul>
+                </div>
                 
-            </div>
+                :
+
+                <Link to="/Control_system">
+                    <a>Control system</a>
+                </Link>
+                
+                }
+                </div>
+            }
         </div>
 
 

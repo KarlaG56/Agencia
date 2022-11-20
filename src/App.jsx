@@ -10,11 +10,11 @@ import Reservation from "./Components/Page/Reservation";
 import Controler_ticket from "./Components/Page/Controler-ticket"
 import Controler_destiny from "./Components/Page/Controler-destiny"
 import Controler_Employee from "./Components/Page/Controler-Employee"
-import { UserContext } from "./Components/context/UserContext"
+import UserContext from "./Components/context/UserContext"
 import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
 import MyReservations from "./Components/Page/MyReservation"
-import UserRoute from "./Components/PrivateRoute/UserRoute.js"
+import UserRoute from "./Components/PrivateRoute/UserRoute"
 import EmployeeRoute from "./Components/PrivateRoute/EmployeeRoute";
 
 function App() {
