@@ -6,7 +6,7 @@ function EmployeeRoute(){
 	const {user} = useContext(UserContext)
 	const navigate = useNavigate()
 
-	return (user.role == 2 ? <Outlet/> : <Navigate to='/notFound'/>)
+	return (user.role == 2 ? <Outlet/> : <Navigate to='/notAuthorized'/>)
 }
 
 export default EmployeeRoute;
