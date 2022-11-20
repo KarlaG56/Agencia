@@ -4,7 +4,7 @@ function Data() {
     return ( 
         <div className="ListComments">
             <h1 className="ListComments_Titulo">List comments</h1>
-            {response.map((registro) => {
+            {response.map((response) => {
                 return <Card comment={response.comment} time={response.date} author={response.user}/>;
             })}
         </div>
