@@ -10,10 +10,12 @@ import Reservation from "./Components/Page/Reservation";
 import Controler_ticket from "./Components/Page/Controler-ticket"
 import Controler_destiny from "./Components/Page/Controler-destiny"
 import Controler_Employee from "./Components/Page/Controler-Employee"
-import { UserContext } from "./Components/context/context"
+import { UserContext } from "./Components/context/UserContext"
 import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
 import MyReservations from "./Components/Page/MyReservation"
+import UserRoute from "./Components/PrivateRoute/UserRoute.js"
+import EmployeeRoute from "./Components/PrivateRoute/EmployeeRoute";
 
 function App() {
     const [user, setUser] = useState(null);
@@ -28,13 +30,17 @@ function App() {
                     <Route path='/Airplane' element={<Airplane />} />
                     <Route path='/Cruice' element={<CruiceShip />} />
                     <Route path='/Bus' element={<Bus />} />
-                    <Route path='/Register' element={<Register/>} />
-                    <Route path='/Reservation/:id/:type' element={<Reservation/>} />
-                    <Route path='/Control_system' element={<Control/>} />
-                    <Route path='/Control_system/Ticket' element={<Controler_ticket />} />
-                    <Route path='/Control_system/Destination' element={<Controler_destiny />} />
-                    <Route path='/Control_system/Employee' element={<Controler_Employee />} />
-                    <Route path='/My_Reservations' element={<MyReservations/>} />
+                    <Route path='/Register' element={<Register />} />
+                    <Route element={<UserRoute />}>
+                        <Route path='/Reservation/:id/:type' element={<Reservation />} />
+                        <Route path='/My_Reservations' element={<MyReservations />} />
+                        <Route element={<EmployeeRoute />}>
+                            <Route path='/Control_system' element={<Control />} />
+                            <Route path='/Control_system/Ticket' element={<Controler_ticket />} />
+                            <Route path='/Control_system/Destination' element={<Controler_destiny />} />
+                            <Route path='/Control_system/Employee' element={<Controler_Employee />} />
+                        </Route>
+                    </Route>
                 </Routes>
             </UserContext.Provider>
         </BrowserRouter>

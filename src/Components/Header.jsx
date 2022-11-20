@@ -1,7 +1,7 @@
 import '../assets/Style/Header.css'
 import { Link } from 'react-router-dom';
 import { useRef, useState, useContext } from 'react'
-import { UserContext } from "./context/context"
+import { UserContext } from "./context/UserContext"
 import { useTheme } from "../hooks/Theme";
 
 function Header() {
