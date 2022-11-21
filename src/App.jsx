@@ -14,6 +14,7 @@ import { UserContext } from "./Components/context/context"
 import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
 import MyReservations from "./Components/Page/MyReservation"
+import NotFound from "./Components/NotFound"
 
 function App() {
     const [user, setUser] = useState(null);
@@ -35,6 +36,7 @@ function App() {
                     <Route path='/Control_system/Destination' element={<Controler_destiny />} />
                     <Route path='/Control_system/Employee' element={<Controler_Employee />} />
                     <Route path='/My_Reservations' element={<MyReservations/>} />
+                    <Route path="/notFound" element={<NotFound/>}/>
                 </Routes>
             </UserContext.Provider>
         </BrowserRouter>
