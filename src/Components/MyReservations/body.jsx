@@ -1,63 +1,60 @@
+import { useState, useContext, useEffect} from 'react'
+import UserContext from '../context/UserContext';
 function Body() {
+    const [apiData, setApiData] = useState(null)
+    const { user } = useContext(UserContext);
+    let link = "http://localhost:8080/reservation/" + user.id;
+
+    useEffect(function () {
+        fetch(link)
+            .then(response => response.json())
+            .then(data => setApiData(data))
+            .catch(err => console.log(err));
+    }, [])
+    console.log(apiData)
     return (
         <div className="table-container">
             <table className="table-reservation">
                 <tr id="header-table">
-                    <th>Place</th>
+                    <th>Destination</th>
                     <th>Transport</th>
                     <th>Date</th>
                     <th>Cost</th>
-                    <th></th>
+                    <th>Status</th>
+                    <th>Pago</th>
+                    <th>Boletos</th>
                 </tr>
-                <tr id="line-one">
-                    <th>España</th>
-                    <th>Airplane</th>
-                    <td>01/12/22</td>
-                    <td>123$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>   
-                <tr id="line-two">
-                    <th>China</th>
-                    <th>Bus</th>
-                    <td>02/12/22</td>
-                    <td>627$ US</td>
-                    <td><button id="button-table">Cancel</button></td>  
-                </tr>
-                <tr id="line-one">
-                    <th>Ecuador</th>
-                    <th>Cruise</th>
-                    <td>03/12/22</td>
-                    <td>912$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
-                <tr id="line-two">
-                    <th>Alemania</th>
-                    <th>Airplane</th>
-                    <td>04/12/22</td>
-                    <td>126$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
-                <tr id="line-one">
-                    <th>Peru</th>
-                    <th>Bus</th>
-                    <td>05/12/22</td>
-                    <td>328$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
-                <tr id="line-two">
-                    <th>Colombia</th>
-                    <th>Cruise</th>
-                    <td>06/12/22</td>
-                    <td>732$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
-                <tr id="line-one">
-                    <th>Aguas Calientes</th>
-                    <th>Airplane</th>
-                    <td>07/12/22</td>
-                    <td>1298$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
+                {
+                    apiData && apiData.map((reservation, index) => (
+                        <tr>
+                            <th>{reservation.destination}</th>
+                            <th>{reservation.typeOfTrip}</th>
+                            <th>{reservation.reservationDate}</th>
+                            <th>{reservation.cost}</th>
+                            {
+                                reservation.status == "Cancelado" ?
+                                <th>Cancelado</th>
+                                :
+                                <th><button>Cancelar</button></th>
+                            }
+                            {
+                                reservation.status == "No pagado" ?
+                                <th><button>Pagar</button></th>
+                                :
+                                reservation.status = "Pagado" ?
+                                <th>Pagado</th>
+                                :
+                                <th>Cancelado</th>
+                            }
+                            {
+                                reservation.status == "cancelado" ?
+                                <th>Cancelado</th>
+                                :
+                                <th><button>Ver boletos</button></th>
+                            }
+                        </tr>
+                    ))
+                }
             </table>
         </div>
     );

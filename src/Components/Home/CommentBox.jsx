@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import reactDOM from "react-dom/client"
+import UserContext from "../context/UserContext";
 
 function CommentBox() {
   const [comment, setComment] = useState("");
+  //const {user} = useContext(UserContext)
+  //var value = localStorage.getItem("id")
+
 
   function handleChangetextarea(event) {
     setComment(event.target.value);
@@ -10,15 +15,14 @@ function CommentBox() {
   function handleClick() {
     var today = new Date();
     var now = today.toLocaleString();
-    var user = sessionStorage.getItem("id");
     var postAs = document.getElementById("select");
 
-    console.log(sessionStorage);
-    console.log("probando");
-    console.log(now);
-    console.log(user);
+    //console.log("probando");
+    //console.log(now);
+    //console.log(user.id);
+    //console.log(value)
     //console.log(postAs.value);
-    console.log(comment);
+    //console.log(comment);
     const option = {
       method: "POST",
       headers: {
@@ -30,16 +34,15 @@ function CommentBox() {
       },
       body: JSON.stringify({
         comment: comment,
-        date: now,
-        user: user,
+        date: now
       }),
     };
-    fetch("http://localhost:8080/comment", option)
+    //fetch("http://localhost:8080/comment/" + 1, option)
+    fetch("http://localhost:8080/comment/", option)
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
   }
-
   return (
     <>
       <div id="divPadre" className="CommentBox-container">
