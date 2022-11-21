@@ -1,14 +1,17 @@
 import '../assets/Style/Header.css'
 import { Link } from 'react-router-dom';
 import { useRef, useState, useContext } from 'react'
-import { UserContext } from "./context/context"
+import UserContext from "./context/UserContext"
+import ValidateContext from "./context/ValidateContext"
 import { useTheme } from "../hooks/Theme";
 
 function Header() {
 
     const [theme, handleChange] = useTheme('dark');
 
-    const { user, setUser } = useContext(UserContext);
+    const {user} = useContext(UserContext);
+    const {validate} = useContext(ValidateContext);
+
     return (
         <div className="Header">
             <Link to="/" id="logo">
@@ -46,7 +49,34 @@ function Header() {
                 <a>Bus</a>
             </Link>
 
-            {user == null ?
+            {validate ?
+                <div>
+                    {user.role == "client" ?
+                        <div className='menu-container'>
+                            <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
+                            <label for="menu-hamburger"> ☰ </label>
+                            <ul>
+                                <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link>
+                                <Link to="/" className='M-Seccion'><li>Payment type</li></Link>
+                                <Link to="/" className='M-Seccion'><li>Delete account</li></Link>
+                                <Link to="/Login" className='M-Seccion' ><li>Sing off</li></Link>
+                            </ul>
+                        </div>
+
+                        :
+
+                        <Link to="/Control_system" id="Control_system">
+                            <div id="place-2">
+                                <img src="/icon/Login.svg" />
+                            </div>
+                            <a>Control System</a>
+                        </Link>
+
+                    }
+                </div>
+
+                :
+
                 <Link to="/Login" id="Login">
                     <div id="place-2">
                         <img src="/icon/Login.svg" />
@@ -54,27 +84,7 @@ function Header() {
                     <a>Login</a>
                 </Link >
 
-                :
-
-                <Link to="/Control_system" id="Control">
-                    <div id="place-2">
-                    </div>
-                    <a>Control System</a>
-                </Link>
-
             }
-
-            <div className='menu-container'>
-                <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
-                <label for="menu-hamburger"> ☰ </label>
-                <ul>
-                   <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link> 
-                   <Link to="/" className='M-Seccion'><li>Payment type</li></Link> 
-                   <Link to="/" className='M-Seccion'><li>Delete account</li></Link> 
-                   <Link to="/Login" className='M-Seccion' ><li>Sing off</li></Link>  
-                </ul>
-                
-            </div>
         </div>
 
 
