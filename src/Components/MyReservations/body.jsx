@@ -22,6 +22,7 @@ function Body() {
                     <th>Cost</th>
                     <th>Status</th>
                     <th>Pago</th>
+                    <th>Boletos</th>
                 </tr>
                 {
                     apiData && apiData.map((reservation, index) => (
@@ -44,6 +45,12 @@ function Body() {
                                 <th>Pagado</th>
                                 :
                                 <th>Cancelado</th>
+                            }
+                            {
+                                reservation.status == "cancelado" ?
+                                <th>Cancelado</th>
+                                :
+                                <th><button>Ver boletos</button></th>
                             }
                         </tr>
                     ))
