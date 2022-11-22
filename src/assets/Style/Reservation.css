@@ -166,3 +166,365 @@
   transform: translate(324px,-233px);
   color: white;
 }
+
+.button-seat1{
+  width: 20px;
+  height: 25px;
+}
+
+#btn-place-airplane1{
+  position: relative;
+  left: 30.2%;
+  bottom: 226px;
+}
+
+#btn-place-airplane2{
+  position: relative;
+  left: 28.3%;
+  bottom: 190px;
+}
+
+#btn-place-airplane3{
+  position: relative;
+  left: 26.4%;
+  bottom: 117px;
+}
+
+#btn-place-airplane4{
+  position: relative;
+  left: 24.4%;
+  bottom: 81px;
+}
+
+#btn-place-airplane5{
+  position: relative;
+  left: 25.3%;
+  bottom: 226px;
+}
+
+#btn-place-airplane6{
+  position: relative;
+  left: 23.4%;
+  bottom: 190px;
+}
+
+#btn-place-airplane7{
+  position: relative;
+  left: 21.4%;
+  bottom: 117px;
+}
+
+#btn-place-airplane8{
+  position: relative;
+  left: 19.5%;
+  bottom: 81px;
+}
+
+#btn-place-airplane9{
+  position: relative;
+  left: 20.3%;
+  bottom: 226px;
+}
+
+#btn-place-airplane10{
+  position: relative;
+  left: 18.4%;
+  bottom: 190px;
+}
+
+#btn-place-airplane11{
+  position: relative;
+  left: 16.5%;
+  bottom: 117px;
+}
+
+#btn-place-airplane12{
+  position: relative;
+  left: 14.6%;
+  bottom: 81px;
+}
+
+#btn-place-airplane1, #btn-place-airplane2, #btn-place-airplane3, #btn-place-airplane4, #btn-place-airplane5, #btn-place-airplane6, #btn-place-airplane7, #btn-place-airplane8, #btn-place-airplane9, #btn-place-airplane10, #btn-place-airplane11, #btn-place-airplane12{
+  background-color: #1361ab;
+  border-radius: 3px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.button-seat{
+  width: 20px;
+  height: 20px;
+}
+
+#btn-place-airplane13{
+  position: relative;
+  left: 18.2%;
+  bottom: 231px;
+}
+
+#btn-place-airplane14{
+  position: relative;
+  left: 16.3%;
+  bottom: 206px;
+}
+
+#btn-place-airplane15{
+  position: relative;
+  left: 14.4%;
+  bottom: 183px;
+}
+
+#btn-place-airplane16{
+  position: relative;
+  left: 12.5%;
+  bottom: 130px;
+}
+
+#btn-place-airplane17{
+  position: relative;
+  left: 10.6%;
+  bottom: 105px;
+}
+
+#btn-place-airplane18{
+  position: relative;
+  left: 8.7%;
+  bottom: 81px;
+}
+
+#btn-place-airplane19{
+  position: relative;
+  left: 25.2%;
+  bottom: 231px;
+}
+
+#btn-place-airplane20{
+  position: relative;
+  left: 23.3%;
+  bottom: 206px;
+}
+
+#btn-place-airplane21{
+  position: relative;
+  left: 21.4%;
+  bottom: 183px;
+}
+
+#btn-place-airplane22{
+  position: relative;
+  left: 19.5%;
+  bottom: 130px;
+}
+
+#btn-place-airplane23{
+  position: relative;
+  left: 17.6%;
+  bottom: 105px;
+}
+
+#btn-place-airplane24{
+  position: relative;
+  left: 15.6%;
+  bottom: 81px;
+}
+
+#btn-place-airplane13, #btn-place-airplane14, #btn-place-airplane15, #btn-place-airplane16, #btn-place-airplane17, #btn-place-airplane18, #btn-place-airplane19, #btn-place-airplane20, #btn-place-airplane21, #btn-place-airplane22, #btn-place-airplane23, #btn-place-airplane24{
+  background-color: #dfb737;
+  border-radius: 3px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+#btn-place-airplane25{
+  position: relative;
+  left: -2.2%;
+  bottom: 231px;
+}
+
+#btn-place-airplane26{
+  position: relative;
+  left: -4.1%;
+  bottom: 206px;
+}
+
+#btn-place-airplane27{
+  position: relative;
+  left: -6%;
+  bottom: 183px;
+}
+
+#btn-place-airplane28{
+  position: relative;
+  left: -7.9%;
+  bottom: 130px;
+}
+
+#btn-place-airplane29{
+  position: relative;
+  left: -9.8%;
+  bottom: 105px;
+}
+
+#btn-place-airplane30{
+  position: relative;
+  left: -11.7%;
+  bottom: 81px;
+}
+
+#btn-place-airplane31{
+  position: relative;
+  left: -11.2%;
+  bottom: 231px;
+}
+
+#btn-place-airplane32{
+  position: relative;
+  left: -13.1%;
+  bottom: 206px;
+}
+
+#btn-place-airplane33{
+  position: relative;
+  left: -15%;
+  bottom: 183px;
+}
+
+#btn-place-airplane34{
+  position: relative;
+  left: -16.9%;
+  bottom: 130px;
+}
+
+#btn-place-airplane35{
+  position: relative;
+  left: -18.8%;
+  bottom: 105px;
+}
+
+#btn-place-airplane36{
+  position: relative;
+  left: -20.7%;
+  bottom: 81px;
+}
+
+#btn-place-airplane37{
+  position: relative;
+  left: -20.1%;
+  bottom: 231px;
+}
+
+#btn-place-airplane38{
+  position: relative;
+  left: -22%;
+  bottom: 206px;
+}
+
+#btn-place-airplane39{
+  position: relative;
+  left: -23.9%;
+  bottom: 183px;
+}
+
+#btn-place-airplane40{
+  position: relative;
+  left: -25.8%;
+  bottom: 130px;
+}
+
+#btn-place-airplane41{
+  position: relative;
+  left: -27.7%;
+  bottom: 105px;
+}
+
+#btn-place-airplane42{
+  position: relative;
+  left: -29.6%;
+  bottom: 81px;
+}
+
+#btn-place-airplane43{
+  position: relative;
+  left: -29.1%;
+  bottom: 231px;
+}
+
+#btn-place-airplane44{
+  position: relative;
+  left: -31%;
+  bottom: 206px;
+}
+
+#btn-place-airplane45{
+  position: relative;
+  left: -32.9%;
+  bottom: 183px;
+}
+
+#btn-place-airplane46{
+  position: relative;
+  left: -34.8%;
+  bottom: 130px;
+}
+
+#btn-place-airplane47{
+  position: relative;
+  left: -36.7%;
+  bottom: 105px;
+}
+
+#btn-place-airplane48{
+  position: relative;
+  left: -38.5%;
+  bottom: 81px;
+}
+
+#btn-place-airplane25, #btn-place-airplane26, #btn-place-airplane27, #btn-place-airplane28, #btn-place-airplane29, #btn-place-airplane30, #btn-place-airplane31, #btn-place-airplane32, #btn-place-airplane33, #btn-place-airplane34, #btn-place-airplane35, #btn-place-airplane36, #btn-place-airplane37, #btn-place-airplane38, #btn-place-airplane39, #btn-place-airplane40, #btn-place-airplane41, #btn-place-airplane42, #btn-place-airplane43, #btn-place-airplane44, #btn-place-airplane45, #btn-place-airplane46, #btn-place-airplane47, #btn-place-airplane48{
+  background-color: #8f754d;
+  border-radius: 3px;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+#btn-place-airplane49{
+  position: relative;
+  left: -38.15%;
+  bottom: 231px;
+}
+
+#btn-place-airplane50{
+  position: relative;
+  left: -40.1%;
+  bottom: 206px;
+}
+
+#btn-place-airplane51{
+  position: relative;
+  left: -42%;
+  bottom: 183px;
+}
+
+#btn-place-airplane52{
+  position: relative;
+  left: -43.9%;
+  bottom: 130px;
+}
+
+#btn-place-airplane53{
+  position: relative;
+  left: 53.7%;
+  bottom: 127px;
+}
+
+#btn-place-airplane54{
+  position: relative;
+  left: 51.8%;
+  bottom: 103px;
+}
+
+#btn-place-airplane49, #btn-place-airplane50, #btn-place-airplane51, #btn-place-airplane52, #btn-place-airplane53, #btn-place-airplane54{
+  background-color: #1361ab;
+  border-radius: 3px;
+  border-color: transparent;
+  cursor: pointer;
+}

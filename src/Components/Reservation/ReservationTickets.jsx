@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import CardReservation from './CardReservation'
+import { CardReservation } from './CardReservation'
+import { CardReservation2 } from './CardReservation2'
 
 function ReservationTickets() {
     /*let link = '';
@@ -29,18 +30,6 @@ function ReservationTickets() {
             .catch(err => console.log(err))
     })
     console.log(apiData)*/
-    var btn = []
-    for(var i = 0; i<106; i++){
-        btn.push(
-            {
-                id: {i},
-                clase: "button-seat"
-            }
-        )
-    }
-
-    
-
     return (
         <>
         <div className='Form-reservation-container'>
@@ -72,9 +61,14 @@ function ReservationTickets() {
         <h1 className='TituloMapaAsientos'>Plane seat map</h1>
         <div className='img_MapaAsientos'>
             <img src='/img/MapaAsientosAvion.png'/>
-            {btn.map((btn) => {
+            {CardReservation.map ((item) => {
                 return(
-                    <CardReservation clase={btn.clase} id={btn.id} />
+                    <button key={item.id} id={item.clase} className={item.class}></button>
+                )
+            })}
+            {CardReservation2.map ((item) => {
+                return(
+                    <button key={item.id} id={item.clase} className={item.class}></button>
                 )
             })}
         </div>
