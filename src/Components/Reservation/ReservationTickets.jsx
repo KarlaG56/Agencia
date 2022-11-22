@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import CardReservation from './CardReservation'
 
 function ReservationTickets() {
     /*let link = '';
@@ -28,8 +29,20 @@ function ReservationTickets() {
             .catch(err => console.log(err))
     })
     console.log(apiData)*/
+    var btn = []
+    for(var i = 0; i<106; i++){
+        btn.push(
+            {
+                id: {i},
+                clase: "button-seat"
+            }
+        )
+    }
+
+    
 
     return (
+        <>
         <div className='Form-reservation-container'>
             <form action="" className='formReserver'>
                 <h3 className='Reserve'>Reserver</h3>
@@ -51,17 +64,22 @@ function ReservationTickets() {
                     <option value="Ejecutiva">Ejecutiva</option>
                 </select><br />
 
-                <label id='label-seatNumber'>Seat number:</label>
-                <select name='SelectReservation3' id="select-seatNumber">
-                    <option disabled selected>Select number</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select><br />
+                <label id='label-departureTime'>Departure time:</label>
+                <input type="time"id="input-departureTime" />
                 <button id='button-reservation-save'>Save</button>
             </form>
         </div>
+        <h1 className='TituloMapaAsientos'>Plane seat map</h1>
+        <div className='img_MapaAsientos'>
+            <img src='/img/MapaAsientosAvion.png'/>
+            {btn.map((btn) => {
+                return(
+                    <CardReservation clase={btn.clase} id={btn.id} />
+                )
+            })}
+        </div>
+        </>
+        
     )
 }
 export default ReservationTickets;

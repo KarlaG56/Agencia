@@ -1,0 +1,47 @@
+.ListComments_Titulo{
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-size: 28px;
+    margin-top: 40px;
+}
+.CommentOfUser{
+  width: 900px;
+  height: 200px;
+  transform: translate(100px, 30px);
+  background-color: rgb(255, 255, 255);
+}
+.CajaComentario{
+    width: 860px;
+   height: 120px;
+   transform: translate(20px, 20px);
+   border-width: 10px;
+   border:solid;
+}
+
+#Delete-CommentOfUser{
+    width: 150px;
+    height: 30px;
+    background: #0575e6;
+    background: -webkit-linear-gradient(to left, #021b79, #0575e6);
+    background: linear-gradient(to left, #021b79, #0575e6);
+    font-size: 15px;
+    color: white;
+    padding: 6px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 25px;
+    transform: translate(730px, 0px);
+}
+#Comment_UserCreator{
+    transform: translate(30px, 20px);
+}
+#Comment_CreatorName{
+    transform: translate(24px, 43px);
+}
+#Comment_Post_Time{
+    width: 10px;
+    transform: translate(440px, 28px);
+}

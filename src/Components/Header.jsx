@@ -1,7 +1,8 @@
 import '../assets/Style/Header.css'
 import { Link } from 'react-router-dom';
 import { useRef, useState, useContext } from 'react'
-import { UserContext } from "./context/context"
+import UserContext from "./context/UserContext"
+import ValidateContext from "./context/ValidateContext"
 import { useTheme } from "../hooks/Theme";
 
 import React from 'react';
@@ -15,17 +16,9 @@ function Header() {
 
     const [theme, handleChange] = useTheme('dark');
 
-    const [open, setOpen] = React.useState(false);
-  
-    const handleClickOpen = () => {
-        setOpen(true);
-    };
-  
-    const handleClose = () => {
-        setOpen(false);
-    };    
+    const {user} = useContext(UserContext);
+    const {validate} = useContext(ValidateContext);
 
-    const { user, setUser } = useContext(UserContext);
     return (
         <div className="Header">
             <Link to="/" id="logo">
@@ -63,7 +56,47 @@ function Header() {
                 <a>Bus</a>
             </Link>
 
-            {user == null ?
+            {validate ?
+                <div>
+                    {user.role == "client" ?
+                        <div className='menu-container'>
+                        <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
+                        <label for="menu-hamburger"> ☰ </label>
+                        <ul>
+                           <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link> 
+                           <Link to="/Payment" className='M-Seccion'><li>Payment type</li></Link> 
+                           <Link to="/" className='M-Seccion'><li><button id='btn-delete-account' onClick={handleClickOpen}>Delete account</button></li></Link> 
+                           <Link to="/Login" className='M-Seccion' ><li>Sing off</li></Link>  
+                        </ul>
+                        <Dialog open={open} onClose={handleClose}>
+                            <DialogTitle>This action cannot be undone. This will permanently delete your entire account. All private workspaces will be deleted, and you will be removed from all shared workspace.</DialogTitle>
+                            <DialogContent>
+                                <DialogContentText>Please type in your password to confirm.</DialogContentText>
+                            </DialogContent>
+                            <input type="password" placeholder="Enter your password" id='alert-password-input'/><br/>
+                            <DialogActions>
+                                <button onClick={handleClose} id='button-alert-confirm'>Permanently delete account and 1 workspace</button><br />
+                            </DialogActions>
+                            <DialogActions>
+                                <button onClick={handleClose} id='button-alert-cancel'>Cancel</button>
+                            </DialogActions>
+                        </Dialog>
+                    </div>
+
+                        :
+
+                        <Link to="/Control_system" id="Control_system">
+                            <div id="place-2">
+                                <img src="/icon/Login.svg" />
+                            </div>
+                            <a>Control System</a>
+                        </Link>
+
+                    }
+                </div>
+
+                :
+
                 <Link to="/Login" id="Login">
                     <div id="place-2">
                         <img src="/icon/Login.svg" />
@@ -71,17 +104,17 @@ function Header() {
                     <a>Login</a>
                 </Link >
 
-                :
-
-                <Link to="/Control_system" id="Control">
-                    <div id="place-2">
-                    </div>
-                    <a>Control System</a>
-                </Link>
-
             }
 
-            <div className='menu-container'>
+            
+        </div>
+    );
+}
+
+export default Header;
+
+/*
+ <div className='menu-container'>
                 <input className='input-hamburger' type="checkbox" id="menu-hamburger" />
                 <label for="menu-hamburger"> ☰ </label>
                 <ul>
@@ -104,8 +137,4 @@ function Header() {
                     </DialogActions>
                 </Dialog>
             </div>
-        </div>
-    );
-}
-
-export default Header;
+*/
