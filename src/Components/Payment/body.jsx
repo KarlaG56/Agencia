@@ -8,9 +8,13 @@ function Body() {
                 <label id="cvv">CVV:<br/><input type="text" /></label>
             </div>
             <div className="payment-scroll-container">
-                <div className="content-scroll-data">
-                    <h1>Registered payment methods</h1><br />
-                    
+                <div className="header-scroll">
+                    <h1>Registered payment methods</h1>
+                </div>
+                <div className="content-scroll-container">
+                    <div className="content-scroll-data">
+                        
+                    </div>
                 </div>
             </div>
         </div>

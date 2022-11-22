@@ -120,10 +120,25 @@
 .payment-scroll-container{
     width: 35%;
     height: 560px;
+    text-align: center;
     float: left;
+}
+
+.header-scroll{
+    width: 100%;
+    height: 80px;
+    background-color: #0b53a7;
+}
+
+.content-scroll-container{
+    width: 100%;
+    height: 480px;
     background-color: #0b53a7;
 	overflow-y: scroll;
-    text-align: center;
+}
+
+.content-scroll-container::-webkit-scrollbar{
+    z-index: -1;
 }
 
 .content-scroll-data{

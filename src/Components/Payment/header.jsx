@@ -7,7 +7,7 @@ function Header() {
                     <div className="image-logo-container">
                         <img src="/icon/Logo.svg" />
                     </div>
-                    <Link to="/" className='Title_Payment'><h1>Payment methods✨</h1></Link>
+                    <Link to="/Payment" className='Title_Payment'><h1>Payment methods✨</h1></Link>
                 </div>
                 
                 <div className="container-home">
