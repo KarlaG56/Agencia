@@ -1,5 +1,6 @@
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import UserContext from '../context/UserContext';
+import Card from './card'
 function Body() {
 
     const { user } = useContext(UserContext)
@@ -8,11 +9,20 @@ function Body() {
     const [ownerName, setOwnerName] = useState('');
     const [expirationDate, setExpirationDate] = useState('');
     const [cvv, setCvv] = useState('');
+    const[paymentData, setPaymentData] = useState(null);
 
     const handleChangeCardNumber = (event) => { setCardNumber(event.target.value) }
     const handleChangeOwnerName = (event) => { setOwnerName(event.target.value) }
     const handleChangeExpirationDate = (event) => { setExpirationDate(event.target.value) }
     const handleChangeCvv = (event) => { setCvv(event.target.value) }
+
+    useEffect(function () {
+        let l="http://localhost:8080/payment/"+user.id
+        fetch(l)
+        .then(response => response.json())
+        .then(data => {setPaymentData(data);})
+        .catch(err => console.log(err))
+    },[])
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -50,7 +60,18 @@ function Body() {
                 </div>
                 <div className="content-scroll-container">
                     <div className="content-scroll-data">
-
+                        {
+                            paymentData && paymentData.map(pays =>(
+                                <Card
+                                    key={pays.id}
+                                    card={pays.cardNumber}
+                                    date={pays.expirationDate}
+                                    name={pays.ownerName}
+                                    cvv={pays.cvv}
+                                    id={pays.id}
+                                />
+                            ))
+                        }
                     </div>
                 </div>
             </div>
