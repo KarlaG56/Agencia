@@ -1,10 +1,12 @@
 import {useRef, useState, useContext} from 'react'
-import { Link, useNavigate} from "react-router-dom";
-import { UserContext } from "../context/context"
+import { Link, useNavigate, Navigate} from "react-router-dom";
+import UserContext from "../context/UserContext"
+import ValidateContext from "../context/ValidateContext"
 
 function Data() {
     const navigate = useNavigate();
     const {user, setUser} = useContext(UserContext);
+    const {validate, setValidate} = useContext(ValidateContext);
     const form = useRef(null);
 
     const handleSubmit = (event) => {
@@ -21,25 +23,14 @@ function Data() {
                 email: formData.get('email'),
                 password: formData.get('password'),
             })
-        }).then((response) => {
-            console.log(response.status)
-            if (response.status === 200)
-                return response.json()
-            else
-                console.log("Error")
-            })
-        .then((data) => {
-        console.log(data)
-        if(data.data !== null || data.data !== undefined){ 
-            if(data.role == "employee"){
-                sessionStorage.setItem('id', data.id); 
-                navigate("/Control_system/Employee")
-            }else{
-                sessionStorage.setItem('id', data.id); 
-                navigate("/")
-            }
-        }
-    }).catch(error => console.error('Error:', error))
+        }).then((response) => response.json())
+        .then((data) => {setUser(data.data); setValidate(data.success)})
+        .catch(error => console.error('Error:', error))
+
+        console.log(user)
+        console.log(validate)
+
+        !validate ? alert("Invalid User or Password") : navigate("/")
 
 }
     return (
@@ -66,14 +57,10 @@ function Data() {
                     <input className="place" type="password" name="password" id='password_Login'/>
                 </div>
 
-                <button type='submit' id="Create-User-button">{window.sessionStorage.getItem("id") ? "Login" : "Logout"}</button>
+                <button type='submit' id="Create-User-button">Login</button>
                 <h4 id='Text-Login'>or</h4><br />
                 <Link id="Create-button" to="/Register">Create account</Link>
-                {/*<div className="button-container">
-                    <Link id="Login-button" to="/">Log in</Link><br />
-                    <h4>or</h4><br />
-                    <Link id="Create-button" to="/Register">Create account</Link>
-                </div>*/}
+                
             </form>
         </div>
     );
