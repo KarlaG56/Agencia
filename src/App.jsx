@@ -14,6 +14,11 @@ import { UserContext } from "./Components/context/context"
 import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
 import MyReservations from "./Components/Page/MyReservation"
+import About from "./Components/Page/About"
+import Contact from "./Components/Page/Contact"
+import Frequent from "./Components/Page/Frequent"
+import Policies from "./Components/Page/Policies"
+import Terms from "./Components/Page/Terms"
 
 function App() {
     const [user, setUser] = useState(null);
@@ -35,6 +40,11 @@ function App() {
                     <Route path='/Control_system/Destination' element={<Controler_destiny />} />
                     <Route path='/Control_system/Employee' element={<Controler_Employee />} />
                     <Route path='/My_Reservations' element={<MyReservations/>} />
+                    <Route path='/About' element={<About/>}/>
+                    <Route path='/Contact' element={<Contact/>}/>
+                    <Route path='/Frequent' element={<Frequent/>}/>
+                    <Route path='/Policies' element={<Policies/>}/>
+                    <Route path='/Terms' element={<Terms/>}/>    
                 </Routes>
             </UserContext.Provider>
         </BrowserRouter>

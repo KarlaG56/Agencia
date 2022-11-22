@@ -1,0 +1,23 @@
+.Body{
+    width: 100%;
+    height: auto;
+    background: #00c6ff; 
+    background: -webkit-linear-gradient(
+      to right,
+      #0072ff,
+      #00c6ff
+    ); 
+    background: linear-gradient(
+      to right,
+      #0072ff,
+      #00c6ff
+    ); 
+    margin-top: 10px;
+    border-radius: 10px;
+    color: antiquewhite;
+}
+
+#qya{
+    color:  white;
+    border: 20px;
+}
