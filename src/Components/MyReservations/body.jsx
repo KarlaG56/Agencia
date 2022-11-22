@@ -23,41 +23,6 @@ function Body() {
                     <td>627$ US</td>
                     <td><button id="button-table">Cancel</button></td>  
                 </tr>
-                <tr id="line-one">
-                    <th>Ecuador</th>
-                    <th>Cruise</th>
-                    <td>03/12/22</td>
-                    <td>912$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
-                <tr id="line-two">
-                    <th>Alemania</th>
-                    <th>Airplane</th>
-                    <td>04/12/22</td>
-                    <td>126$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
-                <tr id="line-one">
-                    <th>Peru</th>
-                    <th>Bus</th>
-                    <td>05/12/22</td>
-                    <td>328$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
-                <tr id="line-two">
-                    <th>Colombia</th>
-                    <th>Cruise</th>
-                    <td>06/12/22</td>
-                    <td>732$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
-                <tr id="line-one">
-                    <th>Aguas Calientes</th>
-                    <th>Airplane</th>
-                    <td>07/12/22</td>
-                    <td>1298$ US</td>
-                    <td><button id="button-table">Cancel</button></td>
-                </tr>
             </table>
         </div>
     );

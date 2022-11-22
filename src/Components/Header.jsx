@@ -4,9 +4,26 @@ import { useRef, useState, useContext } from 'react'
 import { UserContext } from "./context/context"
 import { useTheme } from "../hooks/Theme";
 
+import React from 'react';
+import DialogActions from '@material-ui/core/DialogActions';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContentText from '@material-ui/core/DialogContentText';
+import Dialog from '@material-ui/core/Dialog';
+
 function Header() {
 
     const [theme, handleChange] = useTheme('dark');
+
+    const [open, setOpen] = React.useState(false);
+  
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+  
+    const handleClose = () => {
+        setOpen(false);
+    };    
 
     const { user, setUser } = useContext(UserContext);
     return (
@@ -69,15 +86,25 @@ function Header() {
                 <label for="menu-hamburger"> ☰ </label>
                 <ul>
                    <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link> 
-                   <Link to="/" className='M-Seccion'><li>Payment type</li></Link> 
-                   <Link to="/" className='M-Seccion'><li>Delete account</li></Link> 
+                   <Link to="/Payment" className='M-Seccion'><li>Payment type</li></Link> 
+                   <Link to="/" className='M-Seccion'><li><button id='btn-delete-account' onClick={handleClickOpen}>Delete account</button></li></Link> 
                    <Link to="/Login" className='M-Seccion' ><li>Sing off</li></Link>  
                 </ul>
-                
+                <Dialog open={open} onClose={handleClose}>
+                    <DialogTitle>This action cannot be undone. This will permanently delete your entire account. All private workspaces will be deleted, and you will be removed from all shared workspace.</DialogTitle>
+                    <DialogContent>
+                        <DialogContentText>Please type in your password to confirm.</DialogContentText>
+                    </DialogContent>
+                    <input type="password" placeholder="Enter your password" id='alert-password-input'/><br/>
+                    <DialogActions>
+                        <button onClick={handleClose} id='button-alert-confirm'>Permanently delete account and 1 workspace</button><br />
+                    </DialogActions>
+                    <DialogActions>
+                        <button onClick={handleClose} id='button-alert-cancel'>Cancel</button>
+                    </DialogActions>
+                </Dialog>
             </div>
         </div>
-
-
     );
 }
 

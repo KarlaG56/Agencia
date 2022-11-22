@@ -1,0 +1,132 @@
+.header-payment-container{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+    background: linear-gradient(to right, #0072ff, #00c6ff);;
+}
+
+.Title_Payment{
+    text-decoration: none;
+    color: #fff;
+    font-size: 21px;
+}
+
+.container-ttg{
+    width: 450px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.container-ttg h1{
+    font-size: 30px;
+    color: white;
+}
+
+.image-logo-container{
+    width: 100px;
+    height: 100%;
+}
+
+.image-logo-container{
+    animation: rotation 8s infinite linear;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.image-logo-container img, .container-home img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.container-home{
+    width: 150px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    left: 500px;
+}
+
+.image-home-container{
+    width: 25px;
+    height: 50%;
+}
+
+.container-home h1{
+    font-size: 20px;
+    color: white;
+}
+
+.payment-container{
+    width: 100%;
+    height: 560px;
+    background-color: #1565C0;
+    margin-top: 10px;
+}
+
+.payment-data-container{
+    width: 65%;
+    height: 100%;
+    float: left;
+    font-size: 15px;
+}
+
+#card-number{
+    position: relative;
+    left: 27%;
+    top: 10%;
+}
+
+#owner-name{
+    position: relative;
+    left: 27%;
+    top: 25%;
+}
+
+#expiration-date{
+    position: relative;
+    left: 27%;
+    top: 40%;
+}
+
+#cvv{
+    position: relative;
+    left: 27%;
+    top: 55%;
+}
+
+#card-number input, #owner-name input, #expiration-date input, #cvv input{
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.payment-scroll-container{
+    width: 35%;
+    height: 560px;
+    float: left;
+    background-color: #0b53a7;
+	overflow-y: scroll;
+    text-align: center;
+}
+
+.content-scroll-data{
+    width: 100%;
+    height: auto;
+}
