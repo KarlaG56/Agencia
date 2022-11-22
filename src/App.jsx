@@ -38,8 +38,8 @@ function App() {
                         <Route path='/Cruice' element={<CruiceShip />} />
                         <Route path='/Bus' element={<Bus />} />
                         <Route path='/Register' element={<Register />} />
-                        <Route path='/Reservation' element={<Reservation />} />
                         <Route element={<UserRoute />}>
+                            <Route path='/Reservation' element={<Reservation />} />
                             <Route path='/My_Reservations' element={<MyReservations />} />
                             <Route path="/Payment" element={<Payment />} />
                             <Route element={<EmployeeRoute />}>
@@ -47,7 +47,7 @@ function App() {
                                 <Route path='/Control_system/Ticket' element={<Controler_ticket />} />
                                 <Route path='/Control_system/Destination' element={<Controler_destiny />} />
                                 <Route path='/Control_system/Employee' element={<Controler_Employee />} />
-                                <Route path="/Control_system/ListComments" element={<Controler_ListComments/>} />
+                                <Route path="/Control_system/ListComments" element={<Controler_ListComments />} />
                             </Route>
                         </Route>
                         <Route path="/notFound" element={<NotFound />} />

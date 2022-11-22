@@ -19,7 +19,7 @@
    border:solid;
 }
 
-#Delete-CommentOfUser{
+.Delete-CommentOfUser{
     width: 150px;
     height: 30px;
     background: #0575e6;
@@ -35,13 +35,13 @@
     border-radius: 25px;
     transform: translate(730px, 0px);
 }
-#Comment_UserCreator{
+.Comment_UserCreator{
     transform: translate(30px, 20px);
 }
-#Comment_CreatorName{
+.Comment_CreatorName{
     transform: translate(24px, 43px);
 }
-#Comment_Post_Time{
+.Comment_Post_Time{
     width: 10px;
     transform: translate(440px, 28px);
 }

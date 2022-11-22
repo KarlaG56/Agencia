@@ -1,14 +1,31 @@
-import { responsivePropType } from "react-bootstrap/esm/createUtilityClasses";
-import Card from "./CardComment";
+import CardComment from "./CardComment";
+import { useState, useEffect } from "react";
+
 function Data() {
-    return ( 
-        <div className="ListComments">
-            <h1 className="ListComments_Titulo">List comments</h1>
-            {response.map((response) => {
-                return <Card comment={response.comment} time={response.date} author={response.user}/>;
-            })}
-        </div>
-    );
+  const [responseCopy, setResponseCopy] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:8080/comment")
+      .then((response) => response.json())
+      .then((response) => {
+        setResponseCopy(response);
+      });
+  }, []);
+  return (
+    <div className="ListComments">
+      <h1 className="ListComments_Titulo">List comments</h1>
+      {responseCopy.map((responseCopy) => {
+        return (
+          <CardComment
+            comment={responseCopy.comment}
+            user={responseCopy.user}
+            date={responseCopy.date}
+            key={responseCopy.id}
+            id={responseCopy.id}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 export default Data;
