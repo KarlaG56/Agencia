@@ -55,6 +55,7 @@ function Body() {
                         </tr>
                     ))
                 }
+
             </table>
         </div>
     );

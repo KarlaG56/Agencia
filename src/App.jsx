@@ -15,6 +15,7 @@ import ValidateContext from "./Components/context/ValidateContext";
 import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
 import MyReservations from "./Components/Page/MyReservation"
+import Payment from "./Components/Page/Payment"
 import UserRoute from "./Components/PrivateRoute/UserRoute"
 import EmployeeRoute from "./Components/PrivateRoute/EmployeeRoute";
 
@@ -37,6 +38,7 @@ function App() {
                         <Route element={<UserRoute />}>
                             <Route path='/Reservation/:id/:type' element={<Reservation />} />
                             <Route path='/My_Reservations' element={<MyReservations />} />
+                            <Route path="/Payment" element={<Payment/>} />
                             <Route element={<EmployeeRoute />}>
                                 <Route path='/Control_system' element={<Control />} />
                                 <Route path='/Control_system/Ticket' element={<Controler_ticket />} />

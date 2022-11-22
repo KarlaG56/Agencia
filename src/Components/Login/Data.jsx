@@ -57,7 +57,7 @@ function Data() {
                     <input className="place" type="password" name="password" id='password_Login'/>
                 </div>
 
-                <button type='submit' id="Create-User-button">{window.sessionStorage.getItem("id") ? "Login" : "Logout"}</button>
+                <button type='submit' id="Create-User-button">Login</button>
                 <h4 id='Text-Login'>or</h4><br />
                 <Link id="Create-button" to="/Register">Create account</Link>
                 

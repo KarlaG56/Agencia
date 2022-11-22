@@ -175,7 +175,7 @@ img {
   width: 30px;
   height: 30px;
   position: relative;
-  left: 570px;
+  left: 51.5%;
 }
 
 ul {
@@ -201,6 +201,7 @@ input:checked ~ ul {
   font-weight: bold;
   text-align: center;
   user-select: none;
+  cursor: pointer;
 }
 
 .menu-container label:hover {
@@ -259,32 +260,50 @@ li:hover {
   width: 310px;
   height: 30px;
   position: relative;
-  left: 20px;
-  top: 20px;
+  left: 25%;
   font-size: 15px;
   color: black;
+  text-align: center;
 }
 
-.alert-container input:focus {
+#alert-password-input::placeholder{
+  color: gray;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+#alert-password-input:focus {
   outline: none;
+}
+
+#btn-delete-account{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 #button-alert-confirm {
   width: 310px;
   height: 30px;
   position: relative;
-  left: 20px;
-  top: 40px;
+  right: 22.5%;
   font-size: 15px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
 }
 
 #button-alert-cancel {
   width: 310px;
   height: 30px;
   position: relative;
-  left: 20px;
-  top: 60px;
+  right: 22.5%;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .TitleTTG {
