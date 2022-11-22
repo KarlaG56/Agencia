@@ -12,6 +12,15 @@
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
+.Error2 {
+    padding: 200px 280px;
+    background-color: rgb(255, 255, 255);
+    transform: translate(270px, 90px);
+    position: absolute;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
 #Error-img {
     width: 120px;
     height: 120px;
@@ -37,6 +46,32 @@
     
 }
 
+#Error-img2 {
+    width: 180px;
+    height: 140px;
+    position: absolute;
+    margin-top:-160px;
+    margin-left: -90px;
+    transform: translate(-50px, 0px);
+    animation: member 2.5s linear infinite;
+}
+
+@keyframes member {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(30px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+    
+}
+
+
 
 #Error-title {
     position: absolute;
@@ -47,9 +82,27 @@
     color: rgb(0, 119, 216);
 }
 
+#Error-title2 {
+    position: absolute;
+    margin-left: -195px;
+    transform: translate(80px, 5px);
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(0, 164, 185);
+}
+
 #Error-text {
     position: absolute;
     margin-left: -175px;
+    transform: translate(80px, 80px);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#Error-text2 {
+    position: absolute;
+    margin-left: -305px;
     transform: translate(80px, 80px);
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
