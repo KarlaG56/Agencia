@@ -30,6 +30,7 @@ function ReservationTickets() {
     console.log(apiData)*/
 
     return (
+        <>
         <div className='Form-reservation-container'>
             <form action="" className='formReserver'>
                 <h3 className='Reserve'>Reserver</h3>
@@ -51,17 +52,22 @@ function ReservationTickets() {
                     <option value="Ejecutiva">Ejecutiva</option>
                 </select><br />
 
-                <label id='label-seatNumber'>Seat number:</label>
-                <select name='SelectReservation3' id="select-seatNumber">
-                    <option disabled selected>Select number</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                </select><br />
+                <label id='label-departureTime'>Departure time:</label>
+                <input type="time"id="input-departureTime" />
                 <button id='button-reservation-save'>Save</button>
             </form>
         </div>
+        <div className='img_MapaAsientos'>
+            <h1 className='TituloMapaAsientos'>Plane seat map</h1>
+            <img src='/img/MapaAsientosAvion.png'/>
+            <button id='seat_1'>1</button>
+            <button id='seat_2'>2</button>
+            <button id='seat_2'>2</button>
+            <button id='seat_2'>2</button>
+            <button id='seat_2'>2</button>
+        </div>
+        </>
+        
     )
 }
 export default ReservationTickets;
