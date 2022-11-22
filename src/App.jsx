@@ -15,6 +15,7 @@ import React, { useState } from 'react'
 import Control from "./Components/Page/Control-System"
 import MyReservations from "./Components/Page/MyReservation"
 import NotFound from "./Components/NotFound"
+import NotAuthorized from "./Components/NotAuthorize";
 
 function App() {
     const [user, setUser] = useState(null);
@@ -37,6 +38,8 @@ function App() {
                     <Route path='/Control_system/Employee' element={<Controler_Employee />} />
                     <Route path='/My_Reservations' element={<MyReservations/>} />
                     <Route path="/notFound" element={<NotFound/>}/>
+                    <Route path="/NotAuthorized" element={<NotAuthorized/>}/>
+
                 </Routes>
             </UserContext.Provider>
         </BrowserRouter>
