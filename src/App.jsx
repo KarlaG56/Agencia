@@ -18,6 +18,7 @@ import MyReservations from "./Components/Page/MyReservation"
 import Payment from "./Components/Page/Payment"
 import UserRoute from "./Components/PrivateRoute/UserRoute"
 import EmployeeRoute from "./Components/PrivateRoute/EmployeeRoute";
+import Controler_ListComments from "./Components/Page/Controler-ListComments"
 import NotFound from "./Components/NotFound"
 import NotAuthorized from "./Components/NotAuthorize";
 
@@ -46,6 +47,7 @@ function App() {
                                 <Route path='/Control_system/Ticket' element={<Controler_ticket />} />
                                 <Route path='/Control_system/Destination' element={<Controler_destiny />} />
                                 <Route path='/Control_system/Employee' element={<Controler_Employee />} />
+                                <Route path="/Control_system/ListComments" element={<Controler_ListComments/>} />
                             </Route>
                         </Route>
                         <Route path="/notFound" element={<NotFound />} />
