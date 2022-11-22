@@ -30,7 +30,7 @@ function Header() {
                     method: 'DELETE',
                     headers: {
                         "Accept": "application/json",
-                        "Content-Type": "application/json",
+                        "Content-Type": "application/json"
                     }
                 })
             alert("User Delete")
