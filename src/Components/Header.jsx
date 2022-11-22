@@ -18,8 +18,29 @@ function Header() {
 
     const [open, setOpen] = React.useState(false);
 
+    const [password, setPassword] = useState('')
+
+    const handleChangePassword = (event) => { setPassword(event.target.value) }
+
     const handleDelete = () => {
-        
+        if (user.password == password) {
+            let link = "http://localhost:8080/user/" + user.id;
+            fetch(link,
+                {
+                    method: 'DELETE',
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json",
+                    }
+                })
+            alert("User Delete")
+            setUser(null)
+            setValidate(false)
+        }
+        else {
+            alert("Passwords do not match")
+        }
+
     }
 
     const handleClickOpen = () => {
@@ -30,8 +51,8 @@ function Header() {
         setOpen(false);
     };
 
-    const { user } = useContext(UserContext);
-    const { validate } = useContext(ValidateContext);
+    const { user, setUser } = useContext(UserContext);
+    const { validate, setValidate } = useContext(ValidateContext);
     return (
         <div className="Header">
             <Link to="/" id="logo">
@@ -86,7 +107,7 @@ function Header() {
                                 <DialogContent>
                                     <DialogContentText>Please type in your password to confirm.</DialogContentText>
                                 </DialogContent>
-                                <input type="password" placeholder="Enter your password" id='alert-password-input' /><br />
+                                <input type="password" placeholder="Enter your password" id='alert-password-input' value={password} onChange={handleChangePassword} /><br />
                                 <DialogActions>
                                     <button onClick={handleDelete} id='button-alert-confirm'>Permanently delete account</button><br />
                                 </DialogActions>
