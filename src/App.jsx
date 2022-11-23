@@ -24,7 +24,7 @@ import NotAuthorized from "./Components/NotAuthorize";
 
 function App() {
     const [user, setUser] = useState(null);
-    const [validate, setValidate] = useState(false)
+    const [validate, setValidate] = useState(null)
 
     return (
         <BrowserRouter>
@@ -39,7 +39,7 @@ function App() {
                         <Route path='/Bus' element={<Bus />} />
                         <Route path='/Register' element={<Register />} />
                         <Route element={<UserRoute />}>
-                            <Route path='/Reservation' element={<Reservation />} />
+                            <Route path='/Reservation/:id/:type' element={<Reservation />} />
                             <Route path='/My_Reservations' element={<MyReservations />} />
                             <Route path="/Payment" element={<Payment />} />
                             <Route element={<EmployeeRoute />}>

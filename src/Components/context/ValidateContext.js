@@ -1,5 +1,5 @@
 import { createContext } from "react";  
 
-const ValidateContext = createContext(false);
+const ValidateContext = createContext(null);
 
 export default ValidateContext;

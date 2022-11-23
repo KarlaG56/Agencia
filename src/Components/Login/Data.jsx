@@ -1,4 +1,4 @@
-import {useRef, useState, useContext} from 'react'
+import {useRef, useState, useContext, useEffect} from 'react'
 import { Link, useNavigate, Navigate} from "react-router-dom";
 import UserContext from "../context/UserContext"
 import ValidateContext from "../context/ValidateContext"
@@ -9,28 +9,36 @@ function Data() {
     const {validate, setValidate} = useContext(ValidateContext);
     const form = useRef(null);
 
-    const handleSubmit = (event) => {
+
+    const handleSubmit = async (event) => {
       event.preventDefault();
   
         const formData = new FormData(form.current);
-        fetch("http://localhost:8080/user/validate", 
-            {method: "POST",
-            headers:{
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                email: formData.get('email'),
-                password: formData.get('password'),
+        try {
+            let response = await fetch("http://localhost:8080/user/validate", 
+                {method: "POST",
+                headers:{
+                    "Accept": "application/json",
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                    email: formData.get('email'),
+                    password: formData.get('password'),
+                })
             })
-        }).then((response) => response.json())
-        .then((data) => {setUser(data.data); setValidate(data.success)})
-        .catch(error => console.error('Error:', error))
+            let data = await response.json()   
+                             
+            setUser(data.data); 
+            setValidate(data.success)  
+            console.log(data)   
+            console.log(user)
+            console.log(validate)
+            data.success ? navigate("/") : alert("Invalid User or Password")    
+        } catch (error) {
+            console.log (error)
+        }
 
-        console.log(user)
-        console.log(validate)
 
-        !validate ? alert("Invalid User or Password") : navigate("/")
 
 }
     return (

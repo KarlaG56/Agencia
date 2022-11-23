@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import Seat from '../Flight/Seat'
 import { CardReservation } from './CardReservation'
 import { CardReservation2 } from './CardReservation2'
 
@@ -30,6 +31,11 @@ function ReservationTickets() {
             .catch(err => console.log(err))
     })
     console.log(apiData)*/
+
+    const handleImg = (event)=> {
+        console.log(event.clientX + ':'+event.clientY)
+    }
+
     return (
         <>
         <div className='Form-reservation-container'>
@@ -60,10 +66,11 @@ function ReservationTickets() {
         </div>
         <h1 className='TituloMapaAsientos'>Plane seat map</h1>
         <div className='img_MapaAsientos'>
-            <img src='/img/MapaAsientosAvion.png'/>
-            {CardReservation.map ((item) => {
+            <img onClick={handleImg} src='/img/MapaAsientosAvion.png'/>
+            {CardReservation.map ((item, i) => {
                 return(
-                    <button key={item.id} id={item.clase} className={item.class}></button>
+                    //<button key={item.id} id={item.clase} className={item.class}></button>
+                    <Seat left={(800 + (i*20)+ 10) +'px'} top={'200px'} width={'20px'}/>
                 )
             })}
             {CardReservation2.map ((item) => {
@@ -71,6 +78,7 @@ function ReservationTickets() {
                     <button key={item.id} id={item.clase} className={item.class}></button>
                 )
             })}
+        
         </div>
         </>
         

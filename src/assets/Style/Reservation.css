@@ -40,8 +40,15 @@
   ); 
   margin-top: -20px;
   margin-bottom: 10px;
-  height: 1000px;
+  width: 100%;
   border-radius: 25px;
+  
+}
+
+@media screen and (min-width: 1024px) {
+  .reservation-body {
+    width: 100%;
+  }
   
 }
 
