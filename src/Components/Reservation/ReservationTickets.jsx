@@ -59,13 +59,21 @@ function ReservationTickets() {
             </form>
         </div>
         <h1 className='TituloMapaAsientos'>Plane seat map</h1>
-        <div className='img_MapaAsientos'>
-            <img src='/img/MapaAsientosAvion.png'/>
-            {CardReservation.map ((item) => {
-                return(
-                    <button key={item.id} id={item.clase} className={item.class}></button>
-                )
-            })}
+        <div className='airplane-seat-mapping'>
+            <div className='seat-seccion1'>
+                {CardReservation.map ((item) => {
+                    return(
+                        <button key={item.id} id={item.clase} className={item.class}></button>
+                    )
+                })}
+            </div>
+            <div className='seat-seccion2'>
+                {CardReservation.map((item) => {
+                    return(
+                        <button key={item.id} id={item.clase} className={item.class}></button>
+                    )
+                })}
+            </div>
             {CardReservation2.map ((item) => {
                 return(
                     <button key={item.id} id={item.clase} className={item.class}></button>
