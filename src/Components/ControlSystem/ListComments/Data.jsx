@@ -10,6 +10,7 @@ function Data() {
         setResponseCopy(response);
       });
   }, []);
+  console.log(responseCopy)
   return (
     <div className="ListComments">
       <h1 className="ListComments_Titulo">List comments</h1>
