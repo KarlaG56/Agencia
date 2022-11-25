@@ -1,4 +1,5 @@
 function Body() {
+    let p=0;
     const encabezado = [
         {
             id: 1,
@@ -13,7 +14,7 @@ function Body() {
         {
             id: 3,
             question: "con cuanta antelacion es recomendable reservar" ,
-            answer: "con 4 a 6 meses de antelacion"
+            answer: "es recomendable viajarcon 4 a 6 meses de antelacion"
         },
         {
             id: 4,
@@ -25,13 +26,16 @@ function Body() {
     return (
         <div className="body">
             {encabezado.map ((elemento) => {
+                p=p+1;
+                let idDQ="question" + p;
+                let idDA="answer" + p;
                 return(
                     
-                    <div className="qya">
-                        <h3>{elemento.question}</h3>
-                        
-                        <h4>{elemento.answer}</h4>
-                        <br />
+                    <div className="qya" key={elemento.id}>
+                        <h3 id={idDQ} onClick={()=>{document.getElementById(idDA).style.display="block"}}>{elemento.question}</h3>
+                        <br/> <br/>
+                        <p id={idDA} className="answer" onClick={()=>{document.getElementById(idDA).style.display="none"}}>{elemento.answer}</p>
+                        <br/> <br/>
                     </div>
                 )
             })}

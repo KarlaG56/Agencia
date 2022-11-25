@@ -1,6 +1,6 @@
 import Header from "../Header";
 import Body from "../Flight/Body";
-import Footer from "../Footer";
+import Footer from "../Footer2";
 import '../../assets/Style/Flight.css'
 
 function Flight() {

@@ -17,7 +17,11 @@
     color: antiquewhite;
 }
 
-#qya{
+.qya{
     color:  white;
     border: 20px;
+}
+
+.answer{
+  display: none;
 }
