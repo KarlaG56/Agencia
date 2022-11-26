@@ -1,12 +1,12 @@
 function CardComment({ comment, date, user, id }) {
   function handleClick(event) {
     var temp = document.getElementsByClassName("Delete-CommentOfUser");
-    var eliminate = temp[--id].id;
     fetch("http://localhost:8080/comment/" + eliminate, { method: "DELETE" })
       .then((response) => response.json())
       .then((response) => {
         setResponseCopy(response);
       });
+      console.log(responseCopy)
   }
 
   return (
