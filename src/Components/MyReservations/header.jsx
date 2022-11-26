@@ -7,14 +7,14 @@ function Header() {
                     <div className="image-logo-container">
                         <img src="/icon/Logo.svg" />
                     </div>
-                    <Link to="/" className='Title_MyReservation'><h1>My Reservations✨</h1></Link>
+                    <Link to="/" className='Title_MyReservation'>My Reservations✨</Link>
                 </div>
                 
                 <div className="container-home">
                     <div className="image-home-container">
                         <img src="/icon/Reservation.svg" />
                     </div>
-                    <Link to="/" className='Title_MyReservation'>Home</Link>
+                    <Link to="/" className='Title_MyReservation_home'>Home</Link>
                 </div>
         </div>
     );
