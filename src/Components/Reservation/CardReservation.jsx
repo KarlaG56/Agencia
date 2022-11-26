@@ -2,32 +2,32 @@ export const CardReservation = [
     {
         id: 1,
         clase: "btn-place-airplane1",
-        class: "button-seat1"
+        class: "airplane-seccion1"
     },
     {
         id: 2, 
         clase: "btn-place-airplane2",
-        class: "button-seat1"
+        class: "airplane-seccion1"
     },
     {
         id: 3,
         clase: "btn-place-airplane3",
-        class: "button-seat1"
+        class: "airplane-seccion1"
     },
     {
         id: 4,
         clase: "btn-place-airplane4",
-        class: "button-seat1"
+        class: "airplane-seccion1"
     },
     {
         id: 5,
         clase: "btn-place-airplane5",
-        class: "button-seat1"
+        class: "airplane-seccion1"
     },
     {
         id: 6,
         clase: "btn-place-airplane6",
-        class: "button-seat1"
+        class: "airplane-seccion1"
     },
     {
         id: 7,
