@@ -5,12 +5,14 @@
     font-size: 28px;
     margin-top: 40px;
 }
+
 .CommentOfUser{
   width: 900px;
   height: 200px;
   transform: translate(100px, 30px);
   background-color: rgb(255, 255, 255);
 }
+
 .CajaComentario{
     width: 860px;
    height: 120px;
@@ -35,12 +37,15 @@
     border-radius: 25px;
     transform: translate(730px, 0px);
 }
+
 .Comment_UserCreator{
     transform: translate(30px, 20px);
 }
+
 .Comment_CreatorName{
     transform: translate(24px, 43px);
 }
+
 .Comment_Post_Time{
     width: 10px;
     transform: translate(440px, 28px);

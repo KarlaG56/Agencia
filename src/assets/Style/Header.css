@@ -23,7 +23,6 @@
   border-bottom: rgb(190, 184, 206) 2px solid;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-
 }
 
 #logo {
@@ -147,7 +146,6 @@ img {
   position: absolute;
   justify-content: center;
   right: 50px;
-
   text-decoration: none;
   right: 10px;
   border-left: white 2px solid;
@@ -224,7 +222,7 @@ input:checked ~ label {
 
 .menu-container li {
   display: block;
-  background: #0072ff;  /* fallback for old browsers */
+  background: #0072ff;  
   margin: 0;
   padding: 10px;
   list-style: none;

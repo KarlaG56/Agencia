@@ -11,7 +11,7 @@ function Body() {
     }, [])
     return (
         <>
-            <div className='Body'>
+            <div className='Body_Transports'>
                 <div>
                     <br />
                     <img src="/img/Map2.png" id="Map" />

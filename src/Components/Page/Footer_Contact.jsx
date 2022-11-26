@@ -2,10 +2,10 @@ import Header from "../Header";
 import Body from "../Footer/Contact/Body";
 import Footer from "../Footer2";
 
-import '../../assets/Style/Contact.css'
+import '../../assets/Style/Footer_Contact.css'
 
 
-function Contact() {
+function Footer_Contact() {
     return (
         <>
             <Header/>
@@ -15,4 +15,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default Footer_Contact;

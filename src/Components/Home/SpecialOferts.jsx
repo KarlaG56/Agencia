@@ -32,14 +32,14 @@ function SpecialOferts() {
             points: "⭐ 5",
             img: "/img/Bus.png",
             condition: "Bus",
-            title: "buses from $10 US"
+            title: "Buses from $10 US"
         },
       ];
 
     return (
         <div className='Container'>
             <div className="novedad">
-                <div className="texto">
+                <div className="texto-special">
                     <h2>🔥 Special Offers 🔥</h2>
                 </div>
             </div>

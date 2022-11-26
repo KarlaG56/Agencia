@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
 .Footer {
   width: 100%;
   height: 100px;
@@ -21,44 +22,20 @@
   bottom: 0;
 }
 
-.help{
-  width: 15%;
-  height: 70%;
-  float: left;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.business{
-  width: 15%;
-  height: 70%;
-  float: left;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.legal{
-  width: 15%;
-  height: 70%;
-  float: left;
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
 .div-section {
   width: 25%;
   height: 70%;
   float: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
 }
 
-#title {
-  font-size: 20px;
-  position: relative;
-  top: 10px;
+.title-sections{
+  font-family: 'Cambay', sans-serif;
 }
+
 
 #id {
   font-size: 15px;
@@ -67,48 +44,44 @@
   display: flex;
 }
 
-#copyright {
-  font-size: 15px;
-  position: center;
-  top: 10px;
-}
-
-.Card-networks {
-  width: 25px;
-  height: 25px;
-  margin-right: 15px;
+.Card-networks-1 {
+  width: 27px;
+  height: 27px;
+  margin-top: 10px;
+  margin-left: 30%;
   float: left;
-  position: relative;
-  left: 890px;
   bottom: 25px;
   cursor: pointer;
-  display: flex;
-  align-items: flex-end;
 }
 
-.Card-networks img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.Card-networks-2 {
+  width: 27px;
+  height: 27px;
+  margin-left: 50%;
+  bottom: 25px;
+  cursor: pointer;
+  margin-top:-50px;
 }
 
-#about{
+.Card-networks-3 {
+  width: 27px;
+  height: 27px;
+  margin-left: 60%;
+  bottom: 25px;
+  cursor: pointer;
+  margin-top:-90px;
+}
+
+#text{
   color: white;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
 }
 
-#contact{
-  color: white;
+.copyright {
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#policies{
-  color: white;
-}
-
-#terms{
-  color: white;
-}
-
-#frequent{
-  color: white;
-}
 

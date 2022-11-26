@@ -6,79 +6,7 @@
   backdrop-filter: blur(5px);
   margin-left: -280px;
 }
-/* 
-h3{
-    font-size: 25px;
-    margin-top: 30px;
-}
 
-form{
-    margin-top: 20px;
-}
-
-#Full_name{
-    position: relative;
-    left: -100px;
-    font-size: 20px;
-    color: aliceblue;
-}
-
-#Email{
-    position: relative;
-    left: -115px;
-    font-size: 20px;
-    color: aliceblue;
-}
-
-#Password{
-    position: relative;
-    left: -104px;
-    font-size: 20px;
-    color: aliceblue;
-}
-
-#Role{
-    position: relative;
-    left: -123px;
-    font-size: 20px;
-    color: aliceblue;
-}
-
-#Age{
-    position: relative;
-    left: -123px;
-    font-size: 20px;
-    color: aliceblue;
-}
-
-#Cellphone{
-    position: relative;
-    left: -100px;
-    font-size: 20px;
-    color: aliceblue;
-}
-
-.place{
-    width: 300px;
-    height: 30px;
-    font-size: 15px;
-    color: black;
-}
-
-#place:focus{ outline: none;}
-
-.button-container-EmployeeRegister{
-    transform: translate(10px,-20px);
-    left: 30%;
-    top: 93%;
-}
-
-.Create-button-EmployeeRegister{
-    position: absolute;
-    left:30%;
-    bottom: 20%;
-}
-*/
 .Employee_Background img {
   object-fit: cover;
   width: 100%;

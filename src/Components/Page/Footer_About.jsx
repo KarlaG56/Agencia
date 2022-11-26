@@ -2,10 +2,10 @@ import Header from "../Header";
 import Body from "../Footer/About/Body";
 import Footer from "../Footer2";
 
-import '../../assets/Style/About.css'
+import '../../assets/Style/Footer_About.css'
 
 
-function About() {
+function Footer_About() {
     return (
         <>
             <Header/>
@@ -15,4 +15,4 @@ function About() {
     );
 }
 
-export default About;
+export default Footer_About;

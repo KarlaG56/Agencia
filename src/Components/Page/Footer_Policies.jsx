@@ -2,10 +2,10 @@ import Header from "../Header";
 import Body from "../Footer/policies/Body";
 import Footer from "../Footer2";
 
-import '../../assets/Style/policies.css'
+import '../../assets/Style/Footer_policies.css'
 
 
-function Policies() {
+function Footer_Policies() {
     return (
         <>
             <Header/>
@@ -15,4 +15,4 @@ function Policies() {
     );
 }
 
-export default Policies;
+export default Footer_Policies;

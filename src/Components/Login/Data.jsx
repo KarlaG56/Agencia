@@ -9,7 +9,6 @@ function Data() {
     const {validate, setValidate} = useContext(ValidateContext);
     const form = useRef(null);
 
-
     const handleSubmit = async (event) => {
       event.preventDefault();
   
@@ -37,9 +36,6 @@ function Data() {
         } catch (error) {
             console.log (error)
         }
-
-
-
 }
     return (
         <div className="Login-container">
@@ -52,7 +48,6 @@ function Data() {
             </div>
 
             <h3 className='Title_R'>Account login</h3>
-
             <form className='LoginForm' ref={form} onSubmit={handleSubmit}>
                 <div>
                     <label id="Email">Email</label><br />
@@ -68,7 +63,6 @@ function Data() {
                 <button type='submit' id="Create-User-button">Login</button>
                 <h4 id='Text-Login'>or</h4><br />
                 <Link id="Create-button" to="/Register">Create account</Link>
-                
             </form>
         </div>
     );

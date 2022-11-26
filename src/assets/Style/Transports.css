@@ -1,4 +1,5 @@
-.Body{
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
+.Body_Transports{
     width: 100%;
     height: auto;
     background: #00c6ff; 
@@ -13,7 +14,22 @@
       #00c6ff
     ); 
     margin-top: 10px;
-    border-radius: 10px;
+    
+}
+
+.container-destination{
+  background: #00c6ff; 
+    background: -webkit-linear-gradient(
+      to right,
+      #0072ff,
+      #00c6ff
+    ); 
+    background: linear-gradient(
+      to right,
+      #0072ff,
+      #00c6ff
+    ); 
+   
 }
 
 #Map{
@@ -28,4 +44,5 @@
     color: rgb(255, 255, 255);
     text-align: center;
     margin-top: 30px;
+    font-family: 'Cambay', sans-serif;
 }

@@ -3,24 +3,17 @@
 .Header-controler {
   width: 100%;
   height: 100px;
-  background: #00c6ff; 
-  background: -webkit-linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
-  background: linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
-
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  background: linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
   color: white;
   display: flex;
   justify-content: center;
   line-height: 96px;
-  
-  
 }
 
 .Header-controler a {
@@ -36,6 +29,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -48,10 +42,9 @@
 }
 
 .Nav-controler {
-  background: #000000;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+  background: #000000;
+  background: -webkit-linear-gradient(to right, #434343, #000000);
+  background: linear-gradient(to right, #434343, #000000);
   height: 30px;
   display: flex;
   align-items: center;

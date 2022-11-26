@@ -1,11 +1,11 @@
 import Header from "../Header";
-import Body from "../Footer/Frequent/Body";
+import Body from "../Footer/Terms/Body";
 import Footer from "../Footer2";
 
-import '../../assets/Style/Footer_Frequent.css'
+import '../../assets/Style/Footer_Terms.css'
 
 
-function Frequent() {
+function Footer_Terms() {
     return (
         <>
             <Header/>
@@ -15,4 +15,4 @@ function Frequent() {
     );
 }
 
-export default Frequent;
+export default Footer_Terms;
