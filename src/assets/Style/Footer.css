@@ -21,6 +21,33 @@
   bottom: 0;
 }
 
+.help{
+  width: 15%;
+  height: 70%;
+  float: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.business{
+  width: 15%;
+  height: 70%;
+  float: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.legal{
+  width: 15%;
+  height: 70%;
+  float: left;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
 .div-section {
   width: 25%;
   height: 70%;
@@ -37,11 +64,12 @@
   font-size: 15px;
   position: relative;
   top: 10px;
+  display: flex;
 }
 
 #copyright {
   font-size: 15px;
-  position: relative;
+  position: center;
   top: 10px;
 }
 
@@ -54,6 +82,8 @@
   left: 890px;
   bottom: 25px;
   cursor: pointer;
+  display: flex;
+  align-items: flex-end;
 }
 
 .Card-networks img {
@@ -61,3 +91,24 @@
   height: 100%;
   object-fit: cover;
 }
+
+#about{
+  color: white;
+}
+
+#contact{
+  color: white;
+}
+
+#policies{
+  color: white;
+}
+
+#terms{
+  color: white;
+}
+
+#frequent{
+  color: white;
+}
+

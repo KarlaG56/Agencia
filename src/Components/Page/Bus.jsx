@@ -1,6 +1,6 @@
 import Header from "../Header";
 import Body from "../Bus/Body";
-import Footer from "../Footer";
+import Footer from "../Footer2";
 
 function Bus() {
     return (

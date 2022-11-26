@@ -21,6 +21,11 @@ import EmployeeRoute from "./Components/PrivateRoute/EmployeeRoute";
 import Controler_ListComments from "./Components/Page/Controler-ListComments"
 import NotFound from "./Components/NotFound"
 import NotAuthorized from "./Components/NotAuthorize";
+import About from "./Components/Page/About"
+import Contact from "./Components/Page/Contact"
+import Frequent from "./Components/Page/Frequent"
+import Policies from "./Components/Page/Policies"
+import Terms from "./Components/Page/Terms"
 
 function App() {
     const [user, setUser] = useState(null);
@@ -52,8 +57,12 @@ function App() {
                         </Route>
                         <Route path="/notFound" element={<NotFound />} />
                         <Route path="/NotAuthorized" element={<NotAuthorized />} />
-
-                    </Routes>
+                        <Route path='/About' element={<About/>}/>
+                    <Route path='/Contact' element={<Contact/>}/>
+                    <Route path='/Frequent' element={<Frequent/>}/>
+                    <Route path='/Policies' element={<Policies/>}/>
+                    <Route path='/Terms' element={<Terms/>}/>    
+                 </Routes>
                 </UserContext.Provider>
             </ValidateContext.Provider>
         </BrowserRouter>
