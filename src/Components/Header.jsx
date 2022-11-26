@@ -121,7 +121,7 @@ function Header() {
 
                         <Link to="/Control_system" id="Control_system">
                             <div id="place-2">
-                                <img src="/icon/Login.svg" />
+                              
                             </div>
                             <a>Control System</a>
                         </Link>
