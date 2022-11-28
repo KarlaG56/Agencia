@@ -74,9 +74,9 @@ function Data() {
 
                 <div>
                     <label id="Employee_Password">Confirm password</label>
-                    <br />
                     <input className="Employee_place" type="password" id="passwordConfirm2" />
                 </div>
+                <br />
 
                 <div >
                     <label id="Role">Role</label><br />

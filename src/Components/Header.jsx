@@ -123,7 +123,7 @@ function Header() {
                             <div id="place-2">
                               
                             </div>
-                            <a>Control System</a>
+                            <a >Control System</a>
                         </Link>
 
                     }

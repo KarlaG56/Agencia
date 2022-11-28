@@ -60,7 +60,11 @@
   margin-left: 50%;
   bottom: 25px;
   cursor: pointer;
-  margin-top:-50px;
+  margin-top:-120px;
+}
+
+.links-sections{
+  margin: none;
 }
 
 .Card-networks-3 {
