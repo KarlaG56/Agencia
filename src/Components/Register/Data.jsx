@@ -13,7 +13,7 @@ function Data() {
     let emailConfirm2 = document.getElementById("emailConfirm2");
     let passwordConfirm1 = document.getElementById("passwordConfirm1");
     let passwordConfirm2 = document.getElementById("passwordConfirm2");
-    let age = document.getElementById("age_Login");
+    let age = document.getElementById("age");
     let cellphone = document.getElementById("cellphone");
     
     if (
@@ -65,7 +65,7 @@ function Data() {
         <div>
           <label id="Age_Login">Age</label>
           <br />
-          <input className="place" type="number" name="age_Login" />
+          <input className="place" type="number" name="age" id="age" />
         </div>
         <br />
 

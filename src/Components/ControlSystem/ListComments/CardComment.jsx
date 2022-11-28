@@ -1,12 +1,11 @@
 function CardComment({ comment, date, user, id }) {
-  function handleClick(event) {
-    var temp = document.getElementsByClassName("Delete-CommentOfUser");
-    fetch("http://localhost:8080/comment/" + eliminate, { method: "DELETE" })
-      .then((response) => response.json())
-      .then((response) => {
-        setResponseCopy(response);
-      });
-      console.log(responseCopy)
+  function handleClick() {
+    let link = "http://localhost:8080/comment/" + id
+    fetch(link, { method: "DELETE" })
+
+    let div = document.getElementById(id)
+    alert("Comentario eliminado recargue la pagina")
+    div.remove()
   }
 
   return (
@@ -19,9 +18,8 @@ function CardComment({ comment, date, user, id }) {
       <div className="Delete-button-container-ListComment">
         <button
           className="Delete-CommentOfUser"
-          id={id}
-          value={id}
           onClick={handleClick}
+          id={id}
         >
           Delete
         </button>
