@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
+
 .UploadTicket-container {
   width: 400px;
   height: 600px;
@@ -22,6 +24,7 @@
   margin-left: 120px;
   color: rgb(0, 0, 0);
   font-size: 28px;
+  font-family: 'Cambay', sans-serif;
 }
 
 .placeUploadTicket {
@@ -34,43 +37,49 @@
 #seat_number {
   margin-left: 47px;
   left: 15px;
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #class_type {
   margin-left: 47px;
   left: 15px;
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #origin {
   margin-left: 47px;
   left: 15px;
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #Check_in_time {
   margin-left: 47px;
   left: 15px;
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #deaperture_date {
   margin-left: 47px;
   left: 15px;
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #cost {
   margin-left: 47px;
   left: 15px;
-  font-size: 20px;
+  font-size: 17px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #place:focus {
