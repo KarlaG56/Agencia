@@ -12,9 +12,6 @@ function Footer() {
                     <Link to="/About" id="text">
                         <a >About us</a>
                     </Link>
-                    <Link to="/Contact" id="text">
-                        <a >Contact us</a>
-                    </Link>
                 </div>
 
                 <div className='div-section'>
@@ -39,6 +36,7 @@ function Footer() {
                 
                     <h3 className='title-sections'>Social networks</h3>
 
+                    <div className='social_networks'>
                     <Link >
                         <img className='Card-networks-1' src="/icon/Facebook.svg" alt="" />
                     </Link>
@@ -50,6 +48,7 @@ function Footer() {
                     <Link>
                         <img className='Card-networks-3' src="/icon/WhatsApp.svg" alt="" />
                     </Link>
+                    </div>
 
                 </div>
 
