@@ -44,14 +44,19 @@
   display: flex;
 }
 
+.social_networks{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .Card-networks-1 {
   width: 27px;
   height: 27px;
-  margin-top: 10px;
-  margin-left: 30%;
-  float: left;
-  bottom: 25px;
-  cursor: pointer;
+  position: relative;
+  right: 20px;
 }
 
 .Card-networks-2 {
@@ -70,10 +75,8 @@
 .Card-networks-3 {
   width: 27px;
   height: 27px;
-  margin-left: 60%;
-  bottom: 25px;
-  cursor: pointer;
-  margin-top:-90px;
+  position: relative;
+  left: 20px;
 }
 
 #text{

@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import Seat from '../Flight/Seat'
 import { CardReservation } from './CardReservation'
 import { CardReservation2 } from './CardReservation2'
+import Button from './button'
 
 function ReservationTickets() {
     /*let link = '';
@@ -34,6 +35,13 @@ function ReservationTickets() {
 
     const handleImg = (event)=> {
         console.log(event.clientX + ':'+event.clientY)
+    }
+    var j = 1;
+    function generetedButton (longitude, classname, id){
+        for (var i = 1; i <= longitude; i++){
+            <button key={i} className={classname} id={id} name={j}></button>
+            j++;
+        }
     }
 
     return (
@@ -67,31 +75,37 @@ function ReservationTickets() {
         <h1 className='TituloMapaAsientos'>Plane seat map</h1>
         <div className='airplane-seat-mapping'>
             <div className='seat-seccion1'>
-                {CardReservation.map ((item) => {
-                    return(
-                        <button key={item.id} id={item.clase} className={item.class}></button>
-                    )
-                })}
+                {generetedButton(6, "airplane-seccion1", "btn-place-airplane")}
             </div>
             <div className='seat-seccion2'>
-                {CardReservation.map((item) => {
-                    return(
-                        <button key={item.id} id={item.clase} className={item.class}></button>
-                    )
-                })}
+                {generetedButton(6, "airplane-seccion1", "btn-place-airplane")}
             </div>
-            {CardReservation2.map ((item) => {
-                return(
-                    <button key={item.id} id={item.clase} className={item.class}></button>
-                )
-            })}
-        
+            <div className='seat-seccion3'>
+                {generetedButton(18, "button-seat", "btn-place-airplane")}
+            </div>
+            <div className='seat-seccion4'>
+                {generetedButton(18, "button-seat", "btn-place-airplane")}    
+            </div>
+            <div className='seat-seccion5'>
+                {generetedButton(36, "button-seat", "btn-place-airplane")}
+            </div>
+            <div className='seat-seccion6'>
+                {generetedButton(36, "button-seat", "btn-place-airplane")}
+            </div>
         </div>
         </>
         
     )
 }
 export default ReservationTickets;
+
+/*
+ {CardReservation.map ((item) => {
+                    return(
+                        <button key={item.id} id={item.clase} className={item.class}></button>
+                    )
+                })}
+*/
 
 /* <form className="form-reservation">
             <h3 className='TitleReserver'>Reserver</h3><br/>

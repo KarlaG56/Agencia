@@ -8,9 +8,7 @@ import '../../assets/Style/Footer_Terms.css'
 function Footer_Terms() {
     return (
         <>
-            <Header/>
             <Body/>
-            <Footer/>
         </>
     );
 }

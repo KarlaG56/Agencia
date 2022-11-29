@@ -17,8 +17,6 @@ function Data() {
         let cellphone = document.getElementById("cellphone");
 
         if (
-            emailConfirm1.value == emailConfirm2.value &&
-            passwordConfirm1.value == passwordConfirm2.value ||
             emailConfirm1.value == "" || emailConfirm2.value == "" ||
             passwordConfirm1.value == "" || passwordConfirm2.value == "" ||
             age.value == "" || cellphone.value == ""
@@ -58,6 +56,8 @@ function Data() {
                     <input className="Employee_place" type="text" id="emailConfirm1" />
                 </div>
                 <br />
+                <br />
+
 
                 <div >
                     <label id="Employee_Password">Password</label><br />

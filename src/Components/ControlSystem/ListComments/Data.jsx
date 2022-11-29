@@ -10,6 +10,7 @@ function Data() {
         setResponseCopy(response);
       });
   }, []);
+  var j = 5;
   console.log(responseCopy)
   return (
     <div className="ListComments">
@@ -20,7 +21,6 @@ function Data() {
             comment={responseCopy.comment}
             user={responseCopy.user}
             date={responseCopy.date}
-            key={responseCopy.id}
             id={responseCopy.id}
           />
         );
