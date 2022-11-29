@@ -46,13 +46,13 @@ function Data() {
 
   return (
     <div className="Register-container">
-      <div className="title-container">
+      <div className="title-container-1">
         <div className="Logo-container">
           <img src="/icon/Logo.svg" alt="" />
         </div>
         <h1 id="Title-Register">Touring The Globe✨</h1>
       </div>
-      <h3>Register</h3>
+      <h3 className='Title_R'>Register</h3>
 
       <form ref={form} onSubmit={handleSubmit}>
         <div>
@@ -80,13 +80,6 @@ function Data() {
           <label id="Email">Email</label>
           <br />
           <input className="place"type="email" name="email" id="emailConfirm1"/>
-        </div>
-        <br />
-
-        <div>
-          <label id="email">Confirm email</label>
-          <br />
-          <input className="place" type="email" id="emailConfirm2" />
         </div>
         <br />
 

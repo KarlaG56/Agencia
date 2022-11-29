@@ -59,13 +59,6 @@ function Data() {
                 </div>
                 <br />
 
-                <div>
-                    <label id="Employee_Email">Confirm email</label>
-                    <br />
-                    <input className="Employee_place" type="email" id="emailConfirm2" />
-                </div>
-                <br />
-
                 <div >
                     <label id="Employee_Password">Password</label><br />
                     <input className="Employee_place" type="password" id="passwordConfirm1" />
