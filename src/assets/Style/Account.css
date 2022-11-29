@@ -150,13 +150,9 @@ form {
 #Login-button {
   width: 150px;
   height: 30px;
-  background: #0575e6;
-  background: -webkit-linear-gradient(to left,
-      #021b79,
-      #0575e6);
-  background: linear-gradient(to left,
-      #021b79,
-      #0575e6);
+  background: #008cff;
+  background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
+  background: linear-gradient(to left, #0072ff, #00b7ff);
   font-size: 15px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -208,13 +204,9 @@ form {
   width: 150px;
   height: 40px;
   margin-top: 10px;
-  background: #0575e6;
-  background: -webkit-linear-gradient(to left,
-      #021b79,
-      #0575e6);
-  background: linear-gradient(to left,
-      #021b79,
-      #0575e6);
+  background: #008cff;
+  background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
+  background: linear-gradient(to left, #0072ff, #00b7ff);
 
   font-size: 15px;
   color: white;

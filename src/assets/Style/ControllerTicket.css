@@ -2,16 +2,17 @@
 
 .UploadTicket-container {
   width: 400px;
-  height: 600px;
+  height: 540px;
   transform: translate(600px, 30px);
   background-color: rgb(21, 101, 193, 0.15);
   backdrop-filter: blur(5px);
   margin-left: -280px;
   color: black;
+
 }
 
 .UploadTicketForm {
-  position: relative;
+  position: absolute;
 }
 
 .UploadTicket_Background img {
@@ -38,7 +39,7 @@
 #seat_number {
   margin-left: 15px;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -46,7 +47,7 @@
 #class_type {
   margin-left: 15px;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -54,7 +55,7 @@
 #origin {
   margin-left: 15px;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -62,7 +63,7 @@
 #Check_in_time {
   margin-left: 15px;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -70,7 +71,7 @@
 #deaperture_date {
   margin-left: 15px;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -78,7 +79,7 @@
 #cost {
   margin-left: 15px;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -96,13 +97,13 @@
 #Create-UploadTicket-button {
   width: 150px;
   height: 30px;
-  background: #0575e6;
-  background: -webkit-linear-gradient(to left, #021b79, #0575e6);
-  background: linear-gradient(to left, #021b79, #0575e6);
+  background: #008cff;
+  background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
+  background: linear-gradient(to left, #0072ff, #00b7ff);
   font-size: 15px;
   color: white;
   padding: 12px 30px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
   border: 2px solid black;
   text-decoration: none;
   font-size: 15px;

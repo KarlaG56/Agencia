@@ -3,7 +3,7 @@
 
 .EmployeeRegister {
   width: 400px;
-  height: 680px;
+  height: 640px;
   transform: translate(600px, 30px);
   background-color: rgb(21, 101, 193, 0.15);
   backdrop-filter: blur(5px);
@@ -21,7 +21,7 @@
 #Full_name {
   position: relative;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -29,7 +29,7 @@
 #Employee_Email {
   position: relative;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   left: 15px;
 }
@@ -38,14 +38,14 @@
   position: relative;
   left: 15px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
 }
 
 #Role {
   position: relative;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(0, 0, 0);
 }
@@ -53,7 +53,7 @@
 #Age {
   position: relative;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -61,7 +61,7 @@
 #Cellphone {
   position: relative;
   left: 15px;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -87,13 +87,13 @@
 #Create-Employee-button {
   width: 150px;
   height: 40px;
-  background: #0575e6;
-  background: -webkit-linear-gradient(to left, #021b79, #0575e6);
-  background: linear-gradient(to left, #021b79, #0575e6);
+  background: #008cff;
+  background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
+  background: linear-gradient(to left, #0072ff, #00b7ff);
   font-size: 15px;
   color: white;
   padding: 8px 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
   border: 2px solid black;
   text-decoration: none;
   font-size: 15px;
