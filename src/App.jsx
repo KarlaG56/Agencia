@@ -36,6 +36,7 @@ function App() {
             <ValidateContext.Provider value={{ validate, setValidate }}>
                 <UserContext.Provider value={{ user, setUser }}>
                     <Routes>
+                    <Route path='/Reservation' element={<Reservation />} />
                         <Route path='/' element={<Home />} />
                         <Route path='/Login' element={<Login />} />
                         <Route path='/Home' element={<Home />} />
@@ -44,7 +45,6 @@ function App() {
                         <Route path='/Bus' element={<Bus />} />
                         <Route path='/Register' element={<Register />} />
                         <Route element={<UserRoute />}>
-                            <Route path='/Reservation/:id/:type' element={<Reservation />} />
                             <Route path='/My_Reservations' element={<MyReservations />} />
                             <Route path="/Payment" element={<Payment />} />
                             <Route element={<EmployeeRoute />}>
