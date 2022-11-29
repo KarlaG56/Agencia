@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import Seat from '../Flight/Seat'
-import { CardReservation } from './CardReservation'
-import { CardReservation2 } from './CardReservation2'
-import Button from './button'
 
 function ReservationTickets() {
     /*let link = '';
@@ -37,10 +34,21 @@ function ReservationTickets() {
         console.log(event.clientX + ':'+event.clientY)
     }
 
+    var Seat = [];
+
     function generetedButton (longitude, classname, id){
-        for (var i = 1; i <= longitude; i++){
-            <button key={i} className={classname} id={id}></button>
+        for (var i = 0; i < longitude; i++){
+            var object = {
+                id: i,
+                class: id,
+                className: classname
+            }
+            Seat.push(object);
         }
+    }
+
+    function deleteArray () {
+        Seat.splice(0, Seat.length);
     }
 
     return (
@@ -75,21 +83,56 @@ function ReservationTickets() {
         <div className='airplane-seat-mapping'>
             <div className='seat-seccion1'>
                 {generetedButton(6, "airplane-seccion1", "btn-place-airplane")}
+                {Seat.map ((item) => {
+                    return(
+                        <button key={item.id} id={item.class} className={item.className}></button>
+                    )
+                })}
             </div>
             <div className='seat-seccion2'>
-                {generetedButton(6, "airplane-seccion1", "btn-place-airplane")}
+                {deleteArray()}
+            {generetedButton(6, "airplane-seccion1", "btn-place-airplane")}
+                {Seat.map ((item) => {
+                    return(
+                        <button key={item.id} id={item.class} className={item.className}></button>
+                    )
+                })}
             </div>
             <div className='seat-seccion3'>
-                {generetedButton(18, "button-seat", "btn-place-airplane")}
+            {deleteArray()}
+            {generetedButton(18, "button-seat", "btn-place-airplane")}
+                {Seat.map ((item) => {
+                    return(
+                        <button key={item.id} id={item.class} className={item.className}></button>
+                    )
+                })}
             </div>
             <div className='seat-seccion4'>
-                {generetedButton(18, "button-seat", "btn-place-airplane")}    
+            {deleteArray()}
+            {generetedButton(18, "button-seat", "btn-place-airplane")}
+                {Seat.map ((item) => {
+                    return(
+                        <button key={item.id} id={item.class} className={item.className}></button>
+                    )
+                })}
             </div>
             <div className='seat-seccion5'>
-                {generetedButton(36, "button-seat", "btn-place-airplane")}
+            {deleteArray()}
+            {generetedButton(36, "button-seat", "btn-place-airplane")}
+                {Seat.map ((item) => {
+                    return(
+                        <button key={item.id} id={item.class} className={item.className}></button>
+                    )
+                })}
             </div>
             <div className='seat-seccion6'>
-                {generetedButton(36, "button-seat", "btn-place-airplane")}
+            {deleteArray()}
+            {generetedButton(36, "button-seat", "btn-place-airplane")}
+                {Seat.map ((item) => {
+                    return(
+                        <button key={item.id} id={item.class} className={item.className}></button>
+                    )
+                })}
             </div>
         </div>
         </>
@@ -97,6 +140,17 @@ function ReservationTickets() {
     )
 }
 export default ReservationTickets;
+
+/*
+for (var i = 0; i < 6; i++){
+        var object = {
+            id: i,
+            class: "btn-place-airplane",
+            className: "airplane-seccion1"
+        }
+        Seat1.push(object);
+    }
+*/
 
 /*
  {CardReservation.map ((item) => {
