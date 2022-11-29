@@ -12,9 +12,6 @@ function Footer() {
                     <Link to="/About" id="text">
                         <a >About us</a>
                     </Link>
-                    <Link to="/Contact" id="text">
-                        <a >Contact us</a>
-                    </Link>
                 </div>
 
                 <div className='div-section'>
