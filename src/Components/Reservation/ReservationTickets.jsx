@@ -36,10 +36,11 @@ function ReservationTickets() {
     const handleImg = (event)=> {
         console.log(event.clientX + ':'+event.clientY)
     }
-
+    var j = 1;
     function generetedButton (longitude, classname, id){
         for (var i = 1; i <= longitude; i++){
-            <button key={i} className={classname} id={id}></button>
+            <button key={i} className={classname} id={id} name={j}></button>
+            j++;
         }
     }
 

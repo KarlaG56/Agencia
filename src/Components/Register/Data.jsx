@@ -17,8 +17,6 @@ function Data() {
     let cellphone = document.getElementById("cellphone");
     
     if (
-      emailConfirm1.value == emailConfirm2.value &&
-      passwordConfirm1.value == passwordConfirm2.value ||
       emailConfirm1.value == "" || emailConfirm2.value == "" ||
       passwordConfirm1.value == "" || passwordConfirm2.value == "" ||
       age.value == "" || cellphone.value == ""
@@ -82,12 +80,6 @@ function Data() {
           <input className="place"type="email" name="email" id="emailConfirm1"/>
         </div>
         <br />
-
-        <div>
-          <label id="email">Confirm email</label>
-          <br />
-          <input className="place" type="email" id="emailConfirm2" />
-        </div>
         <br />
 
         <div>
@@ -96,11 +88,6 @@ function Data() {
           <input className="place" type="password" name="password" id="passwordConfirm1"/>
         </div>
         <br />
-        <div>
-          <label id="password">Confirm password</label>
-          <br />
-          <input className="place" type="password" id="passwordConfirm2" />
-        </div>
 
         <div className="Create-button-container">
           <button id="Create-User-button-Register" >Create account</button>
