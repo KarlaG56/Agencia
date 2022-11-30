@@ -10,14 +10,13 @@ function Data() {
     event.preventDefault();
 
     let emailConfirm1 = document.getElementById("emailConfirm1");
-    let emailConfirm2 = document.getElementById("emailConfirm2");
     let passwordConfirm1 = document.getElementById("passwordConfirm1");
     let passwordConfirm2 = document.getElementById("passwordConfirm2");
     let age = document.getElementById("age");
     let cellphone = document.getElementById("cellphone");
-    
     if (
-      emailConfirm1.value == "" || emailConfirm2.value == "" ||
+      passwordConfirm1.value == passwordConfirm2.value ||
+      emailConfirm1.value == "" ||
       passwordConfirm1.value == "" || passwordConfirm2.value == "" ||
       age.value == "" || cellphone.value == ""
     ) {
@@ -95,7 +94,8 @@ function Data() {
         </div>
 
         <div className="Create-button-container">
-          <button id="Create-User-button-Register" >Create account</button> <br/>
+          <button id="Create-User-button-Register" >Create account</button> 
+          <br/><br/><br/>
           <Link id="Create-button_cancel" to="/">Cancel</Link>
         </div>
         

@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 function Data() {
     return (
         <div className="UploadTicket-container">
+            <br/><br/>
             <h3 className="UploadTicket_titulo">Upload ticket</h3>
 
             <form className='UploadTicketForm'>
