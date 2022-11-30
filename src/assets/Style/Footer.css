@@ -62,7 +62,6 @@
 .Card-networks-2 {
   width: 27px;
   height: 27px;
-  margin-left: 50%;
   bottom: 25px;
   cursor: pointer;
   margin-top:-120px;
@@ -80,8 +79,7 @@
 }
 
 #text{
-  color: white;
-  text-decoration: none;
+  color: white;  text-decoration: none;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 15px;
 }

@@ -88,10 +88,17 @@ function Data() {
         </div>
         <br />
 
-        <div className="Create-button-container">
-          <button id="Create-User-button-Register" >Create account</button>
-          {/*<Link id="Create-User-button" to="/Login"><button>Create account</button></Link><br />*/}
+        <div>
+          <label id="password">Confirm password</label>
+          <br />
+          <input className="place" type="password" id="passwordConfirm2" />
         </div>
+
+        <div className="Create-button-container">
+          <button id="Create-User-button-Register" >Create account</button> <br/>
+          <Link id="Create-button_cancel" to="/">Cancel</Link>
+        </div>
+        
       </form>
     </div>
   );

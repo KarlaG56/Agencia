@@ -41,11 +41,11 @@ function Footer() {
                         <img className='Card-networks-1' src="/icon/Facebook.svg" alt="" />
                     </Link>
                     
-                    <Link className='links-sections'>
+                    <Link>
                         <img className='Card-networks-2' src="/icon/Instagram.svg" alt="" />
                     </Link>
 
-                    <Link className='links-sections'>
+                    <Link>
                         <img className='Card-networks-3' src="/icon/WhatsApp.svg" alt="" />
                     </Link>
                     </div>
