@@ -55,6 +55,7 @@ function Body_destiny() {
     }
     return (
         <div className='form-container'>
+            <br/><br/>
             <h1 id='title-destinity'>Load Destinity</h1>
             <form className="Body-Controller" onSubmit={handleSubmit}>
                 <label htmlFor="city" id='city'>City:</label><br />

@@ -1,34 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
 
-.form-container{
+.form-container {
     width: 380px;
-    height: 430px;
-    background-color: rgb(21, 101, 193, .15);
-    backdrop-filter: blur(5px);
+    height: 470px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: absolute;
     left: 180px;
     top: 160px;
 }
 
-.Body-Controller{
+.Body-Controller {
     position: relative;
     left: 30%;
     color: white;
 }
 
-.Destinity_Background{
-    position: relative;
+.Destinity_Background {
     width: 100%;
-    height: 537px;
+    height: 545px;
+    object-fit: cover;
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to top, #0072ff, #00c6ff);
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.Destinity_Background img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-} 
 
-#button-save{
+#button-save {
     width: 100px;
     height: 30px;
     position: relative;
@@ -36,26 +35,26 @@
     top: 120px;
 }
 
-#title-destinity{
+#title-destinity {
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 25px;
+    font-size: 28px;
     font-family: 'Cambay', sans-serif;
 }
 
-#title-id{
+#title-id {
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 30px;
+    font-size: px;
     font-family: 'Cambay', sans-serif;
 }
 
-.label-target{
+.label-target {
     font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-#city{
+#city {
     font-size: 16px;
     position: relative;
     left: -70px;
@@ -63,7 +62,7 @@
     color: rgb(0, 0, 0);
 }
 
-#input-city{
+#input-city {
     width: 300px;
     height: 30px;
     position: relative;
@@ -71,7 +70,7 @@
     color: rgb(0, 0, 0);
 }
 
-#state{
+#state {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -80,7 +79,7 @@
     color: rgb(0, 0, 0);
 }
 
-#input-state{
+#input-state {
     width: 300px;
     height: 30px;
     position: relative;
@@ -89,7 +88,7 @@
     color: rgb(0, 0, 0);
 }
 
-#country{
+#country {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -98,7 +97,7 @@
     color: rgb(0, 0, 0);
 }
 
-#input-country{
+#input-country {
     width: 300px;
     height: 30px;
     position: relative;
@@ -107,7 +106,7 @@
     color: rgb(0, 0, 0);
 }
 
-#file{
+#file {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -116,7 +115,7 @@
     color: rgb(0, 0, 0);
 }
 
-#input-file{
+#input-file {
     width: 300px;
     height: 30px;
     position: relative;
@@ -125,7 +124,7 @@
     color: rgb(0, 0, 0);
 }
 
-#input-airplane{
+#input-airplane {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -134,7 +133,7 @@
     color: rgb(0, 0, 0);
 }
 
-#input-cruise{
+#input-cruise {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -143,7 +142,7 @@
     color: rgb(0, 0, 0);
 }
 
-#input-bus{
+#input-bus {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -152,23 +151,23 @@
     color: rgb(0, 0, 0);
 }
 
-input:focus{
+input:focus {
     outline: none;
     color: rgb(0, 0, 0);
 }
 
-#form-destination-id{
+#form-destination-id {
     width: 500px;
-    height: 300px;
-    background-color: rgb(21, 101, 193, .15);
-    backdrop-filter: blur(5px);
+    height: 340px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     position: absolute;
     right: 180px;
     top: 240px;
     color: rgb(0, 0, 0);
 }
 
-#label-input-target{
+#label-input-target {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -176,7 +175,7 @@ input:focus{
     top: 20px;
 }
 
-#input-target{
+#input-target {
     width: 300px;
     height: 30px;
     font-size: 16px;
@@ -186,7 +185,7 @@ input:focus{
     top: 45px;
 }
 
-#label-target{
+#label-target {
     font-size: 16px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position: relative;
@@ -194,14 +193,13 @@ input:focus{
     top: 65px;
 }
 
-#button-reset-id{
+#button-reset-id {
     width: 100px;
     height: 30px;
     position: relative;
     left: 40%;
     top: 140px;
 }
-
 
 #button-save {
     width: 150px;
@@ -210,7 +208,7 @@ input:focus{
     background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
     background: linear-gradient(to left, #0072ff, #00b7ff);
     font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: white;
     padding: 8px 20px;
     border: 2px solid black;
@@ -218,10 +216,10 @@ input:focus{
     font-size: 15px;
     border-radius: 25px;
     margin-top: -35px;
-    left:0%;
-  }
+    left: 0%;
+}
 
-  #button-reset-id {
+#button-reset-id {
     width: 100px;
     height: 40px;
     position: relative;
@@ -233,9 +231,9 @@ input:focus{
     font-size: 15px;
     color: white;
     padding: 8px 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 2px solid black;
     text-decoration: none;
     font-size: 15px;
     border-radius: 25px;
-  }
+}

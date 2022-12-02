@@ -43,6 +43,7 @@ function Data() {
 
     return (
         <div className="EmployeeRegister">
+            <br/><br/>
             <h3 className="Employee_titulo">Register Employee</h3>
             <form className='ControllerEmployeeRegisterForm'>
                 <div>
@@ -56,8 +57,6 @@ function Data() {
                     <input className="Employee_place" type="text" id="emailConfirm1" />
                 </div>
                 <br />
-                <br />
-
 
                 <div >
                     <label id="Employee_Password">Password</label><br />
