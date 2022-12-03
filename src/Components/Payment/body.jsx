@@ -68,6 +68,7 @@ function Body() {
                 </div>
                 <div className="content-scroll-container">
                     <div className="content-scroll-data">
+                        
                         {
                             paymentData && paymentData.map(pays => (
                                 <Card

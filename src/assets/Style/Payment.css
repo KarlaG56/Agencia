@@ -89,6 +89,13 @@
     margin-top: 10px;
 }
 
+.payment-card{
+    width: 100%;
+    height: 160px;
+    background-color: #1565C0;
+    margin-top: 10px;
+}
+
 .payment-data-container{
     width: 65%;
     height: 100%;
