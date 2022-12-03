@@ -1,5 +1,8 @@
-import { useState, useContext, useEffect} from 'react'
+import { useState, useContext, useEffect } from 'react'
 import UserContext from '../context/UserContext';
+import TR from './TR'
+
+
 function Body() {
     const [apiData, setApiData] = useState(null)
     const { user } = useContext(UserContext);
@@ -11,6 +14,7 @@ function Body() {
             .then(data => setApiData(data))
             .catch(err => console.log(err));
     }, [])
+
     console.log(apiData)
     return (
         <div className="table-container">
@@ -25,34 +29,16 @@ function Body() {
                     <th>Boletos</th>
                 </tr>
                 {
-                    apiData && apiData.map((reservation, index) => (
-                        <tr>
-                            <th>{reservation.destination}</th>
-                            <th>{reservation.typeOfTrip}</th>
-                            <th>{reservation.reservationDate}</th>
-                            <th>{reservation.cost}</th>
-                            {
-                                reservation.status == "Cancelado" ?
-                                <th>Cancelado</th>
-                                :
-                                <th><button>Cancelar</button></th>
-                            }
-                            {
-                                reservation.status == "No pagado" ?
-                                <th><button>Pagar</button></th>
-                                :
-                                reservation.status = "Pagado" ?
-                                <th>Pagado</th>
-                                :
-                                <th>Cancelado</th>
-                            }
-                            {
-                                reservation.status == "cancelado" ?
-                                <th>Cancelado</th>
-                                :
-                                <th><button>Ver boletos</button></th>
-                            }
-                        </tr>
+                    apiData && apiData.map((reservation) => (
+                        <TR
+                            id={reservation.id}
+                            userId={user.id}
+                            destination={reservation.destination}
+                            typeOfTrip={reservation.typeOfTrip}
+                            reservationDate={reservation.reservationDate}
+                            cost={reservation.cost}
+                            status={reservation.status}
+                        />
                     ))
                 }
 
