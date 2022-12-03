@@ -37,8 +37,13 @@ function ReservationTickets() {
     var Seat = [];
 
     function generetedButton (longitude, classname, id){
-        for (var i = 1; i <= longitude; i++){
-            <button key={i} className={classname} id={id}></button>
+        for (var i = 0; i < longitude; i++){
+            var object = {
+                id: i,
+                class: id,
+                className: classname
+            }
+            Seat.push(object);
         }
     }
 
