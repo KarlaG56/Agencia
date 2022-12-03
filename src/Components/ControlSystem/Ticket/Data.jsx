@@ -6,6 +6,16 @@ function Data() {
             <h3 className="UploadTicket_titulo">Upload ticket</h3>
 
             <form className='UploadTicketForm'>
+
+                <div>
+                    <label id="type of trip">type of trip</label>
+                    <select className="selectTypeoftrip">
+                        <option value="low">bus</option>
+                        <option value="low">plane</option>
+                        <option value="low">ship</option>
+                    </select>
+                </div>
+
                 <div>
                     <label id="seat_number">Number of Seat</label><br />
                     <input className="placeUploadTicket" type="number"  min={0} max={36}/>
