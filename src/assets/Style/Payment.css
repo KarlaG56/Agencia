@@ -94,29 +94,42 @@
     height: 100%;
     float: left;
     font-size: 15px;
+    background-color: rgb(202, 211, 208);
+}
+
+.payment-data-container2{
+    width: 55%;
+    height: 60%;
+    float: left;
+    margin-top: 10%;
+    margin-left: 25%;
+    font-size: 15px;
+    background-color: rgba(5, 110, 75, 0.397);
 }
 
 #card-number{
     position: relative;
-    left: 27%;
+    left: 2%;
     top: 10%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
 }
 
 #owner-name{
     position: relative;
-    left: 27%;
+    left: 0%;
     top: 25%;
 }
 
 #expiration-date{
     position: relative;
-    left: 27%;
+    left: 0%;
     top: 40%;
 }
 
 #cvv{
     position: relative;
-    left: 27%;
+    left:0%;
     top: 55%;
 }
 
@@ -132,23 +145,20 @@
     height: 560px;
     text-align: center;
     float: left;
+    background-color: #00c6ff;
 }
 
 .header-scroll{
     width: 100%;
     height: 80px;
-    background-color: #0b53a7;
+    background-color: #ffffff;
 }
 
 .content-scroll-container{
     width: 100%;
     height: 480px;
-    background-color: #0b53a7;
+    background-color: #06274d;
 	overflow-y: scroll;
-}
-
-.content-scroll-container::-webkit-scrollbar{
-    z-index: -1;
 }
 
 .content-scroll-data{

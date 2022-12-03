@@ -219,6 +219,7 @@ form {
   font-size: 16px;
   position: relative;
   border-radius: 25px;
+  cursor:pointer;
 }
 
 #Create-User-button-Register {
