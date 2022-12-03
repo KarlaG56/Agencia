@@ -10,16 +10,14 @@ function Data() {
         event.preventDefault();
 
         let emailConfirm1 = document.getElementById("emailConfirm1");
-        let emailConfirm2 = document.getElementById("emailConfirm2");
         let passwordConfirm1 = document.getElementById("passwordConfirm1");
         let passwordConfirm2 = document.getElementById("passwordConfirm2");
         let age = document.getElementById("age");
         let cellphone = document.getElementById("cellphone");
 
         if (
-            emailConfirm1.value == emailConfirm2.value &&
             passwordConfirm1.value == passwordConfirm2.value ||
-            emailConfirm1.value == "" || emailConfirm2.value == "" ||
+            emailConfirm1.value == "" ||
             passwordConfirm1.value == "" || passwordConfirm2.value == "" ||
             age.value == "" || cellphone.value == ""
         ) {
@@ -39,12 +37,13 @@ function Data() {
                 }),
             });
         } else {
-            console.log("tas loco")
+            console.log("error")
         }
     };
 
     return (
         <div className="EmployeeRegister">
+            <br/><br/>
             <h3 className="Employee_titulo">Register Employee</h3>
             <form className='ControllerEmployeeRegisterForm'>
                 <div>
@@ -59,13 +58,6 @@ function Data() {
                 </div>
                 <br />
 
-                <div>
-                    <label id="Employee_Email">Confirm email</label>
-                    <br />
-                    <input className="Employee_place" type="email" id="emailConfirm2" />
-                </div>
-                <br />
-
                 <div >
                     <label id="Employee_Password">Password</label><br />
                     <input className="Employee_place" type="password" id="passwordConfirm1" />
@@ -74,9 +66,9 @@ function Data() {
 
                 <div>
                     <label id="Employee_Password">Confirm password</label>
-                    <br />
                     <input className="Employee_place" type="password" id="passwordConfirm2" />
                 </div>
+                <br />
 
                 <div >
                     <label id="Role">Role</label><br />

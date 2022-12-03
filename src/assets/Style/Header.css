@@ -309,8 +309,6 @@ li:hover {
   cursor: pointer;
 }
 
-
-
 .M-Seccion{
     text-decoration: none;
     color: #fff;
@@ -328,4 +326,8 @@ li:hover {
   right: 40px;
   text-decoration: none;
   margin-top: -25px;
+}
+
+#Control_system a{
+  margin: none;
 }

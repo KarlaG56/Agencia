@@ -39,11 +39,12 @@ function Data() {
 }
     return (
         <div className="Login-container">
-            
+             <br/><br/>
             <div className="title-container-1">
                 <div className="Logo-container">
                     <img src="/icon/Logo.svg" alt="" />
                 </div>
+               
                 <h1>Touring The Globe✨</h1>
             </div>
 

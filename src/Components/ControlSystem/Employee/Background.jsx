@@ -2,7 +2,10 @@ import Body from "./Body_employee";
 
 function Background() {
     return (
-        <Body />
+        <div className="Employee_Background">
+            <Body />
+        </div>
+
     );
 }
 export default Background;

@@ -10,9 +10,11 @@ function Data() {
         setResponseCopy(response);
       });
   }, []);
+  var j = 5;
   console.log(responseCopy)
   return (
     <div className="ListComments">
+      <br/>
       <h1 className="ListComments_Titulo">List comments</h1>
       {responseCopy.map((responseCopy) => {
         return (
@@ -20,7 +22,6 @@ function Data() {
             comment={responseCopy.comment}
             user={responseCopy.user}
             date={responseCopy.date}
-            key={responseCopy.id}
             id={responseCopy.id}
           />
         );

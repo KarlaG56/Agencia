@@ -4,9 +4,12 @@ import TypeOfTrip from "./DestinyId";
 function Background() {
     return (
         <>
-            <Destiny />
-            <TypeOfTrip />
+            <div className="Destinity_Background">
+                <Destiny />
+                <TypeOfTrip />
+            </div>
         </>
+
     );
 }
 
