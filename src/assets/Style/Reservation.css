@@ -164,16 +164,15 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .seat-seccion1{
   width: 95px;
   height: 63px;
   border: 1px black solid;
-  position: relative;
-  left: 313px;
-  top: 52px;
+  margin-left: 30%;
+  margin-top: 20em;
 }
 
 .airplane-seccion1{
@@ -197,13 +196,13 @@ body{
   float: left;
 }
 .seat-seccion3{
-  width: 161px;
-  height: 70px;
+  width: 15%;
+  height: 5em;
   border: 1px green solid;
   float: left;
   position: relative;
-  left: 339px;
-  top: -11px;
+  left: 36.2%;
+  top: -4.8em;
 }
 
 .seat-seccion4{
@@ -237,8 +236,8 @@ body{
 }
 
 .button-seat{
-  width: 20px;
-  height: 20px;
+  width: 1.8em;
+  height: 1.8em;
   background-color: #1361ab;
   border-color: transparent;
   border-radius: 3px;
