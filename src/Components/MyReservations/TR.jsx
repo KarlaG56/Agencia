@@ -7,11 +7,86 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import Dialog from '@material-ui/core/Dialog';
 function TR(props) {
+    const [link, setLink] = useState(null)
+    const [linkC, setLinkC] = useState(null)
     const [apiPay, setApiPay] = useState(null)
+    const [apiTicket, setApiTicket] = useState(null)
     const [openPay, setOpenPay] = useState(null)
+    const [openShow, setOpenShow] = useState(null)
     const [payment, setPayment] = useState(null)
     const handleClickPay = () => { setOpenPay(true) }
     const handleClosePay = () => { setOpenPay(false) }
+    const handleCloseShow = () => { setOpenShow(false) }
+    const handleClickShowTickets = () => {
+        switch (props.typeOfTrip) {
+
+            case 'flight':
+                setLink('http://localhost:8080/ticket-airplane/reservation/' + props.id);
+                break;
+            case 'cruise ship':
+                setLink('http://localhost:8080/ticket-cruise-ship/reservation/' + props.id);
+                break;
+            case 'bus':
+                setLink("http://localhost:8080/ticket-bus/reservation/" + props.id);
+                break;
+        }
+        fetch(link)
+            .then(response => response.json())
+            .then(data => {setApiTicket(data); setOpenShow(true)})
+            .catch(error => console.log(error))
+    }
+
+    const createTable = () => {
+        return(
+            <table>
+                <tr>
+                                    <th>Number</th>
+                                    <th>Class</th>
+                                    <th>Departure Date</th>
+                                    <th>Check in time</th>
+                                    <th>Origin</th>
+                                    <th>Destination</th>
+                                </tr>
+                                {
+                                    apiTicket && apiTicket.map(tickets => (
+                                        <tr>
+                                            <th>{tickets.seatNumber}</th>
+                                            <th>{tickets.classType}</th>
+                                            <th>{tickets.departureDate}</th>
+                                            <th>{tickets.checkInTime}</th>
+                                            <th>{tickets.origin}</th>
+                                            <th>{props.destination}</th>
+                                        </tr>
+                                    ))
+                                }
+            </table>
+        )
+    }
+
+    const handleClickCancel = () =>{
+        switch (props.typeOfTrip) {
+
+            case 'flight':
+                setLinkC("http://localhost:8080/reservation-status/airplane/" + props.id);
+                break;
+            case 'cruise ship':
+                setLinkC("http://localhost:8080/reservation-status/cruice-ship/" + props.id);
+                break;
+            case 'bus':
+                setLinkC("http://localhost:8080/reservation-status/bus/" + props.id);
+                break;
+        }
+        console.log(linkC);
+        var requestOptions = {
+            method: 'PUT',
+            redirect: 'follow'
+          };
+        fetch(linkC,
+            requestOptions
+        ).then(response => response.text())
+        .then(result => console.log(result))
+        .catch(error => console.log('error', error));
+    }
 
     const handleClickPayOut = () => {
         var myHeaders = new Headers();
@@ -60,7 +135,7 @@ function TR(props) {
                 props.status == "Cancelled" ?
                     <th>Cancelled</th>
                     :
-                    <th><button >Cancel</button></th>
+                    <th><button onClick={handleClickCancel}>Cancel</button></th>
             }
             {
 
@@ -87,16 +162,28 @@ function TR(props) {
                         </Dialog>
                     </th>
                     :
-                    props.status = "Paid out" ?
+                    props.status == "Pay out" ?
                         <th>Paid out</th>
                         :
                         <th>Cancelled</th>
             }
             {
-                props.status == "cancelled" ?
+                props.status == "Cancelled" ?
                     <th>Cancelled</th>
                     :
-                    <th><button>Show tickets</button></th>
+                    <th>
+                        <button onClick={handleClickShowTickets}>Show tickets</button>
+                        <Dialog open={openShow} onClose={handleCloseShow}>
+                            <DialogTitle>Show tickets</DialogTitle>
+                            <DialogContent>
+                                {createTable()}
+                            </DialogContent>
+                            <DialogActions>
+                                <button onClick={handleCloseShow}>Close</button>
+                            </DialogActions>
+                        </Dialog>
+                    </th>
+
             }
         </tr>
     )

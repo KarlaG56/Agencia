@@ -14,8 +14,6 @@ function Body() {
             .then(data => setApiData(data))
             .catch(err => console.log(err));
     }, [])
-
-    console.log(apiData)
     return (
         <div className="table-container">
             <table className="table-reservation">
