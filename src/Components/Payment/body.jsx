@@ -47,12 +47,12 @@ function Body() {
         <div className="payment-container">
             <div className="payment-data-container">
                 <div className="payment-data-container2">
-                <br/>
-                        <div >
+                    <br />
+
+                    <form onSubmit={handleSubmit} >
+                        <div className='Title-Register-Payment'>
                             <h1>Register payment method</h1>
                         </div>
-                    <form onSubmit={handleSubmit} >
-                        
                         <label id="card-number">Card number:<br /><input type="text" value={cardNumber} onChange={handleChangeCardNumber} /></label><br />
                         <label id="owner-name">Owner name:<br /><input type="text" value={ownerName} onChange={handleChangeOwnerName} /></label><br />
                         <label id="expiration-date">Expiration date:<br /><input type="date" value={expirationDate} onChange={handleChangeExpirationDate} /></label><br />
@@ -64,11 +64,12 @@ function Body() {
             </div>
             <div className="payment-scroll-container">
                 <div className="header-scroll">
+                    <br/>
                     <h1 className="Title-RegisteredPaymentMethods">Registered payment methods</h1>
                 </div>
                 <div className="content-scroll-container">
                     <div className="content-scroll-data">
-                        
+
                         {
                             paymentData && paymentData.map(pays => (
                                 <Card
