@@ -5,7 +5,7 @@ function cardPay(props) {
             <span>Expiration Date: {props.date}</span><br />
             <span>Owner Name: {props.name}</span>
             <span>CVV:{props.cvv}</span><br />
-            <button onClick={() => {
+            <button className="DeleteMetodoDePago" onClick={() => {
                 let link = "http://localhost:8080/payment/" + props.id;
                 fetch(link,
                     {

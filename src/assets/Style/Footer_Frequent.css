@@ -1,6 +1,74 @@
-.body{
-    background-color: white;
-    border: 50px;
-    border-radius: 30px;
+#question-title{
+    width: 100%;
+    height: 50px;
+    text-align: center;
 }
 
+.question-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-container1, .info-container2, .info-container3, .info-container4, .info-container5 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 50px;
+  }
+  
+  ul {
+    display: none;
+  }
+  
+  input:checked ~ ul {
+    display: block;
+  }
+  
+  #menu-hamburger1, #menu-hamburger2, #menu-hamburger3, #menu-hamburger4, #menu-hamburger5 {
+    display: none;
+  }
+  
+  .info-container1 label, .info-container2 label, .info-container3 label, .info-container4 label, .info-container5 label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+  }
+  
+  .info-container1 label:hover, .info-container2 label:hover, .info-container3 label:hover, .info-container4 label:hover, .info-container5 label:hover {
+    background: rgb(0, 84, 163);
+  }
+  
+  input:checked ~ label {
+    background: rgb(0, 136, 226);
+  }
+  
+  .info-container1 ul, .info-container2 ul, .info-container3 ul, .info-container4 ul, .info-container5 ul {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .info-container1 li, .info-container2 li, .info-container3 li, .info-container4 li, .info-container5 li {
+    display: block;
+    background: #0072ff;  
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  li:hover {
+    filter: brightness(110%);
+  }
