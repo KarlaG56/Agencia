@@ -57,6 +57,7 @@ function TypeOfTrip() {
 
     return(
         <form id='form-destination-id'>
+            <br/><br/>
             <h1 id='title-id'>Assign trip type to destination</h1>
             <label htmlFor="" id='label-input-target'>Id destination:</label>
             <input id='input-target' value={id} onChange={(event) => {setId(event.target.value)}}/><br/>

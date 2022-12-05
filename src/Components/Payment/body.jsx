@@ -9,7 +9,7 @@ function Body() {
     const [ownerName, setOwnerName] = useState('');
     const [expirationDate, setExpirationDate] = useState('');
     const [cvv, setCvv] = useState('');
-    const[paymentData, setPaymentData] = useState(null);
+    const [paymentData, setPaymentData] = useState(null);
 
     const handleChangeCardNumber = (event) => { setCardNumber(event.target.value) }
     const handleChangeOwnerName = (event) => { setOwnerName(event.target.value) }
@@ -17,12 +17,12 @@ function Body() {
     const handleChangeCvv = (event) => { setCvv(event.target.value) }
 
     useEffect(function () {
-        let l="http://localhost:8080/payment/"+user.id
+        let l = "http://localhost:8080/payment/" + user.id
         fetch(l)
-        .then(response => response.json())
-        .then(data => {setPaymentData(data);})
-        .catch(err => console.log(err))
-    },[])
+            .then(response => response.json())
+            .then(data => { setPaymentData(data); })
+            .catch(err => console.log(err))
+    }, [])
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -35,10 +35,10 @@ function Body() {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify({
-                    ownerName : ownerName,
-                    cardNumber : cardNumber,
+                    ownerName: ownerName,
+                    cardNumber: cardNumber,
                     cvv: cvv,
-                    expirationDate : expirationDate
+                    expirationDate: expirationDate
                 }),
             })
     }
@@ -46,22 +46,32 @@ function Body() {
     return (
         <div className="payment-container">
             <div className="payment-data-container">
-                <form onSubmit={handleSubmit}>
-                    <label id="card-number">Card number:<br /><input type="text" value={cardNumber} onChange={handleChangeCardNumber} /></label><br />
-                    <label id="owner-name">Owner name:<br /><input type="text" value={ownerName} onChange={handleChangeOwnerName} /></label><br />
-                    <label id="expiration-date">Expiration date:<br /><input type="date" value={expirationDate} onChange={handleChangeExpirationDate} /></label><br />
-                    <label id="cvv">CVV:<br /><input type="text" value={cvv} onChange={handleChangeCvv} /></label><br />
-                    <button>Add</button>
-                </form>
+                <div className="payment-data-container2">
+                    <br />
+
+                    <form onSubmit={handleSubmit} >
+                        <div className='Title-Register-Payment'>
+                            <h1>Register payment method</h1>
+                        </div>
+                        <label id="card-number">Card number:<br /><input type="text" value={cardNumber} onChange={handleChangeCardNumber} /></label><br />
+                        <label id="owner-name">Owner name:<br /><input type="text" value={ownerName} onChange={handleChangeOwnerName} /></label><br />
+                        <label id="expiration-date">Expiration date:<br /><input type="date" value={expirationDate} onChange={handleChangeExpirationDate} /></label><br />
+                        <label id="cvv">CVV:<br /><input type="text" value={cvv} onChange={handleChangeCvv} /></label><br />
+                        <button className="AddMetodoDePago">Add</button>
+                    </form>
+                </div>
+
             </div>
             <div className="payment-scroll-container">
                 <div className="header-scroll">
-                    <h1>Registered payment methods</h1>
+                    <br/>
+                    <h1 className="Title-RegisteredPaymentMethods">Registered payment methods</h1>
                 </div>
                 <div className="content-scroll-container">
                     <div className="content-scroll-data">
+
                         {
-                            paymentData && paymentData.map(pays =>(
+                            paymentData && paymentData.map(pays => (
                                 <Card
                                     key={pays.id}
                                     card={pays.cardNumber}

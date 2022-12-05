@@ -10,14 +10,13 @@ function Data() {
     event.preventDefault();
 
     let emailConfirm1 = document.getElementById("emailConfirm1");
-    let emailConfirm2 = document.getElementById("emailConfirm2");
     let passwordConfirm1 = document.getElementById("passwordConfirm1");
     let passwordConfirm2 = document.getElementById("passwordConfirm2");
     let age = document.getElementById("age");
     let cellphone = document.getElementById("cellphone");
-    
     if (
-      emailConfirm1.value == "" || emailConfirm2.value == "" ||
+      passwordConfirm1.value == passwordConfirm2.value ||
+      emailConfirm1.value == "" ||
       passwordConfirm1.value == "" || passwordConfirm2.value == "" ||
       age.value == "" || cellphone.value == ""
     ) {
@@ -44,13 +43,13 @@ function Data() {
 
   return (
     <div className="Register-container">
-      <div className="title-container">
+      <div className="title-container-1">
         <div className="Logo-container">
           <img src="/icon/Logo.svg" alt="" />
         </div>
         <h1 id="Title-Register">Touring The Globe✨</h1>
       </div>
-      <h3>Register</h3>
+      <h3 className='Title_R'>Register</h3>
 
       <form ref={form} onSubmit={handleSubmit}>
         <div>
@@ -80,7 +79,6 @@ function Data() {
           <input className="place"type="email" name="email" id="emailConfirm1"/>
         </div>
         <br />
-        <br />
 
         <div>
           <label id="Password">Password</label>
@@ -89,10 +87,18 @@ function Data() {
         </div>
         <br />
 
-        <div className="Create-button-container">
-          <button id="Create-User-button-Register" >Create account</button>
-          {/*<Link id="Create-User-button" to="/Login"><button>Create account</button></Link><br />*/}
+        <div>
+          <label id="password">Confirm password</label>
+          <br />
+          <input className="place" type="password" id="passwordConfirm2" />
         </div>
+
+        <div className="Create-button-container">
+          <button id="Create-User-button-Register" >Create account</button> 
+          <br/><br/><br/>
+          <Link id="Create-button_cancel" to="/">Cancel</Link>
+        </div>
+        
       </form>
     </div>
   );

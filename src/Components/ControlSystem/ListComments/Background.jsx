@@ -2,7 +2,10 @@ import Body from "./Body_listComments";
 
 function Background() {
     return ( 
-        <Body />
+        <div className="background-list">
+            <Body />
+        </div>
+        
      );
 }
 export default Background;
