@@ -32,12 +32,12 @@ const createTable = ({props}) => {
             {
                 apiTicket && apiTicket.map(tickets => (
                     <tr>
-                        <th>{tickets.seatNumber}</th>
-                        <th>{tickets.classType}</th>
-                        <th>{tickets.departureDate}</th>
-                        <th>{tickets.checkInTime}</th>
-                        <th>{tickets.origin}</th>
-                        <th>{props.destination}</th>
+                        <td>{tickets.seatNumber}</td>
+                        <td>{tickets.classType}</td>
+                        <td>{tickets.departureDate}</td>
+                        <td>{tickets.checkInTime}</td>
+                        <td>{tickets.origin}</td>
+                        <td>{props.destination}</td>
                     </tr>
                 ))
             }

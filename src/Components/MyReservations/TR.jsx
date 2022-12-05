@@ -32,38 +32,38 @@ function TR(props) {
         }
         fetch(link)
             .then(response => response.json())
-            .then(data => {setApiTicket(data); setOpenShow(true)})
+            .then(data => { setApiTicket(data); setOpenShow(true) })
             .catch(error => console.log(error))
     }
 
     const createTable = () => {
-        return(
+        return (
             <table>
                 <tr>
-                                    <th>Number</th>
-                                    <th>Class</th>
-                                    <th>Departure Date</th>
-                                    <th>Check in time</th>
-                                    <th>Origin</th>
-                                    <th>Destination</th>
-                                </tr>
-                                {
-                                    apiTicket && apiTicket.map(tickets => (
-                                        <tr>
-                                            <th>{tickets.seatNumber}</th>
-                                            <th>{tickets.classType}</th>
-                                            <th>{tickets.departureDate}</th>
-                                            <th>{tickets.checkInTime}</th>
-                                            <th>{tickets.origin}</th>
-                                            <th>{props.destination}</th>
-                                        </tr>
-                                    ))
-                                }
+                    <th>Number</th>
+                    <th>Class</th>
+                    <th>Departure Date</th>
+                    <th>Check in time</th>
+                    <th>Origin</th>
+                    <th>Destination</th>
+                </tr>
+                {
+                    apiTicket && apiTicket.map(tickets => (
+                        <tr>
+                            <th>{tickets.seatNumber}</th>
+                            <th>{tickets.classType}</th>
+                            <th>{tickets.departureDate}</th>
+                            <th>{tickets.checkInTime}</th>
+                            <th>{tickets.origin}</th>
+                            <th>{props.destination}</th>
+                        </tr>
+                    ))
+                }
             </table>
         )
     }
 
-    const handleClickCancel = () =>{
+    const handleClickCancel = () => {
         switch (props.typeOfTrip) {
 
             case 'flight':
@@ -80,12 +80,12 @@ function TR(props) {
         var requestOptions = {
             method: 'PUT',
             redirect: 'follow'
-          };
+        };
         fetch(linkC,
             requestOptions
         ).then(response => response.text())
-        .then(result => console.log(result))
-        .catch(error => console.log('error', error));
+            .then(result => console.log(result))
+            .catch(error => console.log('error', error));
     }
 
     const handleClickPayOut = () => {
@@ -126,7 +126,7 @@ function TR(props) {
     }
 
     return (
-        <tr>
+        <tr className='card-tickets-inf'>
             <th>{props.destination}</th>
             <th>{props.typeOfTrip}</th>
             <th>{props.reservationDate}</th>
@@ -135,13 +135,13 @@ function TR(props) {
                 props.status == "Cancelled" ?
                     <th>Cancelled</th>
                     :
-                    <th><button onClick={handleClickCancel}>Cancel</button></th>
+                    <th><button onClick={handleClickCancel} className='cancelled'>Cancel</button></th>
             }
             {
 
                 props.status == "Not payed" ?
-                    <th>
-                        <button onClick={handleClickPay}>Pay</button>
+                    <th >
+                        <button onClick={handleClickPay} className="button-pay">Pay</button>
                         <Dialog open={openPay} onClose={handleClosePay}>
                             <DialogTitle>Pay Reservation</DialogTitle>
                             <DialogContent>
@@ -154,10 +154,10 @@ function TR(props) {
                                 </select>
                             </DialogContent>
                             <DialogActions>
-                                <button onClick={handleClickPayOut}>Pay</button>
+                                <button onClick={handleClickPayOut} className="button-pay2" >Pay</button>
                             </DialogActions>
                             <DialogActions>
-                                <button onClick={handleClosePay}>Cancel</button>
+                                <button onClick={handleClosePay} className="cancelled2" >Cancel</button>
                             </DialogActions>
                         </Dialog>
                     </th>
@@ -169,10 +169,10 @@ function TR(props) {
             }
             {
                 props.status == "Cancelled" ?
-                    <th>Cancelled</th>
+                    <th >Cancelled</th>
                     :
                     <th>
-                        <button onClick={handleClickShowTickets}>Show tickets</button>
+                        <button onClick={handleClickShowTickets} className="button-show">Show tickets</button>
                         <Dialog open={openShow} onClose={handleCloseShow}>
                             <DialogTitle>Show tickets</DialogTitle>
                             <DialogContent>
