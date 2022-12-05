@@ -65,7 +65,7 @@ function Body() {
             <div className="payment-scroll-container">
                 <div className="header-scroll">
                     <br/>
-                    <h1 className="Title-RegisteredPaymentMethods">Registered payment methods</h1>
+                    <h1 className="Title-RegisteredPaymentMethods">Payment methods</h1>
                 </div>
                 <div className="content-scroll-container">
                     <div className="content-scroll-data">

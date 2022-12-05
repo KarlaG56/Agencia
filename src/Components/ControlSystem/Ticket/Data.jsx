@@ -9,15 +9,6 @@ function Data() {
             <form className='UploadTicketForm'>
 
                 <div>
-                    <label id="type of trip">type of trip</label>
-                    <select className="selectTypeoftrip">
-                        <option value="low">bus</option>
-                        <option value="low">plane</option>
-                        <option value="low">ship</option>
-                    </select>
-                </div>
-
-                <div>
                     <label id="seat_number">Number of Seat</label><br />
                     <input className="placeUploadTicket" type="number"  min={0} max={36}/>
                 </div>
@@ -56,6 +47,17 @@ function Data() {
                     <input className="placeUploadTicket" type="number" min={0}/>
                 </div>
                 <br />
+
+                <div>
+                    <label id="type-trip">Type of trip</label>
+                    <select className="selectTypeoftrip">
+                    <option value="low">Select</option>
+                        <option value="low">bus</option>
+                        <option value="low">plane</option>
+                        <option value="low">ship</option>
+                    </select>
+                </div>
+                <br/><br/>
 
                 <div className="Create-button-container-UploadTicket">
                     <Link id="Create-UploadTicket-button" to="/">Reserver</Link><br />

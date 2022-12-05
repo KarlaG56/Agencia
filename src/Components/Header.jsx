@@ -119,10 +119,8 @@ function Header() {
 
                         :
 
-                        <Link to="/Control_system" id="Control_system">
-                            <div id="place-2">
-                            <img src="/icon/" />
-                            </div>
+                        <Link to="/Control_system/Ticket" id="Control_system">
+                            
                             <a >Control System</a>
                         </Link>
 
