@@ -97,17 +97,20 @@
 .payment-container {
     width: 100%;
     height: 560px;
-    background-color: #1565C0;
+    background-color: #e7e7e7;
     margin-top: 10px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .payment-card {
-    width: 100%;
+    width: 96%;
     height: 200px;
-    background-color: #fff;
+    margin-left: 2%;
+    background-image: url(/public/img/tarjeta4.jpg);
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
     margin-top: 10px;
-    font-size: 17px;
+    font-size: 18px;
+    color: #fff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
@@ -126,6 +129,8 @@
     background: linear-gradient(to right,
             #f83600,
             #fe8c00);
+
+            
 }
 
 .payment-data-container2 {
@@ -180,11 +185,13 @@
 }
 
 .payment-scroll-container {
-    width: 35%;
+    width: 34.5%;
+    margin-left: 0.5%;
     height: 560px;
     text-align: center;
     float: left;
     background-color: #00c6ff;
+    border-right: 90px black;
 }
 
 .header-scroll {

@@ -101,7 +101,8 @@
 
 .table-reservation {
     width: 80%;
-    height: 98%;
+    background-color: #fff;
+    height: auto;
     font-size: 20px;
     position: relative;
     left: 110px;
@@ -117,26 +118,22 @@
     background: -webkit-linear-gradient(to right, #434343, #000000);
     background: linear-gradient(to right, #434343, #000000);
     font-size: 20px;
-    height: 15%;
+    height: 90px;
     color: #fff;
     font-family: 'Cambay', sans-serif;
 }
 
+
 .card-tickets-inf {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 17px;
-    padding:5% ;
+    border: #000000 solid 1px;
 }
 
-#line-one {
-    background-color: #E5E7E9;
-}
 
-#line-two {
-    background-color: #ffffff;
-}
 
 .cancelled {
+    margin: 1.5em;
     width: 100px;
     height: 30px;
     color: black;
@@ -211,6 +208,26 @@
     width: 80%;
 }
 
+.table-show2{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:1px solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
 
+.table-show2 th{
+    border: #000000 solid 1px;
+}
 
+.back-show-tr{
+    background: #f12711;
+    background: linear-gradient(to left, #f5af19, #f12711);
+    margin-top: 10px;
+    color: #fff;
+}
+
+.table-show2 span{
+    margin:2em
+}
 

@@ -4,17 +4,13 @@
 .Header {
   width: 100%;
   height: 100px;
-  background: #00c6ff; 
-  background: -webkit-linear-gradient(
-    to bottom,
-    #0072ff,
-    #00c6ff
-  ); 
-  background: linear-gradient(
-    to bottom,
-    #0072ff,
-    #00c6ff
-  ); 
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to bottom,
+      #0072ff,
+      #00c6ff);
+  background: linear-gradient(to bottom,
+      #0072ff,
+      #00c6ff);
   color: white;
   display: flex;
   align-items: center;
@@ -47,6 +43,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -185,7 +182,7 @@ ul {
   display: none;
 }
 
-input:checked ~ ul {
+input:checked~ul {
   display: block;
 }
 
@@ -211,7 +208,7 @@ input:checked ~ ul {
   background: rgb(0, 84, 163);
 }
 
-input:checked ~ label {
+input:checked~label {
   background: rgb(0, 136, 226);
 }
 
@@ -227,7 +224,7 @@ input:checked ~ label {
 
 .menu-container li {
   display: block;
-  background: #0072ff;  
+  background: #0072ff;
   margin: 0;
   padding: 10px;
   list-style: none;
@@ -269,7 +266,7 @@ li:hover {
   text-align: center;
 }
 
-#alert-password-input::placeholder{
+#alert-password-input::placeholder {
   color: gray;
   font-size: 1.2em;
   font-style: italic;
@@ -279,7 +276,7 @@ li:hover {
   outline: none;
 }
 
-#btn-delete-account{
+#btn-delete-account {
   height: 100%;
   width: 100%;
   background-color: transparent;
@@ -295,7 +292,14 @@ li:hover {
   position: relative;
   right: 22.5%;
   font-size: 15px;
-  background-color: red;
+  background: #f00000;
+  background: -webkit-linear-gradient(to left,
+      #f21f14,
+      #f00000);
+  background: linear-gradient(to left,
+      #ff2519,
+      #f00000);
+
   color: white;
   cursor: pointer;
 }
@@ -307,14 +311,15 @@ li:hover {
   right: 22.5%;
   font-size: 15px;
   cursor: pointer;
+  
 }
 
-.M-Seccion{
-    text-decoration: none;
-    color: #fff;
+.M-Seccion {
+  text-decoration: none;
+  color: #fff;
 }
 
-#Control_system{
+#Control_system {
   color: #fff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   width: 90px;
@@ -328,6 +333,6 @@ li:hover {
   margin-top: -25px;
 }
 
-#Control_system a{
+#Control_system a {
   margin: none;
 }

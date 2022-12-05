@@ -38,8 +38,8 @@ function TR(props) {
 
     const createTable = () => {
         return (
-            <table>
-                <tr>
+            <table className='table-show2'>
+                <tr className='back-show-tr'>
                     <th>Number</th>
                     <th>Class</th>
                     <th>Departure Date</th>
@@ -50,12 +50,12 @@ function TR(props) {
                 {
                     apiTicket && apiTicket.map(tickets => (
                         <tr>
-                            <th>{tickets.seatNumber}</th>
-                            <th>{tickets.classType}</th>
-                            <th>{tickets.departureDate}</th>
-                            <th>{tickets.checkInTime}</th>
-                            <th>{tickets.origin}</th>
-                            <th>{props.destination}</th>
+                            <th><span>{tickets.seatNumber}</span></th>
+                            <th><span>{tickets.classType}</span></th>
+                            <th><span>{tickets.departureDate}</span></th>
+                            <th><span>{tickets.checkInTime}</span></th>
+                            <th><span>{tickets.origin}</span></th>
+                            <th><span>{props.destination}</span></th>
                         </tr>
                     ))
                 }
@@ -171,15 +171,15 @@ function TR(props) {
                 props.status == "Cancelled" ?
                     <th >Cancelled</th>
                     :
-                    <th>
+                    <th >
                         <button onClick={handleClickShowTickets} className="button-show">Show tickets</button>
                         <Dialog open={openShow} onClose={handleCloseShow}>
                             <DialogTitle>Show tickets</DialogTitle>
-                            <DialogContent>
+                            <DialogContent className='table-show'>
                                 {createTable()}
                             </DialogContent>
                             <DialogActions>
-                                <button onClick={handleCloseShow}>Close</button>
+                                <button onClick={handleCloseShow} className="cancelled" >Close</button>
                             </DialogActions>
                         </Dialog>
                     </th>
