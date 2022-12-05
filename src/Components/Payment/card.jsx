@@ -1,11 +1,13 @@
 function cardPay(props) {
     return (
-        <div className="payment-container">
-            <span>Card Number: {props.card}</span>
+        <div className="payment-card">
+            <br/><br/>
+            <span>Card Number: {props.card}</span><br/>
             <span>Expiration Date: {props.date}</span><br />
-            <span>Owner Name: {props.name}</span>
+            <span>Owner Name: {props.name}</span><br/>
             <span>CVV:{props.cvv}</span><br />
-            <button onClick={() => {
+            <br/>
+            <button className="DeleteMetodoDePago" onClick={() => {
                 let link = "http://localhost:8080/payment/" + props.id;
                 fetch(link,
                     {

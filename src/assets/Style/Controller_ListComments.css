@@ -1,36 +1,50 @@
-.ListComments_Titulo{
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
+
+.ListComments_Titulo {
     display: flex;
     justify-content: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 28px;
-    margin-top: 40px;
+    margin-top: 10px;
+    font-family: 'Cambay', sans-serif;
 }
 
-.CommentOfUser{
-  width: 900px;
-  height: 200px;
-  transform: translate(100px, 30px);
-  background-color: rgb(255, 255, 255);
+.background-list{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background: #00c6ff;
+    background: -webkit-linear-gradient(to top, #0072ff, #00c6ff);
+    background: linear-gradient(to top, #0072ff, #00c6ff);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.CajaComentario{
+
+.CommentOfUser {
+    width: 900px;
+    height: 200px;
+    transform: translate(100px, 30px);
+    background-color: rgb(255, 255, 255);
+}
+
+.CajaComentario {
     width: 860px;
-   height: 120px;
-   transform: translate(20px, 20px);
-   border-width: 10px;
-   border:solid;
+    height: 120px;
+    transform: translate(20px, 20px);
+    border-width: 10px;
+    border: solid;
 }
 
-.Delete-CommentOfUser{
+.Delete-CommentOfUser {
     width: 150px;
     height: 30px;
-    background: #0575e6;
-    background: -webkit-linear-gradient(to left, #021b79, #0575e6);
-    background: linear-gradient(to left, #021b79, #0575e6);
+    background: #008cff;
+    background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
+    background: linear-gradient(to left, #0072ff, #00b7ff);
     font-size: 15px;
     color: white;
     padding: 6px 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     border: 2px solid black;
     text-decoration: none;
     font-size: 15px;
@@ -38,15 +52,15 @@
     transform: translate(730px, 0px);
 }
 
-.Comment_UserCreator{
+.Comment_UserCreator {
     transform: translate(30px, 20px);
 }
 
-.Comment_CreatorName{
+.Comment_CreatorName {
     transform: translate(24px, 43px);
 }
 
-.Comment_Post_Time{
+.Comment_Post_Time {
     width: 10px;
     transform: translate(440px, 28px);
 }

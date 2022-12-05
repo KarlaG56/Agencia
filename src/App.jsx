@@ -22,7 +22,6 @@ import Controler_ListComments from "./Components/Page/Controler-ListComments"
 import NotFound from "./Components/NotFound"
 import NotAuthorized from "./Components/NotAuthorize";
 import About from "./Components/Page/Footer_About"
-import Contact from "./Components/Page/Footer_Contact"
 import Frequent from "./Components/Page/Footer_Frequent"
 import Policies from "./Components/Page/Footer_Policies"
 import Terms from "./Components/Page/Footer_Terms"
@@ -36,6 +35,7 @@ function App() {
             <ValidateContext.Provider value={{ validate, setValidate }}>
                 <UserContext.Provider value={{ user, setUser }}>
                     <Routes>
+
                         <Route path='/' element={<Home />} />
                         <Route path='/Login' element={<Login />} />
                         <Route path='/Home' element={<Home />} />
@@ -57,12 +57,11 @@ function App() {
                         </Route>
                         <Route path="/notFound" element={<NotFound />} />
                         <Route path="/NotAuthorized" element={<NotAuthorized />} />
-                        <Route path='/About' element={<About/>}/>
-                    <Route path='/Contact' element={<Contact/>}/>
-                    <Route path='/Frequent' element={<Frequent/>}/>
-                    <Route path='/Policies' element={<Policies/>}/>
-                    <Route path='/Terms' element={<Terms/>}/>    
-                 </Routes>
+                        <Route path='/About' element={<About />} />
+                        <Route path='/Frequent' element={<Frequent />} />
+                        <Route path='/Policies' element={<Policies />} />
+                        <Route path='/Terms' element={<Terms />} />
+                    </Routes>
                 </UserContext.Provider>
             </ValidateContext.Provider>
         </BrowserRouter>

@@ -1,3 +1,7 @@
+body{
+  box-sizing: border-box;
+}
+
 .Form-reservation-container {
   height: 430px;
   width: 700px;
@@ -156,19 +160,19 @@
 .airplane-seat-mapping{
   width: 100%;
   height: 300px;
-  background-image: url(/img/AirplaneMap.svg);
+  background-image: url(/public/img/MapaAutobus.jpg) ;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .seat-seccion1{
-  width: 90px;
+  width: 95px;
   height: 63px;
-  position: relative;
-  left: 313px;
-  top: 52px;
+  border: 1px black solid;
+  margin-left: 30%;
+  margin-top: 20em;
 }
 
 .airplane-seccion1{
@@ -183,10 +187,61 @@
 }
 
 .seat-seccion2{
-  width: 90px;
+  width: 95px;
   height: 63px;
   border: 1px red solid;
   position: relative;
   left: 313px;
   top: 99px;
+  float: left;
+}
+.seat-seccion3{
+  width: 15%;
+  height: 5em;
+  border: 1px green solid;
+  float: left;
+  position: relative;
+  left: 36.2%;
+  top: -4.8em;
+}
+
+.seat-seccion4{
+  width: 161px;
+  height: 70px;
+  border: 1px orange solid;
+  float: left;
+  position: relative;
+  left: 180px;
+  top: 90px;
+}
+
+.seat-seccion5{
+  width: 320px;
+  height: 71px;
+  border: 1px yellow solid;
+  float: left;
+  position: relative;
+  left: 211px;
+  top: -12px;
+}
+
+.seat-seccion6{
+  width: 320px;
+  height: 71px;
+  border: 1px brown solid;
+  float: left;
+  position: relative;
+  left: 623px;
+  top: 19px;
+}
+
+.button-seat{
+  width: 1.8em;
+  height: 1.8em;
+  background-color: #1361ab;
+  border-color: transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-bottom: 4.5px;
+  margin-right: 6.5px;
 }

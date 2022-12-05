@@ -1,16 +1,24 @@
-.EmployeeRegister {
-  width: 400px;
-  height: 680px;
-  transform: translate(600px, 30px);
-  background-color: rgb(21, 101, 193, 0.15);
-  backdrop-filter: blur(5px);
-  margin-left: -280px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
 
-.Employee_Background img {
+.Employee_Background{
   object-fit: cover;
   width: 100%;
-  height: 900px;
+  height: 740px;
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to top, #0072ff, #00c6ff);
+  background: linear-gradient(to top, #0072ff, #00c6ff);
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+
+
+.EmployeeRegister {
+  width: 400px;
+  height: 670px;
+  transform: translate(600px, 30px);
+  background-color: rgb(255, 255, 255);
+  margin-left: -280px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .Employee_titulo {
@@ -18,19 +26,21 @@
   color: rgb(0, 0, 0);
   font-size: 28px;
   margin-top: 0px;
+  font-family: 'Cambay', sans-serif;
 }
 
 #Full_name {
   position: relative;
   left: 15px;
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #Employee_Email {
   position: relative;
-
-  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
   color: rgb(0, 0, 0);
   left: 15px;
 }
@@ -38,29 +48,33 @@
 #Employee_Password {
   position: relative;
   left: 15px;
-  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
   color: rgb(0, 0, 0);
 }
 
 #Role {
   position: relative;
   left: 15px;
-  font-size: 20px;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(0, 0, 0);
 }
 
 #Age {
   position: relative;
   left: 15px;
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #Cellphone {
   position: relative;
   left: 15px;
-  font-size: 20px;
+  font-size: 16px;
   color: rgb(0, 0, 0);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .Employee_place {
@@ -83,18 +97,17 @@
 
 #Create-Employee-button {
   width: 150px;
-  height: 30px;
-  width: 150px;
-  height: 30px;
-  background: #0575e6;
-  background: -webkit-linear-gradient(to left, #021b79, #0575e6);
-  background: linear-gradient(to left, #021b79, #0575e6);
+  height: 45px;
+  background: #008cff;
+  background: -webkit-linear-gradient(to left, #0072ff, #027bdf);
+  background: linear-gradient(to left, #0072ff, #00b7ff);
   font-size: 15px;
   color: white;
-  padding: 6px 20px;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 12px 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;  
   border: 2px solid black;
   text-decoration: none;
   font-size: 15px;
   border-radius: 25px;
+  margin-top: -35px;
 }

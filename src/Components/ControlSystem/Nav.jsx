@@ -15,7 +15,7 @@ function Aside() {
                 <a>| Load destiny |</a>
             </Link>
 
-            <Link to="/Control_system/Destination" className='Block'>
+            <Link to="/Control_system/ListComments" className='Block'>
                 <a>| List comments |</a>
             </Link>
 
