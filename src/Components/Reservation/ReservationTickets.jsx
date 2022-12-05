@@ -67,7 +67,7 @@ function ReservationTickets() {
                 return (
                     <>
                         <img src="/img/MapaAutobus.jpg" />
-                        <span>How many seats do you want?</span>
+                        <span className="questions-r">How many seats do you want?</span>
                         <br />
                         <input type="number" value={howMany} onChange={handleChangeSeats}></input>
                         <br />

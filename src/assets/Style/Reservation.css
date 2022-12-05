@@ -156,6 +156,12 @@ body{
   transform: translate(410px, 14px);
   font-size: 40px;
 }
+.questions-r{
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+}
 
 .airplane-seat-mapping{
   width: 100%;
