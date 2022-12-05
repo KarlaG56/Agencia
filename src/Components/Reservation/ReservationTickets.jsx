@@ -5,7 +5,7 @@ import { CardReservation } from './CardReservation'
 import { CardReservation2 } from './CardReservation2'
 
 function ReservationTickets() {
-    /*let link = '';
+    let link = '';
     let params = useParams();
     const [fecha, setFecha] = useState('');
     const [origins, setOrigins] = useState('');
@@ -23,17 +23,35 @@ function ReservationTickets() {
             break;
     }
 
+    const tickets = () => {
+        switch (params.type) {
+            case 'flight':
+                return(
+                    <img src=""/>
+                )
+                break;
+            case 'cruise ship':
+                
+                break;
+            case 'bus':
+                return(
+                    <img src="/img/MapaAutobus.jpg"/>
+                )
+                break;
+        }
+    }
+
     //if (params.type) {}
     useEffect(function () {
         fetch(link)
             .then(response => response.json())
             .then(data => {setApiData(data)})
             .catch(err => console.log(err))
-    })
-    console.log(apiData)*/
+    },[])
+    console.log(apiData)
 
     const handleImg = (event)=> {
-        console.log(event.clientX + ':'+event.clientY)
+        
     }
 
     return (
@@ -64,29 +82,9 @@ function ReservationTickets() {
                 <button id='button-reservation-save'>Save</button>
             </form>
         </div>
-        <h1 className='TituloMapaAsientos'>Plane seat map</h1>
-        <div className='airplane-seat-mapping'>
-            <div className='seat-seccion1'>
-                {CardReservation.map ((item) => {
-                    return(
-                        <button key={item.id} id={item.clase} className={item.class}></button>
-                    )
-                })}
-            </div>
-            <div className='seat-seccion2'>
-                {CardReservation.map((item) => {
-                    return(
-                        <button key={item.id} id={item.clase} className={item.class}></button>
-                    )
-                })}
-            </div>
-            {CardReservation2.map ((item) => {
-                return(
-                    <button key={item.id} id={item.clase} className={item.class}></button>
-                )
-            })}
-        
-        </div>
+        {
+            tickets
+        }
         </>
         
     )
