@@ -43,10 +43,12 @@ function ReservationTickets() {
             case 'flight':
                 return (
                     <>
-                        <img src="/img/AirplaneMap.svg" />
-                        <span>How many seats do you want?</span>
-                        <br />
-                        <input type="number" value={howMany} onChange={handleChangeSeats}></input>
+                        <img src="/img/MapaAvion.png" className="img-bus"/>
+                        <br/><br/>
+                        <span className="questions-r">How many seats do you want?</span>
+                        <br /><br/>
+                        <center><input type="number" value={howMany} onChange={handleChangeSeats}></input></center>
+                        
                         <br />
                         {
                             generatedSelect()
@@ -57,19 +59,21 @@ function ReservationTickets() {
             case 'cruise ship':
                 return (
                     <>
-                        <span>How many seats do you want?</span>
+                        <span className="questions-r">How many seats do you want?</span>
                         <br />
-                        <input type="number" value={howMany} onChange={handleChangeSeats}></input>
+                        <center><input type="number" value={howMany} onChange={handleChangeSeats}></input></center>
+                        
                     </>
                 )
                 break;
             case 'bus':
                 return (
                     <>
-                        <img src="/img/MapaAutobus.jpg" />
+                        <img src="/img/MapaAutobus.jpg" className="img-bus"/>
+                        <br/><br/>
                         <span className="questions-r">How many seats do you want?</span>
                         <br />
-                        <input type="number" value={howMany} onChange={handleChangeSeats}></input>
+                        <center><input className="select-trasport" type="number" value={howMany} onChange={handleChangeSeats}></input></center>
                         <br />
                         {
                             generatedSelect()
