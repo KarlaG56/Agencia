@@ -8,7 +8,7 @@ function Body() {
             <div className="Carousel-container">
             <Carousel></Carousel>
             </div>
-            <SpecialOferts></SpecialOferts>
+            
             <CommentBox></CommentBox>
         </div>
     );
