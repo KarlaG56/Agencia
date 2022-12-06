@@ -147,12 +147,14 @@
     font-size: 15px;
     color: #fff;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .cancelled2 {
     width: 100px;
     height: 30px;
     margin:auto ;
+    cursor: pointer;
     color: black;
     background: #f00000;
     background: -webkit-linear-gradient(to left,
@@ -176,6 +178,7 @@
     font-size: 15px;
     color: #fff;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .button-pay2 {
@@ -189,6 +192,7 @@
     background: linear-gradient(to left, #0072ff, #00b7ff);
     font-size: 15px;
     color: #fff;
+    cursor: pointer;
     border-radius: 25px;
 }
 
@@ -200,6 +204,7 @@
     background: linear-gradient(to left, #f5af19, #f12711);
     font-size: 15px;
     color: #fff;
+    cursor: pointer;
     border-radius: 25px;
 }
 
