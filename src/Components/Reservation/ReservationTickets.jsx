@@ -1,15 +1,22 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useParams } from 'react-router-dom'
-import Seat from '../Flight/Seat'
+import UserContext from '../context/UserContext';
 
 
 function ReservationTickets() {
+    const { user } = useContext(UserContext);
+    const time = Date.now();
+    const today = new Date(time)
     let link = '';
     let params = useParams();
-    const destiny = params.destiny;
     const [fecha, setFecha] = useState('');
-    const [origins, setOrigins] = useState('');
+    const handleChangeFecha = (event) => { setFecha(event.target.value); console.log(event.target.value) }
     const [origin, setOrigin] = useState('');
+    const handleChangeOrigin = (event) => { setOrigin(event.target.value); console.log(event.target.value) }
+    const [classType, setClassType] = useState('');
+    const handleChangeClassType = (event) => { setClassType(event.target.value); console.log(event.target.value) }
+    const [checkInTime, setCheckInTime] = useState('');
+    const handleChangeCheckInTime = (event) => { setCheckInTime(event.target.value); console.log(event.target.value) }
     const [apiData, setApiData] = useState('');
     const [howMany, setHowMany] = useState(0);
     const handleChangeSeats = (event) => {
@@ -27,16 +34,99 @@ function ReservationTickets() {
             break;
     }
 
+    const reserv = (event) => {
+        event.preventDefault();
+        console.log(event)
+        var myHeaders = new Headers();
+        myHeaders.append("Content-Type", "application/json");
+        var raw = JSON.stringify({
+            "reservationDate": today.toLocaleDateString(),
+            "destination": params.destiny,
+            "typeOfTrip": params.type
+        });
+
+        var requestOptions = {
+            method: 'POST',
+            headers: myHeaders,
+            body: raw,
+            redirect: 'follow'
+        };
+        fetch("http://localhost:8080/reservation/" + user.id, requestOptions)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                switch (params.type) {
+                    case 'flight':
+                        var requestOptions = {
+                            method: 'PUT',
+                            body: raw,
+                            redirect: 'follow'
+                          };
+                        for(let i = 0; i < event.target.length; i++) {
+                            fetch("http://localhost:8080/ticket-airplane/" + event.target[i].value + "/" + data.id, requestOptions)
+                        }
+                        break;
+                    case 'cruise ship':
+                        var requestOptions = {
+                            method: 'PUT',
+                            body: raw,
+                            redirect: 'follow'
+                          };
+                        for(let i = 0; i < event.target.length; i++) {
+                            fetch("http://localhost:8080/ticket-cruise-ship/" + event.target[i].value+ "/" + data.id, requestOptions)
+                            .then(response => response.json())
+                            .then(data => console.log(data))
+                        }
+                        break;
+                    case 'bus':
+                        var requestOptions = {
+                            method: 'PUT',
+                            body: raw,
+                            redirect: 'follow'
+                          };
+                        for(let i = 0; i < event.target.length; i++) {
+                            fetch("http://localhost:8080/ticket-bus/" + event.target[i].value+ "/" + data.id, requestOptions)
+                            .then(response => response.json())
+                            .then(data => console.log(data))
+                        }
+                        break;
+                }
+                var requestOptions = {
+                    method: 'PUT',
+                    body: raw,
+                    redirect: 'follow'
+                  };
+                fetch('http://localhost:8080/reservation/'+data.id, requestOptions)
+            })
+            .catch(error => console.log('error', error));
+    }
+
     const generatedSelect = () => {
-        let selects = [];
-        for (let i = 0; i < howMany; i++) {
-            selects.push(
-                <select>
-                    <option selected disabled>----Select----</option>
-                </select>
-            )
+        let seatsSelected = [];
+        let selects = []
+        if (howMany <= apiData.length) {
+            
+            for (let i = 0; i < howMany; i++) {
+                selects.push(
+                    <select onChange={event => { seatsSelected.push(event.target.value); console.log(seatsSelected) }}>
+                        <option selected disabled>----Select----</option>
+                        {
+                            apiData && apiData.map(data => (
+                                <option value={data.id}>{data.seatNumber}</option>
+                            ))
+                        }
+                    </select>
+                )
+            }
         }
-        return selects;
+        return (
+            <form onSubmit={reserv}>
+                {
+                    selects
+                }
+                <button>Reserv</button>
+            </form>
+        )
     }
 
     const tickets = () => {
@@ -44,16 +134,17 @@ function ReservationTickets() {
             case 'flight':
                 return (
                     <>
-                        <img src="/img/MapaAvion.png" className="img-bus"/>
-                        <br/><br/>
+                        <img src="/img/MapaAvion.png" className="img-bus" />
+                        <br /><br />
                         <span className="questions-r">How many seats do you want?</span>
-                        <br /><br/>
+                        <br /><br />
                         <center><input type="number" value={howMany} onChange={handleChangeSeats}></input></center>
-                        
+
                         <br />
                         {
                             generatedSelect()
                         }
+                        <button onClick={reserv}>reserv</button>
                     </>
                 )
                 break;
@@ -61,17 +152,21 @@ function ReservationTickets() {
                 return (
                     <>
                         <span className="questions-r">How many seats do you want?</span>
-                        <br />
+                        <br /><br />
                         <center><input type="number" value={howMany} onChange={handleChangeSeats}></input></center>
-                        
+
+                        <br />
+                        {
+                            generatedSelect()
+                        }
                     </>
                 )
                 break;
             case 'bus':
                 return (
                     <>
-                        <img src="/img/MapaAutobus.jpg" className="img-bus"/>
-                        <br/><br/>
+                        <img src="/img/MapaAutobus.jpg" className="img-bus" />
+                        <br /><br />
                         <span className="questions-r">How many seats do you want?</span>
                         <br />
                         <center><input className="select-trasport" type="number" value={howMany} onChange={handleChangeSeats}></input></center>
@@ -85,48 +180,60 @@ function ReservationTickets() {
         }
     }
 
+    const handleFilter = (event) => {
+        event.preventDefault();
+        const data1 = apiData.filter(apiData => apiData.origin === origin && apiData.checkInTime === checkInTime && apiData.departureDate === fecha && apiData.classType === classType)
+        /*for(let i = 0; i <apiData.length; i++) {
+            if(apiData[i].origin === origin && apiData[i].checkInTime === checkInTime && apiData[i].departureDate === fecha && apiData[i].classType === classType) {
+                console.log(apiData[i])
+            }else{
+                delete apiData[i];
+            }
+        }*/
+    }
+
     //if (params.type) {}
     useEffect(function () {
         fetch(link)
             .then(response => response.json())
-            .then(data => { setApiData(data) })
+            .then(data => { setApiData(data); })
             .catch(err => console.log(err))
     }, [])
     console.log(apiData)
-    console.log(destiny)
 
 
 
     return (
         <>
             <div className='Form-reservation-container'>
-                <form action="" className='formReserver'>
+                <form onSubmit={handleFilter} className='formReserver'>
                     <h3 className='Reserve'>Reserver</h3>
                     <br />
                     <label id='label-date'>Departure Date:</label>
-                    <input type="date" id='input-date' /><br />
+                    <input type="text" id='input-date' value={fecha} onChange={handleChangeFecha} /><br />
 
                     <label id='label-originReservation'>Origin:</label>
-                    <select name="origin" id="select-origin">
-                        <option className='Select_origin' disabled selected>Select origin</option>
-                        <option className='Tuxtla_Gtz' value="Tuxtla">Tuxtla Gtz, Chiapas</option>
-                    </select><br />
+                    <input type="text" id='input-originReservation' value={origin} onChange={handleChangeOrigin} />
+                    <br />
 
                     <label id='label-classType'>Class type:</label>
-                    <select name="class" id="select-classType">
+                    <select name="class" id="select-classType" onChange={handleChangeClassType}>
                         <option disabled selected>Select class</option>
-                        <option value="Turista">Económica</option>
-                        <option value="Turista">Turista</option>
-                        <option value="Ejecutiva">Ejecutiva</option>
+                        <option value="tird">Económica</option>
+                        <option value="second">Turista</option>
+                        <option value="first">Ejecutiva</option>
                     </select><br />
 
-                    <label id='label-departureTime'>Departure time:</label>
-                    <input type="time" id="input-departureTime" />
+                    <label id='label-departureTime' >Departure time:</label>
+                    <input type="text" id="input-departureTime" value={checkInTime} onChange={handleChangeCheckInTime} />
                     <button id='button-reservation-save'>Save</button>
                 </form>
             </div>
             {
-                tickets()
+                apiData != null ?
+                    tickets()
+                    :
+                    alert("Not found")
             }
         </>
 
