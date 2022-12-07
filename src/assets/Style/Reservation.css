@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
 
-body{
+body {
   box-sizing: border-box;
 }
 
@@ -8,7 +8,7 @@ body{
   height: 430px;
   width: 700px;
   margin-top: -105px;
-  margin-left: 10px;
+  margin-left: 20px;
   position: relative;
   margin-bottom: 30px;
   text-align: center;
@@ -17,30 +17,27 @@ body{
   background-image: url(/img/Rio.jpg);
   border-radius: 25px;
   border-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
 }
 
-.formReserver{
-    background-color: rgb(21, 101, 193, .15);
-    backdrop-filter: blur(5px);
-    width: 660px;
-    height: 370px;
-    margin-left: 30px;
-    margin-top: 30px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.formReserver {
+  background-color: rgb(21, 101, 193, .15);
+  backdrop-filter: blur(5px);
+  width: 660px;
+  height: 370px;
+  margin-top: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.reservation-body{
-  background: #00c6ff; 
-  background: -webkit-linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
-  background: linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
+.reservation-body {
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  background: linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
   margin-top: -20px;
   margin-bottom: 10px;
   width: 100%;
@@ -56,17 +53,17 @@ body{
 
 .destination-img {
   height: 300px;
- margin-top: 25px ;
- margin-left: -25px;
- border-radius: 25px;
- box-shadow: rgb(255, 255, 255) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
- margin-bottom: 15px;
+  margin-top: 25px;
+  margin-left: -25px;
+  border-radius: 25px;
+  box-shadow: rgb(255, 255, 255) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
+  margin-bottom: 15px;
 }
 
 .destination-info {
   height: 120px;
   width: 320px;
-  margin-top:30px;
+  margin-top: 30px;
   margin-left: 760px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #fff;
@@ -86,20 +83,6 @@ body{
   align-items: center;
 }
 
-#label-date {
-  position: relative;
-  left: -150px;
-  bottom: -60px;
-  font-size: 20px;
-  text-shadow: 0 0 5px #fff;
-}
-
-#input-date {
-  position: relative;
-  left: -148px;
-  bottom: -60px;
-  font-size: 18px;
-}
 
 #label-classType {
   position: relative;
@@ -116,15 +99,6 @@ body{
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
 
-#label-originReservation {
-  position: relative;
-  left: 160px;
-  top: 30px;
-  font-size: 20px;
-  text-shadow: 0 0 5px #fff;
-}
-
-
 #select-origin {
   top: 30px;
   left: 160px;
@@ -132,77 +106,133 @@ body{
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
 
-#label-departureTime {
+#label-date {
   position: relative;
-  top: -65px;
-  left: -106px;
+  left: -143px;
+  bottom: -60px;
   font-size: 20px;
   text-shadow: 0 0 5px #fff;
 }
 
+#label-originReservation {
+  position: relative;
+  left: 192px;
+  bottom: -36px;
+  font-size: 20px;
+  text-shadow: 0 0 5px #fff;
+}
+
+#label-departureTime {
+  position: relative;
+  left: -90px;
+  bottom: 65px;
+  font-size: 20px;
+  text-shadow: 0 0 5px #fff;
+}
+
+#input-originReservation {
+  position: relative;
+  left: 200px;
+  bottom: -36px;
+  width: 180px;
+  height: 21px;
+  font-size: 18px;
+}
+
 #input-departureTime {
   position: relative;
-  top: -65px;
-  left: -100px;
-  font-size: 15.5px;
+  left: -80px;
+  bottom: 65px;
+  width: 180px;
+  height: 21px;
+  font-size: 18px;
+}
+
+#input-date {
+  position: relative;
+  left: -134px;
+  bottom: -60px;
+  width: 180px;
+  height: 21px;
+  font-size: 18px;
+}
+
+.button-reservation-save {
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  background: linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  font-size: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 12px 35px;
+  margin-bottom: 15px;
+  
 }
 
 #button-reservation-save {
-    margin-top:120px;
-    background: #00c6ff; 
-  background: -webkit-linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
-  background: linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
-    font-size: 15px;
-    color: white;
-    padding: 6px 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    border: 2px solid black;
-    text-decoration: none;
-    font-size: 15px;
-    border-radius: 25px;
-    padding: 12px 35px;
-    transform: translate(-135px,9px);
+  margin-top: 120px;
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  background: linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  font-size: 15px;
+  color: white;
+  padding: 6px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 12px 35px;
+  transform: translate(-135px, 9px);
 }
-.img-bus{
-  display:flex;
-  justify-content:center;
+
+.img-bus {
+  display: flex;
+  justify-content: center;
   width: 60%;
 }
-.TituloMapaAsientos{
-  font-family:Arial, Helvetica, sans-serif;
+
+.TituloMapaAsientos {
+  font-family: Arial, Helvetica, sans-serif;
   transform: translate(410px, 14px);
   font-size: 40px;
 }
-.questions-r{
+
+.questions-r {
   color: #fff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size:25px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
 }
-.select-trasport{
+
+.select-trasport {
   display: flex;
 }
 
-.airplane-seat-mapping{
+.airplane-seat-mapping {
   width: 100%;
   height: 300px;
-  background-image: url(/public/img/MapaAutobus.jpg) ;
+  background-image: url(/public/img/MapaAutobus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 0px;
 }
 
-.title-reservation-destination{
+.title-reservation-destination {
   color: #fff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-shadow: 0 0 3px #000000;

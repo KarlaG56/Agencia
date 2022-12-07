@@ -34,8 +34,6 @@ function CommentBox() {
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
-      setUser(null)
-      setValidate(false)
   }
   return (
     <>

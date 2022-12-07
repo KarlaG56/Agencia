@@ -63,7 +63,9 @@ function ReservationTickets() {
                             redirect: 'follow'
                           };
                         for(let i = 0; i < event.target.length; i++) {
-                            fetch("http://localhost:8080/ticket-airplane/" + event.target[i].value + "/" + data.id, requestOptions)
+                            fetch("http://localhost:8080/ticket-airplane/" + event.target[i].value+ "/" + data.id, requestOptions)
+                            .then(response => response.json())
+                            .then(data => console.log(data))
                         }
                         break;
                     case 'cruise ship':
@@ -124,7 +126,7 @@ function ReservationTickets() {
                 {
                     selects
                 }
-                <button>Reserv</button>
+                <center><button className='button-reservation-save'>Reserv</button></center>
             </form>
         )
     }
