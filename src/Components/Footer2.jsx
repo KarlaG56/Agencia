@@ -20,7 +20,7 @@ function Footer() {
                         <a >Terms</a>
                     </Link>
                     <Link to="/Policies" id="text">
-                        <a id='policies'>privacy policies</a>
+                        <a id='policies'>Privacy policies</a>
                     </Link>
                 </div>
 
@@ -44,7 +44,7 @@ function Footer() {
                         <a href='https://www.instagram.com/thouringtheglobe/' title="instagram"> <img className='Card-networks-2' src="/icon/Instagram.svg" alt="instagram" /></a>
 
 
-                        <a href='https://wa.me/qr/ML55XO4MTF6OA1' title='what'><img className='Card-networks-3' src="/icon/WhatsApp.svg" alt='what' /></a>
+                        <a href='https://api.whatsapp.com/send?phone=%2B529615615901&text=Welcome+to+the+agency%3A+Touring+the+globe%F0%9F%8C%8E%E2%9C%A8' title='what'><img className='Card-networks-3' src="/icon/WhatsApp.svg" alt='what' /></a>
 
 
                     </div>

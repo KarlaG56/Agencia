@@ -99,8 +99,8 @@ function ReservationTickets() {
         <>
             <div className='Form-reservation-container'>
                 <form action="" className='formReserver'>
+                    <br/>
                     <h3 className='Reserve'>Reserver</h3>
-                    <br />
                     <label id='label-date'>Departure Date:</label>
                     <input type="date" id='input-date' /><br />
 
