@@ -47,24 +47,7 @@ function CommentBox() {
           Post comments with your account, so you can manage them in the future.
           If you post anonymous comments, you will not be able to edit or delete
           them.
-        </label>
-        <div className="CommentBox-Box">
-          <div className="Image-container">
-            <img src="/icon/Person.svg" alt="" />
-          </div>
-          <strong>
-            <label id="Post">Post as:</label>
-          </strong>
-          <div className="Box">
-            <select id="select">
-              <option value="User">User</option>
-              <option value="Anonymous">Anonymous</option>
-              <option value="Anonymous" selected>
-                ...
-              </option>
-            </select>
-          </div>
-        </div>
+        </label><br/>
         <textarea onChange={handleChangetextarea}
           cols="20"
           rows="5"
