@@ -20,12 +20,11 @@ body{
 .formReserver{
     background-color: rgb(21, 101, 193, .15);
     backdrop-filter: blur(5px);
-    width: 620px;
+    width: 660px;
     height: 370px;
     position: relative;
-    margin-left: 30px;
+    margin-left: 10px;
     margin-top: 40px;
-    font-family:Arial, Helvetica, sans-serif;
     
 }
 
@@ -58,6 +57,9 @@ body{
   height: 300px;
  margin-top: 25px ;
  margin-left: -25px;
+ border-radius: 25px;
+ box-shadow: rgb(255, 255, 255) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
+ margin-bottom: 15px;
 }
 
 .destination-info {
@@ -66,13 +68,16 @@ body{
   position: relative;
   margin-top:30px;
   margin-left: 760px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .Reserve {
-  transform: translate(10px, 25px);
+  
   font-size: 40px;
   margin-top: -10px;
-  position: relative;
+  
 }
 
 .campos label {

@@ -207,6 +207,7 @@ function ReservationTickets() {
         <>
             <div className='Form-reservation-container'>
                 <form onSubmit={handleFilter} className='formReserver'>
+                <br/>
                     <h3 className='Reserve'>Reserver</h3>
                     <br />
                     <label id='label-date'>Departure Date:</label>
