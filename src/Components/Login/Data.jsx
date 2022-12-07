@@ -19,6 +19,7 @@ function Data() {
                 headers:{
                     "Accept": "application/json",
                     "Content-Type": "application/json",
+                    "Authorization": window.localStorage.getItem("token")
                 },
                 body: JSON.stringify({
                     email: formData.get('email'),
@@ -26,7 +27,10 @@ function Data() {
                 })
             })
             let data = await response.json()   
-                             
+            window.localStorage.setItem("token", data.token)
+                      
+            /*console.log("soy el token")
+            console.log(data.token)*/
             setUser(data.data); 
             setValidate(data.success)  
             console.log(data)   

@@ -30,7 +30,8 @@ function Header() {
                     method: 'DELETE',
                     headers: {
                         "Accept": "application/json",
-                        "Content-Type": "application/json"
+                        "Content-Type": "application/json",
+                        "Authorization": window.localStorage.getItem("token")
                     }
                 })
             alert("User Delete")
@@ -43,6 +44,10 @@ function Header() {
 
     }
 
+    const click = () =>{
+        window.localStorage.removeItem("token")
+    }
+    
     const handleClickOpen = () => {
         setOpen(true);
     };
@@ -100,7 +105,7 @@ function Header() {
                                 <Link to="/My_Reservations" className='M-Seccion'><li>My reservations</li></Link>
                                 <Link to="/Payment" className='M-Seccion'><li>Payment type</li></Link>
                                 <Link to="/" className='M-Seccion'><li><button id='btn-delete-account' onClick={handleClickOpen}>Delete account</button></li></Link>
-                                <Link to="/Login" className='M-Seccion' ><li>Sing off</li></Link>
+                                <Link to="/Login" className='M-Seccion' onClick={click}><li>Sing off</li></Link>
                             </ul>
                             <Dialog open={open} onClose={handleClose}>
                                 <DialogTitle>This action cannot be undone. This will permanently delete your entire account. All private workspaces will be deleted, and you will be removed from all shared workspace.</DialogTitle>

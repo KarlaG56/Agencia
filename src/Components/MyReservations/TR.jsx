@@ -79,7 +79,8 @@ function TR(props) {
         console.log(linkC);
         var requestOptions = {
             method: 'PUT',
-            redirect: 'follow'
+            redirect: 'follow',
+            "Authorization": window.localStorage.getItem("token")
         };
         fetch(linkC,
             requestOptions
@@ -101,7 +102,8 @@ function TR(props) {
             method: 'PUT',
             headers: myHeaders,
             body: raw,
-            redirect: 'follow'
+            redirect: 'follow',
+            "Authorization": window.localStorage.getItem("token")
         };
 
         fetch("http://localhost:8080/reservation-status/" + props.id, requestOptions)

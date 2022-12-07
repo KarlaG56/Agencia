@@ -7,7 +7,8 @@ function TypeOfTrip() {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                "Authorization": window.localStorage.getItem("token")
             },
             body: JSON.stringify({
                 destination:id,
@@ -25,7 +26,8 @@ function TypeOfTrip() {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                "Authorization": window.localStorage.getItem("token")
             },
             body: JSON.stringify({
                 destination:id,
@@ -42,7 +44,8 @@ function TypeOfTrip() {
             method: 'POST',
             headers: {
                 'Accept': 'application/json',
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                "Authorization": window.localStorage.getItem("token")
             },
             body: JSON.stringify({
                 destination:id,

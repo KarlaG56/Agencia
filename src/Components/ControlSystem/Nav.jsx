@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 
 function Aside() {
+
+    const click = () =>{
+        window.localStorage.removeItem("token")
+    }
+
     return (
         <nav className='Nav-controler'>
             <Link to="/Control_system/Ticket" className='Block'>
@@ -23,7 +28,7 @@ function Aside() {
                 <a>| HomePage |</a>
             </Link>
 
-            <Link to="/Login" className='Block'>
+            <Link to="/Login" className='Block' onClick={click}>
                 <a>| Sign off</a>
             </Link>
         </nav>

@@ -14,7 +14,8 @@ function cardPay(props) {
                         method: 'DELETE',
                         headers: {
                             "Accept": "application/json",
-                            "Content-Type": "application/json"
+                            "Content-Type": "application/json",
+                            "Authorization": window.localStorage.getItem("token")
                         }
                     })
                 alert("Payment Delete")
