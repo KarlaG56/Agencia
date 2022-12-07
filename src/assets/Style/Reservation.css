@@ -100,6 +100,7 @@ body{
   top: 92px;
   left: 177px;
   font-size: 20px;
+  text-shadow: 0 0 5px #fff;
 }
 
 #select-classType {
@@ -114,6 +115,7 @@ body{
   left: 160px;
   top: 30px;
   font-size: 20px;
+  text-shadow: 0 0 5px #fff;
 }
 
 
@@ -129,6 +131,7 @@ body{
   top: -65px;
   left: -106px;
   font-size: 20px;
+  text-shadow: 0 0 5px #fff;
 }
 
 #input-departureTime {
@@ -193,81 +196,9 @@ body{
   margin-top: 0px;
 }
 
-.seat-seccion1{
-  width: 95px;
-  height: 63px;
-  border: 1px black solid;
-  margin-left: 30%;
-  margin-top: 20em;
-}
+.title-reservation-destination{
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 0 0 3px #000000;
 
-.airplane-seccion1{
-  width: 22px;
-  height: 26px;
-  background-color: #1361ab;
-  border-color: transparent;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  margin-right: 7.5px;
-}
-
-.seat-seccion2{
-  width: 95px;
-  height: 63px;
-  border: 1px red solid;
-  position: relative;
-  left: 313px;
-  top: 99px;
-  float: left;
-}
-.seat-seccion3{
-  width: 15%;
-  height: 5em;
-  border: 1px green solid;
-  float: left;
-  position: relative;
-  left: 36.2%;
-  top: -4.8em;
-}
-
-.seat-seccion4{
-  width: 161px;
-  height: 70px;
-  border: 1px orange solid;
-  float: left;
-  position: relative;
-  left: 180px;
-  top: 90px;
-}
-
-.seat-seccion5{
-  width: 320px;
-  height: 71px;
-  border: 1px yellow solid;
-  float: left;
-  position: relative;
-  left: 211px;
-  top: -12px;
-}
-
-.seat-seccion6{
-  width: 320px;
-  height: 71px;
-  border: 1px brown solid;
-  float: left;
-  position: relative;
-  left: 623px;
-  top: 19px;
-}
-
-.button-seat{
-  width: 1.8em;
-  height: 1.8em;
-  background-color: #1361ab;
-  border-color: transparent;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-bottom: 4.5px;
-  margin-right: 6.5px;
 }

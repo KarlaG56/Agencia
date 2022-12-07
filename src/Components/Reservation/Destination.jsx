@@ -15,8 +15,9 @@ function Mostrar() {
     }, [])
     return(
         <div className="destination-info">
-            <img src={img} alt={city} className="destination-img"/>
-            <h1>{city}, {state}, {country}</h1>
+            <img src={img} alt={city} className="destination-img"/><br/>
+            
+            <h1 className='title-reservation-destination'>"{city}, {state}, {country}"</h1>
         </div>
     )
 }
