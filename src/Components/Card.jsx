@@ -2,7 +2,8 @@ import '../assets/Style/Card.css'
 import {Link} from 'react-router-dom'
 
 function Card(props) {
-    const link=("/Reservation/" + props.id + "/" + props.type)
+    const destiny=props.city + " " + props.state + " " + props.country;
+    const link=("/Reservation/"+ destiny + "/" + props.id + "/" + props.type)
     return (
         <Link to={link}  id="reservation_section">
             <div className="card">

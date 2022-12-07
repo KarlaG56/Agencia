@@ -6,6 +6,7 @@ import Seat from '../Flight/Seat'
 function ReservationTickets() {
     let link = '';
     let params = useParams();
+    const destiny = params.destiny;
     const [fecha, setFecha] = useState('');
     const [origins, setOrigins] = useState('');
     const [origin, setOrigin] = useState('');
@@ -92,6 +93,7 @@ function ReservationTickets() {
             .catch(err => console.log(err))
     }, [])
     console.log(apiData)
+    console.log(destiny)
 
 
 
