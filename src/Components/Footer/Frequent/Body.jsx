@@ -1,6 +1,7 @@
 function Body() {
     return (
         <div className="questions-container">
+            <br/> <br/>
             <h1 id="question-title">Frequent Questions</h1>
             <div className='info-container1'>
                 <input className='input-hamburger' type="checkbox" id="menu-hamburger1" />

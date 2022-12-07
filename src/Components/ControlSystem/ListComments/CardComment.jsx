@@ -24,6 +24,7 @@ function CardComment({ comment, date, user, id }) {
           Delete
         </button>
       </div>
+      <br/>
     </div>
   );
 }

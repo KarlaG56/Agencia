@@ -18,6 +18,7 @@ function Data() {
       <h1 className="ListComments_Titulo">List comments</h1>
       {responseCopy.map((responseCopy) => {
         return (
+        
           <CardComment
             comment={responseCopy.comment}
             user={responseCopy.user}

@@ -4,6 +4,7 @@ function Background() {
     return ( 
         <div className="background-list">
             <Body />
+            <br/>
         </div>
         
      );

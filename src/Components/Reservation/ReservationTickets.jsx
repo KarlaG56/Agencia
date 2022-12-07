@@ -209,7 +209,6 @@ function ReservationTickets() {
                 <form onSubmit={handleFilter} className='formReserver'>
                 <br/>
                     <h3 className='Reserve'>Reserver</h3>
-                    <br />
                     <label id='label-date'>Departure Date:</label>
                     <input type="text" id='input-date' value={fecha} onChange={handleChangeFecha} /><br />
 
