@@ -1,6 +1,6 @@
 import {useContext} from 'react';
+import { useNavigate, Navigate, Outlet } from 'react-router-dom';
 import UserContext from "../context/UserContext"
-import {useNavigate, Navigate, Outlet} from 'react-router-dom';
 
 function EmployeeRoute(){
 	const {user} = useContext(UserContext)
@@ -8,7 +8,7 @@ function EmployeeRoute(){
 
 	console.log(user)
 
-	return (user.role == "employee" ? <Outlet/> : navigate("/NotAuthorized"))
+	return (user.role == "employee" ? <Outlet/> : <Navigate to="/NotAuthorized"/>)
 }
 
 export default EmployeeRoute;

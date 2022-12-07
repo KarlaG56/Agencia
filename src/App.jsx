@@ -44,7 +44,7 @@ function App() {
                         <Route path='/Bus' element={<Bus />} />
                         <Route path='/Register' element={<Register />} />
                         <Route element={<UserRoute />}>
-                            <Route path='/Reservation/:id/:type' element={<Reservation />} />
+                            <Route path='/Reservation/:destiny/:id/:type' element={<Reservation />} />
                             <Route path='/My_Reservations' element={<MyReservations />} />
                             <Route path="/Payment" element={<Payment />} />
                             <Route element={<EmployeeRoute />}>

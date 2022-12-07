@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom';
 
 function Aside() {
 
-    const click = () =>{
+    const logout = () => {
+        setUser(null)
+        setValidate(false)
         window.localStorage.removeItem("token")
     }
 
@@ -28,7 +30,7 @@ function Aside() {
                 <a>| HomePage |</a>
             </Link>
 
-            <Link to="/Login" className='Block' onClick={click}>
+            <Link to="/Login" className='Block' onClick={logout}>
                 <a>| Sign off</a>
             </Link>
         </nav>

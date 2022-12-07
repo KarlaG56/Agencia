@@ -1,4 +1,6 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
+
+body {
   box-sizing: border-box;
 }
 
@@ -6,7 +8,7 @@ body{
   height: 430px;
   width: 700px;
   margin-top: -105px;
-  margin-left: 10px;
+  margin-left: 20px;
   position: relative;
   margin-bottom: 30px;
   text-align: center;
@@ -15,32 +17,27 @@ body{
   background-image: url(/img/Rio.jpg);
   border-radius: 25px;
   border-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
 }
 
-.formReserver{
-    background-color: rgb(21, 101, 193, .15);
-    backdrop-filter: blur(5px);
-    width: 620px;
-    height: 370px;
-    position: relative;
-    margin-left: 30px;
-    margin-top: 40px;
-    font-family:Arial, Helvetica, sans-serif;
-    
+.formReserver {
+  background-color: rgb(21, 101, 193, .15);
+  backdrop-filter: blur(5px);
+  width: 660px;
+  height: 370px;
+  margin-top: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.reservation-body{
-  background: #00c6ff; 
-  background: -webkit-linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
-  background: linear-gradient(
-    to right,
-    #0072ff,
-    #00c6ff
-  ); 
+.reservation-body {
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  background: linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
   margin-top: -20px;
   margin-bottom: 10px;
   width: 100%;
@@ -56,23 +53,28 @@ body{
 
 .destination-img {
   height: 300px;
- margin-top: 25px ;
- margin-left: -25px;
+  margin-top: 25px;
+  margin-left: -25px;
+  border-radius: 25px;
+  box-shadow: rgb(255, 255, 255) 0px 1px 4px, rgb(255, 255, 255) 0px 0px 0px 3px;
+  margin-bottom: 15px;
 }
 
 .destination-info {
   height: 120px;
   width: 320px;
-  position: relative;
-  margin-top:30px;
+  margin-top: 30px;
   margin-left: 760px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #fff;
+  text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .Reserve {
-  transform: translate(10px, 25px);
+  margin-bottom: -15px;
   font-size: 40px;
-  margin-top: -10px;
-  position: relative;
+  font-family: 'Cambay', sans-serif;
+  text-shadow: 0 0 5px #fff;
 }
 
 .campos label {
@@ -81,181 +83,158 @@ body{
   align-items: center;
 }
 
-#label-date {
-  position: relative;
-  left: -150px;
-  bottom: -60px;
-  font-size: 20px;
-}
-
-#input-date {
-  position: relative;
-  left: -148px;
-  bottom: -60px;
-  font-size: 18px;
-}
 
 #label-classType {
   position: relative;
   top: 92px;
   left: 177px;
   font-size: 20px;
+  text-shadow: 0 0 5px #fff;
 }
 
 #select-classType {
-  position: relative;
   top: 94px;
   left: 180px;
   font-size: 15.5px;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+
+#select-origin {
+  top: 30px;
+  left: 160px;
+  font-size: 15.5px;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+
+#label-date {
+  position: relative;
+  left: -143px;
+  bottom: -60px;
+  font-size: 20px;
+  text-shadow: 0 0 5px #fff;
 }
 
 #label-originReservation {
   position: relative;
-  left: 160px;
-  top: 30px;
+  left: 192px;
+  bottom: -36px;
   font-size: 20px;
-}
-#select-origin {
-  position: relative;
-  top: 30px;
-  left: 160px;
-  font-size: 15.5px;
+  text-shadow: 0 0 5px #fff;
 }
 
 #label-departureTime {
   position: relative;
-  top: -65px;
-  left: -106px;
+  left: -90px;
+  bottom: 65px;
   font-size: 20px;
+  text-shadow: 0 0 5px #fff;
+}
+
+#input-originReservation {
+  position: relative;
+  left: 200px;
+  bottom: -36px;
+  width: 180px;
+  height: 21px;
+  font-size: 18px;
 }
 
 #input-departureTime {
   position: relative;
-  top: -65px;
-  left: -100px;
-  font-size: 15.5px;
+  left: -80px;
+  bottom: 65px;
+  width: 180px;
+  height: 21px;
+  font-size: 18px;
+}
+
+#input-date {
+  position: relative;
+  left: -134px;
+  bottom: -60px;
+  width: 180px;
+  height: 21px;
+  font-size: 18px;
+}
+
+.button-reservation-save {
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  background: linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  font-size: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 12px 35px;
+  margin-bottom: 15px;
+  
 }
 
 #button-reservation-save {
-    margin-top:120px;
-    background-color: #0082c8;
-    font-size: 15px;
-    color: white;
-    padding: 6px 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    border: 2px solid black;
-    text-decoration: none;
-    font-size: 15px;
-    border-radius: 25px;
-    padding: 12px 35px;
-    transform: translate(-135px,9px);
+  margin-top: 120px;
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  background: linear-gradient(to right,
+      #0072ff,
+      #00c6ff);
+  font-size: 15px;
+  color: white;
+  padding: 6px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 2px solid black;
+  text-decoration: none;
+  font-size: 15px;
+  border-radius: 25px;
+  padding: 12px 35px;
+  transform: translate(-135px, 9px);
 }
-.img-bus{
-  display:flex;
-  justify-content:center;
+
+.img-bus {
+  display: flex;
+  justify-content: center;
   width: 60%;
 }
-.TituloMapaAsientos{
-  font-family:Arial, Helvetica, sans-serif;
+
+.TituloMapaAsientos {
+  font-family: Arial, Helvetica, sans-serif;
   transform: translate(410px, 14px);
   font-size: 40px;
 }
-.questions-r{
+
+.questions-r {
   color: #fff;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size:25px;
+  font-size: 25px;
   display: flex;
   justify-content: center;
 }
-.select-trasport{
+
+.select-trasport {
   display: flex;
 }
 
-.airplane-seat-mapping{
+.airplane-seat-mapping {
   width: 100%;
   height: 300px;
-  background-image: url(/public/img/MapaAutobus.jpg) ;
+  background-image: url(/public/img/MapaAutobus.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: 0px;
 }
 
-.seat-seccion1{
-  width: 95px;
-  height: 63px;
-  border: 1px black solid;
-  margin-left: 30%;
-  margin-top: 20em;
-}
+.title-reservation-destination {
+  color: #fff;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-shadow: 0 0 3px #000000;
 
-.airplane-seccion1{
-  width: 22px;
-  height: 26px;
-  background-color: #1361ab;
-  border-color: transparent;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-bottom: 10px;
-  margin-right: 7.5px;
-}
-
-.seat-seccion2{
-  width: 95px;
-  height: 63px;
-  border: 1px red solid;
-  position: relative;
-  left: 313px;
-  top: 99px;
-  float: left;
-}
-.seat-seccion3{
-  width: 15%;
-  height: 5em;
-  border: 1px green solid;
-  float: left;
-  position: relative;
-  left: 36.2%;
-  top: -4.8em;
-}
-
-.seat-seccion4{
-  width: 161px;
-  height: 70px;
-  border: 1px orange solid;
-  float: left;
-  position: relative;
-  left: 180px;
-  top: 90px;
-}
-
-.seat-seccion5{
-  width: 320px;
-  height: 71px;
-  border: 1px yellow solid;
-  float: left;
-  position: relative;
-  left: 211px;
-  top: -12px;
-}
-
-.seat-seccion6{
-  width: 320px;
-  height: 71px;
-  border: 1px brown solid;
-  float: left;
-  position: relative;
-  left: 623px;
-  top: 19px;
-}
-
-.button-seat{
-  width: 1.8em;
-  height: 1.8em;
-  background-color: #1361ab;
-  border-color: transparent;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-bottom: 4.5px;
-  margin-right: 6.5px;
 }
