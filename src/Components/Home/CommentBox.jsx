@@ -23,7 +23,8 @@ function CommentBox() {
         "Content-Type": "application/json",
         cache: "no-cache",
         credentials: "same-origin",
-        mode: "cors"
+        mode: "cors",
+        "Authorization": window.localStorage.getItem("token")
       },
       body: JSON.stringify({
         comment: comment,

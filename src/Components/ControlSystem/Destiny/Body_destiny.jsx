@@ -17,7 +17,8 @@ function Body_destiny() {
         var requestOptions = {
             method: 'POST',
             body: formdata,
-            redirect: 'follow'
+            redirect: 'follow',
+            "Authorization": window.localStorage.getItem("token")
         };
 
         fetch("http://localhost:8080/destination", requestOptions)

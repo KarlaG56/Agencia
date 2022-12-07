@@ -27,6 +27,7 @@ function Data() {
                 headers: {
                     Accept: "application/json",
                     "Content-Type": "application/json",
+                    "Authorization": window.localStorage.getItem("token")
                 },
                 body: JSON.stringify({
                     fullName: formData.get("user"),
