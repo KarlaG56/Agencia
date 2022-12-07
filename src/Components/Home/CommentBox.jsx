@@ -1,28 +1,21 @@
 import { useState, useContext } from "react";
 import reactDOM from "react-dom/client"
-import UserContext from "../context/UserContext";
+import UserContext from "../context/UserContext"
+import ValidateContext from "../context/ValidateContext"
 
 function CommentBox() {
   const [comment, setComment] = useState("");
-  //const {user} = useContext(UserContext)
-  //var value = localStorage.getItem("id")
-
-
+  const { user, setUser } = useContext(UserContext);
+  const { validate, setValidate } = useContext(ValidateContext);
   function handleChangetextarea(event) {
     setComment(event.target.value);
   }
-
   function handleClick() {
     var today = new Date();
     var now = today.toLocaleString();
-    var postAs = document.getElementById("select");
-
-    //console.log("probando");
-    //console.log(now);
-    //console.log(user.id);
-    //console.log(value)
-    //console.log(postAs.value);
-    //console.log(comment);
+    if(user == undefined){
+      alert("Inicie sesión primero!")
+    }
     const option = {
       method: "POST",
       headers: {
@@ -37,11 +30,12 @@ function CommentBox() {
         date: now
       }),
     };
-    //fetch("http://localhost:8080/comment/" + 1, option)
-    fetch("http://localhost:8080/comment/", option)
+    fetch("http://localhost:8080/comment/" + user.id, option)
       .then((response) => response.json())
       .then((data) => console.log(data))
       .catch((err) => console.log(err));
+      setUser(null)
+      setValidate(false)
   }
   return (
     <>
